@@ -100,14 +100,3 @@ items:
           label: konveyor.io/target=camel3
         - name: camel:4
           label: konveyor.io/target=camel4
-    - uuid: e66a777a-ad09-4db8-b7e9-7217a03b4b92
-      name: Azure
-      description: Upgrade your Java application so it can be deployed on Azure App Service.
-      provider: Java
-      imagepath: images/virt.svg
-      choice: true
-      labels:
-        - name: Azure App Service
-          label: konveyor.io/target=azure-appservice
-        - name: Azure Kubernetes Service
-          label: konveyor.io/target=azure-aks
