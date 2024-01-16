@@ -109,5 +109,3 @@ items:
       labels:
         - name: Azure App Service
           label: konveyor.io/target=azure-appservice
-        - name: Azure Kubernetes Service
-          label: konveyor.io/target=azure-aks
