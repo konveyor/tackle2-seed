@@ -12,7 +12,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 5f7cdeeba816cbdb4de04f09e0fe6a930ec05f6023a0f625eb126c9d8294e72a
+      checksum: e157a53df0da7798fe9755b8e5a836a3c254dfd7b61b316c6da93933876b7959
     - uuid: e92057bc-5b66-4f7d-976f-f76aa3ad50e6
       name: camel3/camel2
       description: Rules for changes in XML file (e.g. pom.xml) to run on Apache Camel 3
@@ -36,14 +36,14 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 9e2c79ed635ff34a2cccb8add2577698a9c4a6cc8c581d4c5706a81938f73932
+      checksum: ea12ed70465c0fed9ca758cd8988a72192f764d0a0a811dc373bc936cfea8dd3
     - uuid: 1a523b92-1fb3-422b-aaf7-35f43a259fb9
       name: eap7/weblogic/tests/data
       directory: rulesets/eap7
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 0bec1b431da293dc19a4bcd68e66f0260cea006ded41a83920c994cf245a5bf9
+      checksum: a2281ae04cbb1dbbae4039bf27ec125d8fad891f42973c0a1a1babed1adfdd8f
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
@@ -182,4 +182,4 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 650b46b069abba4e423479dd9fa344d4db595e4a3820e0d808f561e1bd0f2a41
+      checksum: c6b506cc1cd2b467d197bcf6603de99e129dbc4a33eacf0c0518bd7ec339a736
