@@ -43,7 +43,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 07b96755ed1dab1b3ad68ea91eb9c32582d82c977e3b1f502b1dd7e49bec7f94
+      checksum: 75ccd0ab478914359cd502bbed87938cf69b61c3bb0b8b8e760a1e24dcd52d87
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
