@@ -65,14 +65,6 @@ items:
       labels:
         - name: Jakarta
           label: konveyor.io/target=jakarta-ee
-    - uuid: 7c1d9643-aef4-4c18-92a1-567c434707cc
-      name: Spring Boot on Red Hat Runtimes
-      description: A set of rules for assessing the compatibility of applications against the versions of Spring Boot libraries supported by Red Hat Runtimes.
-      provider: Java
-      imagepath: images/migration.svg
-      labels:
-        - name: Spring Boot
-          label: konveyor.io/target=rhr
     - uuid: b035a041-3ee5-417a-86f2-37e0b43ab5c5
       name: JBoss Web Server 6
       description: A collection of rules to support migrating from JWS 5 to JWS 6.
