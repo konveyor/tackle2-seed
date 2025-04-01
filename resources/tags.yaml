@@ -1,210 +1,510 @@
 kind: TagCategory
 version: 1
 items:
-  - name: "3rd party"
+  - name: 3rd party
     rank: 17
-    color: "#2B9AF3"
+    color: '#2B9AF3'
     tags:
-      - name: "Apache Aries"
-      - name: "Apache Geronimo"
-      - name: "Apache Hadoop"
-      - name: "Apache Karaf"
-      - name: "Apache Mahout"
-      - name: "Cloudera"
-      - name: "EJB"
-      - name: "Elasticsearch"
-      - name: "Jetty"
-      - name: "Kibana"
-      - name: "Liferay"
-      - name: "Logstash"
-      - name: "MapR"
-      - name: "Neo4J"
-      - name: "Oracle Forms"
-      - name: "Spring Boot"
-      - name: "TensorFlow"
-      - name: "Tomcat"
-      - name: "Weka"
-  - name: "Bean"
+      - name: Apache Aries
+      - name: Apache Geronimo
+      - name: Apache Hadoop
+      - name: Apache Karaf
+      - name: Apache Mahout
+      - name: Cloudera
+      - name: EJB
+      - name: Elasticsearch
+      - name: Jetty
+      - name: Kibana
+      - name: Liferay
+      - name: Logstash
+      - name: MapR
+      - name: Neo4J
+      - name: Oracle Forms
+      - name: Spring Boot
+      - name: TensorFlow
+      - name: Tomcat
+      - name: Weka
+  - name: Bean
     rank: 26
-    color: "#EC7A08"
+    color: '#EC7A08'
     tags:
-      - name: "EJB XML"
-      - name: "Entity Bean"
-      - name: "JBoss EJB XML"
-      - name: "Management EJB"
-      - name: "Message (MDB)"
-      - name: "Orion EJB XML"
-      - name: "Stateful (SFSB)"
-      - name: "Stateless (SLSB)"
-      - name: "WebSphere EJB"
-      - name: "WebSphere EJB Ext"
-  - name: "Binding"
+      - name: EJB XML
+      - name: Entity Bean
+      - name: JBoss EJB XML
+      - name: Management EJB
+      - name: Message (MDB)
+      - name: Orion EJB XML
+      - name: Stateful (SFSB)
+      - name: Stateless (SLSB)
+      - name: WebSphere EJB
+      - name: WebSphere EJB Ext
+  - name: Binding
     rank: 27
-    color: "#EC7A08"
+    color: '#EC7A08'
     tags:
-      - name: "Java EE JAXB"
-      - name: "JSON-B"
-  - name: "Caching"
+      - name: Java EE JAXB
+      - name: JSON-B
+  - name: Caching
     rank: 18
-    color: "#F032E6"
+    color: '#F032E6'
     tags:
-      - name: "Apache Commons JCS"
-      - name: "Apache Ignite"
-      - name: "Cache API"
-      - name: "Coherence"
-      - name: "Dynacache"
-      - name: "ehcache"
-      - name: "Hazelcast"
-      - name: "Infinispan"
-      - name: "JBoss Cache"
-      - name: "JCache"
-      - name: "Memcached"
-      - name: "Oscache"
-      - name: "Redis"
-      - name: "ShiftOne"
-      - name: "Spring Boot Cache"
-      - name: "Swarmcache"
-  - name: "Clustering"
+      - name: Apache Commons JCS
+      - name: Apache Ignite
+      - name: Cache API
+      - name: Coherence
+      - name: Dynacache
+      - name: ehcache
+      - name: Hazelcast
+      - name: Infinispan
+      - name: JBoss Cache
+      - name: JCache
+      - name: Memcached
+      - name: Oscache
+      - name: Redis
+      - name: ShiftOne
+      - name: Spring Boot Cache
+      - name: Swarmcache
+  - name: Clustering
     rank: 39
-    color: "#40199A"
+    color: '#40199A'
     tags:
-      - name: "Web Session"
-  - name: "Configuration Management"
+      - name: Web Session
+  - name: Configuration Management
     rank: 35
-    color: "#2B9AF3"
+    color: '#2B9AF3'
     tags:
-      - name: "Spring Cloud Config"
-      - name: "Spring Properties"
-  - name: "Database Driver"
+      - name: Spring Cloud Config
+      - name: Spring Properties
+  - name: Database Driver
     rank: 16
-    color: "#009596"
+    color: '#009596'
     tags:
-      - name: "Apache Accumulo Client"
-      - name: "Apache HBase Client"
-      - name: "Axion Driver"
-      - name: "Cassandra Client"
-      - name: "Derby Driver"
-      - name: "H2 Driver"
-      - name: "HSQLDB Driver"
-      - name: "LevelDB Client"
-      - name: "MckoiSQLDB Driver"
-      - name: "Microsoft SQL Driver"
-      - name: "MongoDB Client"
-      - name: "MySQL Driver"
-      - name: "Oracle DB Driver"
-      - name: "PostgreSQL Driver"
-      - name: "SQLite Driver"
-  - name: "Database"
+      - name: Apache Accumulo Client
+      - name: Apache HBase Client
+      - name: Axion Driver
+      - name: Cassandra Client
+      - name: Derby Driver
+      - name: H2 Driver
+      - name: HSQLDB Driver
+      - name: LevelDB Client
+      - name: MckoiSQLDB Driver
+      - name: Microsoft SQL Driver
+      - name: MongoDB Client
+      - name: MySQL Driver
+      - name: Oracle DB Driver
+      - name: PostgreSQL Driver
+      - name: SQLite Driver
+  - name: Database
     rank: 31
-    color: "#009596"
+    color: '#009596'
     tags:
-      - name: "JDBC"
-      - name: "JDBC datasources"
-      - name: "JDBC XA datasources"
-  - name: "HTTP"
+      - name: JDBC
+      - name: JDBC datasources
+      - name: JDBC XA datasources
+  - name: HTTP
     rank: 29
-    color: "#F032E6"
+    color: '#F032E6'
     tags:
-      - name: "JAX-WS"
-      - name: "Servlet"
-      - name: "Web Services Metadata"
-  - name: "Integration"
+      - name: JAX-WS
+      - name: Servlet
+      - name: Web Services Metadata
+  - name: Integration
     rank: 9
-    color: "#F032E6"
+    color: '#F032E6'
     tags:
-      - name: "3scale"
-      - name: "Apache Camel"
-      - name: "Apache Synapse"
-      - name: "Apiman"
-      - name: "Camel"
-      - name: "Ikasan"
-      - name: "Istio"
-      - name: "Micrometer"
-      - name: "Mule"
-      - name: "Petals EIP"
-      - name: "ServiceMix"
-      - name: "Spring Integration"
-      - name: "Swagger"
-      - name: "SwitchYard"
-      - name: "Talend ESB"
-      - name: "Teiid"
-      - name: "WSO2"
-  - name: "Logging"
+      - name: 3scale
+      - name: Apache Camel
+      - name: Apache Synapse
+      - name: Apiman
+      - name: Camel
+      - name: Ikasan
+      - name: Istio
+      - name: Micrometer
+      - name: Mule
+      - name: Petals EIP
+      - name: ServiceMix
+      - name: Spring Integration
+      - name: Swagger
+      - name: SwitchYard
+      - name: Talend ESB
+      - name: Teiid
+      - name: WSO2
+  - name: Inversion of Control
+    rank: 11
+    color: '#F032E6'
+    tags:
+      - name: Airframe
+      - name: AOP Alliance
+      - name: AspectJ
+      - name: BeanInject
+      - name: CDI
+      - name: Cfg Engine
+      - name: Dagger
+      - name: GIN
+      - name: Google Guice
+      - name: Grapht DI
+      - name: Injekt for Kotlin
+      - name: Iroh
+      - name: Javax Inject
+      - name: JayWire
+      - name: Ka DI
+      - name: Kodein
+      - name: KouInject
+      - name: Macros
+      - name: Micro DI
+      - name: Peaberry
+      - name: PicoContainer
+      - name: Plexus Container
+      - name: Polyforms DI
+      - name: Scaldi
+      - name: Silk DI
+      - name: Spring
+      - name: Spring DI
+      - name: Sticky Configured
+      - name: SubCut
+      - name: Syringe
+      - name: Tornado Inject
+      - name: Weld
+      - name: Winter
+  - name: Logging
     rank: 12
-    color: "#6EC664"
+    color: '#6EC664'
     tags:
-      - name: "Airlift Log manager"
-      - name: "Apache Flume"
-      - name: "Log4J"
-      - name: "Logback"
-      - name: "SLF4J"
-      - name: "tinylog"
-  - name: "MVC"
+      - name: Airlift Log manager
+      - name: Apache Flume
+      - name: Avalon Logkit
+      - name: Blitz4J
+      - name: Commons Logging
+      - name: Composite Logging JCL
+      - name: File system Logging
+      - name: GFC Logging
+      - name: JBoss logging
+      - name: Jcabi Log
+      - name: Klogger
+      - name: Kotlin Logging
+      - name: Log.io
+      - name: Log4J
+      - name: Log4s
+      - name: Logback
+      - name: Logging Utils
+      - name: Lumberjack
+      - name: MinLog
+      - name: Monolog
+      - name: NLOG4J
+      - name: OCPsoft Logging Utils
+      - name: OPS4J Pax Logging Service
+      - name: OW2 Log Until
+      - name: Scribe
+      - name: SLF4J
+      - name: Socket handler logging
+      - name: tinylog
+      - name: Twitter Util Logging
+  - name: MVC
     rank: 15
-    color: "#40199A"
+    color: '#40199A'
     tags:
-      - name: "Anakia"
-      - name: "Grails"
-      - name: "GWT"
-      - name: "JSF"
-      - name: "Spring MVC"
-      - name: "Struts"
-      - name: "Thymeleaf"
-      - name: "Vaadin"
-      - name: "Velocity"
-  - name: "Markup"
+      - name: Anakia
+      - name: AngularFaces
+      - name: ANTLR StringTemplate
+      - name: Apache Tapestry
+      - name: BabbageFaces
+      - name: BootFaces
+      - name: ButterFaces
+      - name: Chunk Templates
+      - name: DVSL
+      - name: FreeMarker
+      - name: Grails
+      - name: GWT
+      - name: Handlebars
+      - name: HighFaces
+      - name: ICEfaces
+      - name: Ickenham
+      - name: Jamon
+      - name: Jetbrick template
+      - name: JFreeChart
+      - name: JMustache
+      - name: JSF
+      - name: JSilver
+      - name: JSTL
+      - name: LiferayFaces
+      - name: Mixer
+      - name: Myfaces
+      - name: OmniFaces
+      - name: OpenFaces
+      - name: Oracle ADF
+      - name: Play
+      - name: Portlet
+      - name: PrimeFaces
+      - name: Richfaces
+      - name: Rythm Template Engine
+      - name: Scalate
+      - name: Snippetory Template Engine
+      - name: Spark
+      - name: Spring MVC
+      - name: Stripes
+      - name: Struts
+      - name: Thymeleaf
+      - name: TieFaces
+      - name: Trimou
+      - name: Twirl
+      - name: UberFire
+      - name: Vaadin
+      - name: Velocity
+      - name: Water Template Engine
+      - name: Webmarco
+      - name: Wicket
+  - name: Markup
     rank: 23
-    color: "#F4C145"
+    color: '#F4C145'
     tags:
-      - name: "CSS"
-      - name: "HTML"
-      - name: "Javascript"
-      - name: "Spring Boot Flo"
-  - name: "Messaging"
+      - name: CSS
+      - name: HTML
+      - name: Javascript
+      - name: Spring Boot Flo
+  - name: Messaging
     rank: 32
-    color: "#F032E6"
+    color: '#F032E6'
     tags:
-      - name: "JMS Connection factory"
-      - name: "JMS Queue"
-      - name: "JMS Topic"
-  - name: "Security"
+      - name: JMS Connection factory
+      - name: JMS Queue
+      - name: JMS Topic
+  - name: Object Mapping
+    rank: 24
+    color: '#EC7A08'
+    tags:
+      - name: EclipseLink
+      - name: Hibernate
+      - name: Hibernate Cfg
+      - name: Hibernate Mapping
+      - name: Hibernate OGM
+      - name: Morphia
+      - name: Spring Data
+  - name: Observability
+    rank: 34
+    color: '#6EC664'
+    tags:
+      - name: Spring Boot Actuator
+      - name: Spring JMX
+      - name: Zipkin
+  - name: Other
+    rank: 8
+    color: '#2B9AF3'
+    tags:
+      - name: 0MQ Client
+      - name: ActiveMQ library
+      - name: Amazon SQS Cient
+      - name: AMQP Client
+      - name: Camel Messaging Client
+      - name: Common Annotations
+      - name: EAR Deployment
+      - name: HornetQ Client
+      - name: HTTP Client
+      - name: Java EE JAXR
+      - name: JBossMQ client
+      - name: JCA
+      - name: JNA
+      - name: JNI
+      - name: Mail
+      - name: Properties
+      - name: Qpid Client
+      - name: RabbitMQ Client
+      - name: Resource Adapter
+      - name: RMI
+      - name: RocketMQ Client
+      - name: SNMP4J
+      - name: Spring Messaging Client
+      - name: Zbus Client
+  - name: Persistence
+    rank: 33
+    color: '#009596'
+    tags:
+      - name: JPA entities
+      - name: JPA named queries
+      - name: JPA XML
+      - name: Persistence units
+      - name: Spring Data JPA
+  - name: Processing
+    rank: 25
+    color: '#F032E6'
+    tags:
+      - name: EJB Timer
+      - name: Eureka
+      - name: Feign
+      - name: Java EE Batch
+      - name: Java EE Batch API
+      - name: Java EE JSON-P
+      - name: Java Threads
+      - name: Quartz
+      - name: Spring Batch
+      - name: Spring Scheduled
+  - name: REST
+    rank: 28
+    color: '#F032E6'
+    tags:
+      - name: JAX-RS
+      - name: Jersey
+      - name: Unirest
+  - name: Rich
+    rank: 19
+    color: '#BFEF45'
+    tags:
+      - name: Applet
+      - name: EclipseRCP
+      - name: FormLayoutMaker
+      - name: JavaFX
+      - name: JGoodies
+      - name: JNLP
+      - name: MagicgroupLayout
+      - name: MiGLayout
+      - name: Standard Widget Tookit (SWT)
+      - name: Swing
+  - name: Rules and Processes
+    rank: 22
+    color: '#F4C145'
+    tags:
+      - name: Blaze
+      - name: Camunda
+      - name: Drools
+      - name: Easy Rules
+      - name: iLog
+      - name: JBPM
+      - name: MRules
+      - name: Pega
+  - name: Security
     rank: 10
-    color: "#D95F55"
+    color: '#D95F55'
     tags:
-      - name: "Acegi Security"
-      - name: "Apache Commons Validator"
-      - name: "Bouncy Castle"
-      - name: "Java EE JACC"
-      - name: "OAUTH"
-      - name: "SAML"
-      - name: "Spring Security"
-      - name: "SSL"
-  - name: "Test"
+      - name: Acegi Security
+      - name: AcrIS Security
+      - name: Apache Commons Validator
+      - name: Bouncy Castle
+      - name: Hdiv
+      - name: Jasypt
+      - name: Java EE JACC
+      - name: JSecurity
+      - name: Keyczar
+      - name: OACC
+      - name: OAUTH
+      - name: OpenSAML
+      - name: OTR4J
+      - name: OWASP CSRF Guard
+      - name: OWASP ESAPI
+      - name: PicketBox
+      - name: PicketLink
+      - name: SAML
+      - name: Santuario
+      - name: Security Realm
+      - name: Shiro
+      - name: Spring Security
+      - name: SSL
+      - name: Trunk JGuard
+      - name: Vlad
+      - name: WSS4J
+      - name: XACML
+  - name: Serverless / FAAS
+    rank: 36
+    color: '#40199A'
+    tags:
+      - name: Spring Cloud Function
+  - name: Test
     rank: 14
-    color: "#F4C145"
+    color: '#F4C145'
     tags:
-      - name: "JUnit"
-      - name: "Mockito"
-      - name: "Spock"
-      - name: "TestNG"
-  - name: "Transaction"
+      - name: Akka Testkit
+      - name: Arquillian
+      - name: Catus
+      - name: Concordian
+      - name: Cucumber
+      - name: DBUnit
+      - name: EasyMock
+      - name: EtlUnit
+      - name: Guava Testing
+      - name: Hamcrest
+      - name: HavaRunner
+      - name: HttpUnit
+      - name: JBehave
+      - name: JCunit
+      - name: JFunk
+      - name: JMock
+      - name: JMockit
+      - name: JPA Matchers
+      - name: Jukito
+      - name: JUnit
+      - name: Mockito
+      - name: Mule Functional Test Framework
+      - name: MultithreadedTC
+      - name: Needle
+      - name: OpenPojo
+      - name: Play Test
+      - name: PowerMock
+      - name: Randomized Testing Runner
+      - name: REST Assured
+      - name: Restito
+      - name: Specsy
+      - name: Spock
+      - name: Spring Test
+      - name: Test Interface
+      - name: TestNG
+      - name: Unitils
+      - name: XMLUnit
+  - name: Transaction
     rank: 13
-    color: "#40199A"
+    color: '#40199A'
     tags:
-      - name: "JTA"
-      - name: "Spring Transactions"
-  - name: "Validation"
+      - name: AKKA JTA
+      - name: Apache Meecrowave JTA
+      - name: Apache Sirona JTA
+      - name: Atomikos JTA
+      - name: Demoiselle JTA
+      - name: Everit JTA
+      - name: Evo JTA
+      - name: Geronimo JTA
+      - name: GlassgFish JTA
+      - name: Ignite JTA
+      - name: Java Transaction API
+      - name: JBoss Transactions
+      - name: JTA
+      - name: KumuluzEE JTA
+      - name: Lift JTA
+      - name: Mycontainer JTA
+      - name: Narayana Arjuna
+      - name: Nuxeo JTA/JCA
+      - name: OW2 JTA
+      - name: Spring Transactions
+      - name: WF Core JTA
+  - name: Utilities
+    rank: 37
+    color: '#2B9AF3'
+    tags:
+      - name: Spring Shell
+  - name: Validation
     rank: 21
-    color: "#EC7A08"
+    color: '#EC7A08'
     tags:
-      - name: "Bean Validation"
-  - name: "Web"
+      - name: Bean Validation
+  - name: Web Service
+    rank: 20
+    color: '#40199A'
+    tags:
+      - name: Axis
+      - name: Axis2
+      - name: CXF
+      - name: OpenWS
+      - name: WebSphere WS Binding
+      - name: WebSphere WS Extension
+      - name: WSDL
+      - name: XFire
+  - name: Web
     rank: 30
-    color: "#F032E6"
+    color: '#F032E6'
     tags:
-      - name: "JBoss Web XML"
-      - name: "JSF Page"
-      - name: "JSP Page"
-      - name: "Spring Web"
-      - name: "Web XML File"
-      - name: "WebSocket"
+      - name: JBoss Web XML
+      - name: JSF Page
+      - name: JSP Page
+      - name: Orion Web XML
+      - name: Seam
+      - name: Spring Web
+      - name: Web XML File
+      - name: WebLogic Web XML
+      - name: WebSocket
+      - name: WebSphere Web XML
