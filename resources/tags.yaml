@@ -1,0 +1,210 @@
+kind: TagCategory
+version: 1
+items:
+  - name: "3rd party"
+    rank: 17
+    color: "#2B9AF3"
+    tags:
+      - name: "Apache Aries"
+      - name: "Apache Geronimo"
+      - name: "Apache Hadoop"
+      - name: "Apache Karaf"
+      - name: "Apache Mahout"
+      - name: "Cloudera"
+      - name: "EJB"
+      - name: "Elasticsearch"
+      - name: "Jetty"
+      - name: "Kibana"
+      - name: "Liferay"
+      - name: "Logstash"
+      - name: "MapR"
+      - name: "Neo4J"
+      - name: "Oracle Forms"
+      - name: "Spring Boot"
+      - name: "TensorFlow"
+      - name: "Tomcat"
+      - name: "Weka"
+  - name: "Bean"
+    rank: 26
+    color: "#EC7A08"
+    tags:
+      - name: "EJB XML"
+      - name: "Entity Bean"
+      - name: "JBoss EJB XML"
+      - name: "Management EJB"
+      - name: "Message (MDB)"
+      - name: "Orion EJB XML"
+      - name: "Stateful (SFSB)"
+      - name: "Stateless (SLSB)"
+      - name: "WebSphere EJB"
+      - name: "WebSphere EJB Ext"
+  - name: "Binding"
+    rank: 27
+    color: "#EC7A08"
+    tags:
+      - name: "Java EE JAXB"
+      - name: "JSON-B"
+  - name: "Caching"
+    rank: 18
+    color: "#F032E6"
+    tags:
+      - name: "Apache Commons JCS"
+      - name: "Apache Ignite"
+      - name: "Cache API"
+      - name: "Coherence"
+      - name: "Dynacache"
+      - name: "ehcache"
+      - name: "Hazelcast"
+      - name: "Infinispan"
+      - name: "JBoss Cache"
+      - name: "JCache"
+      - name: "Memcached"
+      - name: "Oscache"
+      - name: "Redis"
+      - name: "ShiftOne"
+      - name: "Spring Boot Cache"
+      - name: "Swarmcache"
+  - name: "Clustering"
+    rank: 39
+    color: "#40199A"
+    tags:
+      - name: "Web Session"
+  - name: "Configuration Management"
+    rank: 35
+    color: "#2B9AF3"
+    tags:
+      - name: "Spring Cloud Config"
+      - name: "Spring Properties"
+  - name: "Database Driver"
+    rank: 16
+    color: "#009596"
+    tags:
+      - name: "Apache Accumulo Client"
+      - name: "Apache HBase Client"
+      - name: "Axion Driver"
+      - name: "Cassandra Client"
+      - name: "Derby Driver"
+      - name: "H2 Driver"
+      - name: "HSQLDB Driver"
+      - name: "LevelDB Client"
+      - name: "MckoiSQLDB Driver"
+      - name: "Microsoft SQL Driver"
+      - name: "MongoDB Client"
+      - name: "MySQL Driver"
+      - name: "Oracle DB Driver"
+      - name: "PostgreSQL Driver"
+      - name: "SQLite Driver"
+  - name: "Database"
+    rank: 31
+    color: "#009596"
+    tags:
+      - name: "JDBC"
+      - name: "JDBC datasources"
+      - name: "JDBC XA datasources"
+  - name: "HTTP"
+    rank: 29
+    color: "#F032E6"
+    tags:
+      - name: "JAX-WS"
+      - name: "Servlet"
+      - name: "Web Services Metadata"
+  - name: "Integration"
+    rank: 9
+    color: "#F032E6"
+    tags:
+      - name: "3scale"
+      - name: "Apache Camel"
+      - name: "Apache Synapse"
+      - name: "Apiman"
+      - name: "Camel"
+      - name: "Ikasan"
+      - name: "Istio"
+      - name: "Micrometer"
+      - name: "Mule"
+      - name: "Petals EIP"
+      - name: "ServiceMix"
+      - name: "Spring Integration"
+      - name: "Swagger"
+      - name: "SwitchYard"
+      - name: "Talend ESB"
+      - name: "Teiid"
+      - name: "WSO2"
+  - name: "Logging"
+    rank: 12
+    color: "#6EC664"
+    tags:
+      - name: "Airlift Log manager"
+      - name: "Apache Flume"
+      - name: "Log4J"
+      - name: "Logback"
+      - name: "SLF4J"
+      - name: "tinylog"
+  - name: "MVC"
+    rank: 15
+    color: "#40199A"
+    tags:
+      - name: "Anakia"
+      - name: "Grails"
+      - name: "GWT"
+      - name: "JSF"
+      - name: "Spring MVC"
+      - name: "Struts"
+      - name: "Thymeleaf"
+      - name: "Vaadin"
+      - name: "Velocity"
+  - name: "Markup"
+    rank: 23
+    color: "#F4C145"
+    tags:
+      - name: "CSS"
+      - name: "HTML"
+      - name: "Javascript"
+      - name: "Spring Boot Flo"
+  - name: "Messaging"
+    rank: 32
+    color: "#F032E6"
+    tags:
+      - name: "JMS Connection factory"
+      - name: "JMS Queue"
+      - name: "JMS Topic"
+  - name: "Security"
+    rank: 10
+    color: "#D95F55"
+    tags:
+      - name: "Acegi Security"
+      - name: "Apache Commons Validator"
+      - name: "Bouncy Castle"
+      - name: "Java EE JACC"
+      - name: "OAUTH"
+      - name: "SAML"
+      - name: "Spring Security"
+      - name: "SSL"
+  - name: "Test"
+    rank: 14
+    color: "#F4C145"
+    tags:
+      - name: "JUnit"
+      - name: "Mockito"
+      - name: "Spock"
+      - name: "TestNG"
+  - name: "Transaction"
+    rank: 13
+    color: "#40199A"
+    tags:
+      - name: "JTA"
+      - name: "Spring Transactions"
+  - name: "Validation"
+    rank: 21
+    color: "#EC7A08"
+    tags:
+      - name: "Bean Validation"
+  - name: "Web"
+    rank: 30
+    color: "#F032E6"
+    tags:
+      - name: "JBoss Web XML"
+      - name: "JSF Page"
+      - name: "JSP Page"
+      - name: "Spring Web"
+      - name: "Web XML File"
+      - name: "WebSocket"
