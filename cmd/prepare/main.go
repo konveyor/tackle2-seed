@@ -74,7 +74,8 @@ func main() {
 				if tc.UUID == "" {
 					tc.UUID = uuid.NewString()
 				}
-				for _, tag := range tc.Tags {
+				for i := range tc.Tags {
+					tag := &tc.Tags[i]
 					if tag.UUID == "" {
 						tag.UUID = uuid.NewString()
 					}
