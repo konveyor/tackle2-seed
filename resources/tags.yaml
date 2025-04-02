@@ -1,924 +1,562 @@
 kind: TagCategory
 version: 1
 items:
-    - uuid: 85e1847c-a9f2-4d82-82b9-ada155e07ea6
-      name: 3rd party
-      color: '#2B9AF3'
-      rank: 17
-      tags:
-        - uuid: 5f2646d3-22f0-4d6e-b97d-45b7ae92ae7d
-          name: Apache Aries
-        - uuid: 98221089-97f8-4bbe-832b-e56e697077f8
-          name: Apache Geronimo
-        - uuid: c9aed8a2-fa09-4aa7-b135-20ee3020c886
-          name: Apache Hadoop
-        - uuid: 96af361c-afcb-41f0-a294-6233a6f79613
-          name: Apache Karaf
-        - uuid: 25d811d9-c37c-4d79-b2b3-a53ccaf47004
-          name: Apache Mahout
-        - uuid: c9ce10d0-b943-469c-a2d5-7258e07ff217
-          name: Cloudera
-        - uuid: e609adc7-82b4-43e2-96d0-534dd9eab43f
-          name: EJB
-        - uuid: e3a6955f-ce0b-475b-88b5-ede111f062e3
-          name: Elasticsearch
-        - uuid: 141f0e2e-2dfe-4491-af64-17236ba4cf2c
-          name: Jetty
-        - uuid: ca5ceb20-781b-462f-9201-1d5ad6500d33
-          name: Kibana
-        - uuid: 27b45b6c-a784-4143-b6db-8b763f2cc676
-          name: Liferay
-        - uuid: 3d688927-b6cb-41fd-8e4f-4670fd5f2f32
-          name: Logstash
-        - uuid: a51153e9-9976-4a20-b04a-e326b23e8b23
-          name: MapR
-        - uuid: b4c3fff1-084a-460b-8378-20ed1242f21b
-          name: Neo4J
-        - uuid: 31f3d297-1af0-4e8d-9167-ac0e5cc9b3b0
-          name: Oracle Forms
-        - uuid: 807e39ef-fae0-4432-94b6-e0fd1662d496
-          name: Spring Boot
-        - uuid: 5d50415e-3dc4-4521-a76f-d20a9c7a0564
-          name: TensorFlow
-        - uuid: 762e7852-5886-45fd-a45f-20eb6bb46b01
-          name: Tomcat
-        - uuid: 53bfb29f-550c-4010-80db-491d817decd1
-          name: Weka
-    - uuid: 6170833d-6acb-4bd6-9be4-37944640d761
-      name: Bean
-      color: '#EC7A08'
-      rank: 26
-      tags:
-        - uuid: 90f86557-25e5-47a3-98b9-7b35eb06f288
-          name: EJB XML
-        - uuid: 1d4271db-e112-414a-aa7f-0b53c852122a
-          name: Entity Bean
-        - uuid: 2f67b022-5b4c-4c42-a098-60ca955cff00
-          name: JBoss EJB XML
-        - uuid: c52ae321-ebfb-4499-8937-b78d59d8aaa6
-          name: Management EJB
-        - uuid: cb79540b-ebe0-4600-9c37-f00ae35a4f9a
-          name: Message (MDB)
-        - uuid: 244af91d-def9-45b4-bf2c-2f89fc03e4b3
-          name: Orion EJB XML
-        - uuid: acb0f7e9-f69d-4372-b6fe-f129b8b5e355
-          name: Stateful (SFSB)
-        - uuid: 3de13820-01b4-4925-ad98-36cd43580399
-          name: Stateless (SLSB)
-        - uuid: f58ee21a-e9f7-4d4c-97bc-4b0f9fef473e
-          name: WebSphere EJB
-        - uuid: 2a0fb94e-927f-482a-b133-904b129d7c51
-          name: WebSphere EJB Ext
-    - uuid: 075385a3-6127-42a9-9a71-c7001698081a
-      name: Binding
-      color: '#EC7A08'
-      rank: 27
-      tags:
-        - uuid: ca6cacba-048c-4502-b771-b83bb5e4c41a
-          name: Java EE JAXB
-        - uuid: c7c8ecb2-4ed5-44e7-8e59-e2ff56ebf0df
-          name: JSON-B
-    - uuid: b32ae3d7-fcfc-458a-bada-82da47544a75
-      name: Caching
-      color: '#F032E6'
-      rank: 18
-      tags:
-        - uuid: 018f14d0-0326-41de-8fb2-f23b78f46b7b
-          name: Apache Commons JCS
-        - uuid: 1336fed1-2e84-4848-a162-3e4c7efbdaf3
-          name: Apache Ignite
-        - uuid: 0d81ff20-6bc9-4991-abb5-bcae0071de4f
-          name: Cache API
-        - uuid: 530c3dc2-73b6-4d10-abaa-6a671a185b2e
-          name: Coherence
-        - uuid: 9b1e0183-ac94-45c6-a579-a5d4386b7e36
-          name: Dynacache
-        - uuid: e83b1d5a-0207-4cd8-b442-c391ab0bac49
-          name: ehcache
-        - uuid: 117dac92-ae04-4423-aec9-e33b8380934c
-          name: Hazelcast
-        - uuid: 7cb42f13-06c2-403d-bb78-084ecc3069c2
-          name: Infinispan
-        - uuid: e5a2cbbc-234b-4c29-90d4-e3fb4bac4103
-          name: JBoss Cache
-        - uuid: 6d8d4415-3ade-48c7-a0d8-42e64aa3112b
-          name: JCache
-        - uuid: 992911f5-7e13-404d-abcb-e12ec9c0fea9
-          name: Memcached
-        - uuid: 68229ba7-8cdb-4c9b-9915-7f07f4c64249
-          name: Oscache
-        - uuid: d034ab34-9e3d-4bbc-a0e7-e9257112d8db
-          name: Redis
-        - uuid: 75123f30-81f8-49a5-adb2-9bc220f1843e
-          name: ShiftOne
-        - uuid: 75229e6f-7f0d-4f59-af52-7bfacfd5d2e6
-          name: Spring Boot Cache
-        - uuid: a742c632-2fe9-4b7c-9d48-325fbb22b624
-          name: Swarmcache
-    - uuid: 81436db2-f119-4da7-a20a-55a60fd41e2e
-      name: Clustering
-      color: '#40199A'
-      rank: 39
-      tags:
-        - uuid: 50c7b97e-97cb-492c-be78-ce69afb97ee2
-          name: Web Session
-    - uuid: f4b2cd91-fcb8-46b0-a279-5fdbf168bf14
-      name: Configuration Management
-      color: '#2B9AF3'
-      rank: 35
-      tags:
-        - uuid: cc3ece19-8fc6-44bc-b428-7973cdd520aa
-          name: Spring Cloud Config
-        - uuid: 62a6e05b-92a2-4e29-b0b0-5b8783248498
-          name: Spring Properties
-    - uuid: c564b736-d501-48b9-a56c-a176c28eefca
-      name: Database Driver
-      color: '#009596'
-      rank: 16
-      tags:
-        - uuid: ae98643b-e5d6-4740-a8f0-81aa7d5ba1a3
-          name: Apache Accumulo Client
-        - uuid: 7ec93edb-184c-44e7-8d63-4615d91cf3fc
-          name: Apache HBase Client
-        - uuid: e342c695-3984-4790-be77-4dcde9dbbb13
-          name: Axion Driver
-        - uuid: 69fa4c16-71f9-4956-87d4-ce29ae5e07ab
-          name: Cassandra Client
-        - uuid: b9e8a12f-e772-43a4-8234-4d51e57eef77
-          name: Derby Driver
-        - uuid: 81eb75d5-4d0c-4475-b221-c03caad564fb
-          name: H2 Driver
-        - uuid: 76ed1c2c-4c7f-4df1-992e-0d3380ba01af
-          name: HSQLDB Driver
-        - uuid: 5c2dd563-2140-4d11-ab58-9330200f9ba6
-          name: LevelDB Client
-        - uuid: 8f84604b-cc20-4271-b486-4b748c00cdff
-          name: MckoiSQLDB Driver
-        - uuid: 34185283-f40a-497e-80cc-53c7cd1651db
-          name: Microsoft SQL Driver
-        - uuid: 3e3e3e68-7cca-4a88-968b-7dc666a3f7d8
-          name: MongoDB Client
-        - uuid: 72a05ba0-785c-4ece-a818-370b002e1181
-          name: MySQL Driver
-        - uuid: fde24f75-e0bd-404e-800f-4e4b03867060
-          name: Oracle DB Driver
-        - uuid: 32745c14-389b-447d-8147-eb54b24e9069
-          name: PostgreSQL Driver
-        - uuid: 1768f2c8-7845-4106-b37d-9c662e857b0e
-          name: SQLite Driver
-    - uuid: ba2a7053-5559-4573-a096-f0bbd59f7b8e
-      name: Database
-      color: '#009596'
-      rank: 31
-      tags:
-        - uuid: 8074994c-dd16-4c7f-98d1-fb1d60b52ac5
-          name: JDBC
-        - uuid: 338c1e86-4348-483b-8952-5fe634914ee7
-          name: JDBC datasources
-        - uuid: 0ac05652-e328-4173-9709-b1f1ad4de8b5
-          name: JDBC XA datasources
-    - uuid: 324a51f8-47f0-48d1-a979-37bbf5232c03
-      name: HTTP
-      color: '#F032E6'
-      rank: 29
-      tags:
-        - uuid: 3d1ef488-55a6-4a78-be35-44344bfb83d9
-          name: JAX-WS
-        - uuid: d0776025-3337-4044-9ed2-e0611bd2236a
-          name: Servlet
-        - uuid: eea6ddac-e8ab-45d2-b2fb-97cc3ae4a881
-          name: Web Services Metadata
-    - uuid: 9517af31-3910-468c-bf87-4b3669e1840e
-      name: Integration
-      color: '#F032E6'
-      rank: 9
-      tags:
-        - uuid: 5bcbb4b1-850a-4e0e-9db3-161bc95d4104
-          name: 3scale
-        - uuid: a7ba63b2-a4f7-451d-8da7-c0b7e3085852
-          name: Apache Camel
-        - uuid: 9fb64940-e91d-4d5b-90d1-95d1ea3108e8
-          name: Apache Synapse
-        - uuid: ef89796f-6b64-40e0-a91c-01cb0631aa8b
-          name: Apiman
-        - uuid: 12bdd139-848b-479b-81cd-97e841c5f149
-          name: Camel
-        - uuid: 6fe66f5f-8d34-4db5-9732-823b4b08dd74
-          name: Ikasan
-        - uuid: a4445601-207d-4054-bb18-c07c7ffb21c6
-          name: Istio
-        - uuid: cc9fa76d-0e08-4055-913c-0d337f89cf1b
-          name: Micrometer
-        - uuid: 5616abac-ab06-4217-9879-37b970fd8377
-          name: Mule
-        - uuid: 976afd86-4743-4e4d-9767-170dd617fed1
-          name: Petals EIP
-        - uuid: 5891284c-554e-48eb-be41-d06f9b1eecbb
-          name: ServiceMix
-        - uuid: 059c9dfd-9f77-49a2-93d2-dfd3cf7e0694
-          name: Spring Integration
-        - uuid: e05c4e69-b38a-421f-8b7d-172c7c9239dc
-          name: Swagger
-        - uuid: 09749f2a-f672-4712-b661-de44984dc7fa
-          name: SwitchYard
-        - uuid: a2003fbf-1479-404f-8a1f-02e9d36136bd
-          name: Talend ESB
-        - uuid: beff42c8-61da-4b9d-8259-38b433b8520b
-          name: Teiid
-        - uuid: c12df139-ebc1-47ca-a3f5-c1682a5dc955
-          name: WSO2
-    - uuid: 5f4136e2-7ec4-4613-a0ce-b75169cbf5b9
-      name: Inversion of Control
-      color: '#F032E6'
-      rank: 11
-      tags:
-        - uuid: d6e84c6d-82ce-49df-ae90-29d755171ec5
-          name: Airframe
-        - uuid: e4b61b33-9d97-47df-bc39-10e9a15fdde5
-          name: AOP Alliance
-        - uuid: 1b47b348-47b0-41da-b597-c005503faf2f
-          name: AspectJ
-        - uuid: 44ead31e-6588-49b0-a052-7c5165901de5
-          name: BeanInject
-        - uuid: c86b1b51-6b52-48e3-ba6f-a8f3308beefe
-          name: CDI
-        - uuid: 89a9c4c0-2f97-4939-a1f4-654c0c430f18
-          name: Cfg Engine
-        - uuid: 14ce4d92-f554-4800-80eb-77a7750e0776
-          name: Dagger
-        - uuid: 2722606d-3933-4b91-803f-603095c7af81
-          name: GIN
-        - uuid: 15baeac9-bb01-43b5-86ba-a7f2c98ea88f
-          name: Google Guice
-        - uuid: 3d6bb46e-04a9-4990-a8ad-8f802aa5167a
-          name: Grapht DI
-        - uuid: dd516f95-fb2e-48cb-a0fc-f88f141a196a
-          name: Injekt for Kotlin
-        - uuid: 55c7c29d-58fa-47f5-8182-901ee903e564
-          name: Iroh
-        - uuid: d44ad377-1fce-42cb-b526-bbaf23ccd355
-          name: Javax Inject
-        - uuid: 0821867c-cc10-4867-900d-450cd3eeeace
-          name: JayWire
-        - uuid: f27dd3af-81ea-45cb-855c-6a960e30a50f
-          name: Ka DI
-        - uuid: eb675019-18a8-4a16-8917-f66b1704e316
-          name: Kodein
-        - uuid: b1fc26a8-ccd1-46a7-846f-6b913b955da4
-          name: KouInject
-        - uuid: 963bd329-538f-4af7-99cd-028864634bbd
-          name: Macros
-        - uuid: e01f4718-3a30-4a64-8311-d19fba649ade
-          name: Micro DI
-        - uuid: ec0d913a-205e-45b6-b027-e06f3d74ec92
-          name: Peaberry
-        - uuid: 507200a5-a398-400f-a958-0cfe7be590b4
-          name: PicoContainer
-        - uuid: fe7c12ac-f641-4ae8-89cb-b7477c9df268
-          name: Plexus Container
-        - uuid: 5e62dfe7-4431-4350-89cf-30aae367d1db
-          name: Polyforms DI
-        - uuid: e93b612e-509b-436c-bd92-806580380103
-          name: Scaldi
-        - uuid: b808f11c-85bd-4a1c-ba72-cd6a4178cb56
-          name: Silk DI
-        - uuid: 7e66fcc9-ef3f-4e2e-a919-f034cdf828c7
-          name: Spring
-        - uuid: 2e65a53d-3a19-46f6-9fe3-982bb753bab3
-          name: Spring DI
-        - uuid: b0ebea6d-7a6b-4e45-ab47-fab8af4afe09
-          name: Sticky Configured
-        - uuid: 652d392c-017f-466a-b7ff-c1f4fcaa3ae7
-          name: SubCut
-        - uuid: 7dfa6eaf-aeed-481c-93b0-57508a817497
-          name: Syringe
-        - uuid: b173a515-1e20-4609-878e-9ca14a7a18f1
-          name: Tornado Inject
-        - uuid: ea372ac9-cfb8-487c-80ca-904ce724bb35
-          name: Weld
-        - uuid: f576d52e-e9ce-41b1-9a6f-7bf38d159acb
-          name: Winter
-    - uuid: 6c283ee1-e255-4229-b327-8c1950549c4b
-      name: Logging
-      color: '#6EC664'
-      rank: 12
-      tags:
-        - uuid: 7be36f6d-9fcd-4904-bf99-72d148307ace
-          name: Airlift Log manager
-        - uuid: bab5ca15-0f8e-42df-8fe7-12b5a49cee64
-          name: Apache Flume
-        - uuid: e8568020-1d46-40b3-9fde-5cf02e2a79e2
-          name: Avalon Logkit
-        - uuid: 76352bc6-2243-4e95-83e7-1d54af609ae6
-          name: Blitz4J
-        - uuid: d0e27826-1c81-4722-b750-97ae71683fa7
-          name: Commons Logging
-        - uuid: b41f5fd9-78f8-4071-99f7-8fef11f8c339
-          name: Composite Logging JCL
-        - uuid: d639a9fa-224a-4b63-a8d7-0db17dc5141d
-          name: File system Logging
-        - uuid: 4c519f10-a0e9-4d2d-b711-6993441c1e71
-          name: GFC Logging
-        - uuid: 14111d52-5816-46aa-9615-687ce983f94f
-          name: JBoss logging
-        - uuid: 67d93352-cc5e-4024-af8e-9dbe33b1dc63
-          name: Jcabi Log
-        - uuid: c91f2ffb-2161-4285-87d0-1f729540a800
-          name: Klogger
-        - uuid: 919767ac-63fc-4290-9807-b6a1dbd87096
-          name: Kotlin Logging
-        - uuid: 12374cb1-adf5-40d5-9406-6118940b068d
-          name: Log.io
-        - uuid: bfca51d2-5deb-49dc-9046-72972bf1c6b6
-          name: Log4J
-        - uuid: 89f89a33-56a4-439b-94e7-510aa2b4563c
-          name: Log4s
-        - uuid: 6bbb3ff4-3bc1-4877-8822-d36e05377cfd
-          name: Logback
-        - uuid: d8fcb394-cb1e-4c35-831b-3cc880b95f05
-          name: Logging Utils
-        - uuid: 2bb7a67b-236e-408d-803b-ce63c7bc2d72
-          name: Lumberjack
-        - uuid: 0ecc31cc-ebe8-47b0-86e0-41b4625e8447
-          name: MinLog
-        - uuid: 11da976e-8a93-4909-a32e-548372dead2f
-          name: Monolog
-        - uuid: a7a6dbcd-bb01-4268-b33e-bd1513479cbe
-          name: NLOG4J
-        - uuid: db7c8260-eb6d-40bd-be27-343ecb8eb0e8
-          name: OCPsoft Logging Utils
-        - uuid: 43bd3f5e-3a1c-448f-8d97-866600c5425b
-          name: OPS4J Pax Logging Service
-        - uuid: c8b9243f-2c6a-4872-adf7-7310f5aa4602
-          name: OW2 Log Until
-        - uuid: 55d679c0-0bc9-4a08-9ffb-344b89564c90
-          name: Scribe
-        - uuid: c91d909b-dc51-45ec-bc4c-524e8bb828c8
-          name: SLF4J
-        - uuid: f5c6440d-5f29-4c10-8f52-22de6f4a6ae4
-          name: Socket handler logging
-        - uuid: bd206221-24a6-4ad7-8fc4-22d9b4f3fb19
-          name: tinylog
-        - uuid: a939ec32-86c4-479e-a961-59a0aa6af8cd
-          name: Twitter Util Logging
-    - uuid: 24ac596f-9461-4660-a272-b520d0fa9522
-      name: MVC
-      color: '#40199A'
-      rank: 15
-      tags:
-        - uuid: 9b82dc18-0f06-45eb-bb22-3cf63f18d120
-          name: Anakia
-        - uuid: c565e4b9-c9b9-4e34-a2ed-9cd2322d1bbc
-          name: AngularFaces
-        - uuid: d65fb6ff-e578-443b-ae99-d7fe9496fc20
-          name: ANTLR StringTemplate
-        - uuid: 999fe41c-4ea6-416a-aae8-eab00755eefb
-          name: Apache Tapestry
-        - uuid: 381165a4-17ab-4e88-827b-59c69bc4dcd2
-          name: BabbageFaces
-        - uuid: 7ec0466c-1cf0-493a-a809-a62119babff6
-          name: BootFaces
-        - uuid: 7b83f8ee-05af-4dc3-8f22-36f441a39cbb
-          name: ButterFaces
-        - uuid: 591d839f-78b3-4892-bb91-abb25ce1feef
-          name: Chunk Templates
-        - uuid: c6912420-29e7-4495-8b54-885bdefd17fd
-          name: DVSL
-        - uuid: e7c8f4f7-36f8-43b6-95f2-80851d8d4c85
-          name: FreeMarker
-        - uuid: 04e8a096-9b29-4bfe-99d0-fc89068e0096
-          name: Grails
-        - uuid: 39d9b858-e2da-4d08-89f7-7d0ea0300445
-          name: GWT
-        - uuid: 3c463a41-f1dc-4643-b648-ebef50e68e72
-          name: Handlebars
-        - uuid: 7735afc5-9874-410d-acba-c70ced7fd2ee
-          name: HighFaces
-        - uuid: d36f173c-ca7d-49bf-8ea1-6ddc006a21f0
-          name: ICEfaces
-        - uuid: 0f091481-d9f2-4ab0-af80-08edde20ba12
-          name: Ickenham
-        - uuid: d2f113c3-f7ed-4c2f-ab0c-9b81a5f00e25
-          name: Jamon
-        - uuid: 0da53a70-c628-40e9-9db0-2f57f9b7df6a
-          name: Jetbrick template
-        - uuid: ab8f02c0-a4b0-4ea5-bd23-68fb970ec239
-          name: JFreeChart
-        - uuid: 07155866-e67a-424f-aa70-b420e44edb4f
-          name: JMustache
-        - uuid: 689c77e0-65f4-4b85-84ee-05921ec2aa4f
-          name: JSF
-        - uuid: 85ff0577-1c21-4e7a-a9ca-bee8fb00afad
-          name: JSilver
-        - uuid: cff198c7-c0d9-4ae7-a92f-80c8d15884f8
-          name: JSTL
-        - uuid: 1f878349-9124-443c-8228-c91634190a23
-          name: LiferayFaces
-        - uuid: d1ebfde7-14c6-4ebe-8e64-9e373061049f
-          name: Mixer
-        - uuid: 4f53a5d1-6e25-4fcc-b98a-b0f1456a2445
-          name: Myfaces
-        - uuid: 552866d9-44e8-4d51-b477-32df57555eee
-          name: OmniFaces
-        - uuid: bf24bc0e-6e69-4240-b299-160afabd695e
-          name: OpenFaces
-        - uuid: d9e918ce-f1f9-43d5-ae11-99935b0fc32b
-          name: Oracle ADF
-        - uuid: 8687cba2-6807-4740-899d-0f3b839a82b3
-          name: Play
-        - uuid: fbec68f4-9ee8-4380-911e-f5047799cb8b
-          name: Portlet
-        - uuid: 2805fadd-92d9-48b2-8332-6421f79535f7
-          name: PrimeFaces
-        - uuid: 7b422ac0-044b-46dc-a475-578b19e07b5f
-          name: Richfaces
-        - uuid: 27c30a56-1c5b-47a4-ac38-746330d89959
-          name: Rythm Template Engine
-        - uuid: bcbfe6f4-a62e-434d-82ff-5dd1e3045b15
-          name: Scalate
-        - uuid: 55f47daa-3704-4db4-8f31-91ef5014d52d
-          name: Snippetory Template Engine
-        - uuid: d725abaf-5be1-4475-bebc-df45fac7c885
-          name: Spark
-        - uuid: 3115c334-ee04-4d15-bc7b-dd5ab8a183b2
-          name: Spring MVC
-        - uuid: 5918de87-d309-486b-ac56-03dce56ee953
-          name: Stripes
-        - uuid: 1dd7e892-2ef2-457d-b283-5e44a910f148
-          name: Struts
-        - uuid: 061801e0-6bb9-4be3-8459-7f060a793074
-          name: Thymeleaf
-        - uuid: c9a4ee3e-d49c-4cf4-9b9b-85bf91fe4136
-          name: TieFaces
-        - uuid: c983c315-326b-4868-9321-05f948e9ca39
-          name: Trimou
-        - uuid: eb53611b-f69c-4640-86a4-d3676c505000
-          name: Twirl
-        - uuid: 6ba4acd3-4cdc-49d5-bb3a-3da93ab6b013
-          name: UberFire
-        - uuid: 7af7d5ed-1f6f-4a07-ba5f-e87757a36eac
-          name: Vaadin
-        - uuid: 5a097b85-1c93-4c32-a72e-82a9ac4778d6
-          name: Velocity
-        - uuid: b61d5c67-f965-4074-b42a-8c09f55dd0e7
-          name: Water Template Engine
-        - uuid: 26f6a611-545d-4db6-9d5f-7d0f4f616fd6
-          name: Webmarco
-        - uuid: 35a92bf2-1a7a-4e2e-a953-61f6faa3afb5
-          name: Wicket
-    - uuid: ada99e6b-99bb-46d1-a3d7-f162f23d1ab9
-      name: Markup
-      color: '#F4C145'
-      rank: 23
-      tags:
-        - uuid: d76030da-bcfa-40a3-8aa7-5f5c97a6a085
-          name: CSS
-        - uuid: 90faa35c-2c13-4acd-9542-a803159d22c1
-          name: HTML
-        - uuid: 0621da56-97ef-441c-a0af-b6ddafa28ecb
-          name: Javascript
-        - uuid: 730ccd36-897b-4304-90a6-b836b3404fca
-          name: Spring Boot Flo
-    - uuid: 53083f78-bd2e-4ce5-a9e0-5ea43cc313dc
-      name: Messaging
-      color: '#F032E6'
-      rank: 32
-      tags:
-        - uuid: 27fee617-47c7-4d4b-b2bf-7c0380d42b6e
-          name: JMS Connection factory
-        - uuid: 47fe4d83-d19a-42a8-b907-e3571c754154
-          name: JMS Queue
-        - uuid: 057dcbc9-2029-4312-9644-b22c0caee81a
-          name: JMS Topic
-    - uuid: 19acdfe8-641a-4d8f-94a7-3d6c68019007
-      name: Object Mapping
-      color: '#EC7A08'
-      rank: 24
-      tags:
-        - uuid: 65fbf35c-a77b-4a4b-8ef2-c459aa1a0bf8
-          name: EclipseLink
-        - uuid: 97308fc6-5b0d-4977-9d70-15925d9084d8
-          name: Hibernate
-        - uuid: 89d4999a-32fc-4330-8b7f-800276eb2647
-          name: Hibernate Cfg
-        - uuid: 6a056a21-b223-45c9-984b-bc7ebc7a2dcc
-          name: Hibernate Mapping
-        - uuid: 0b2d149f-58ca-4d66-9205-e299397e93e9
-          name: Hibernate OGM
-        - uuid: eec18d2d-c24a-4096-bdf2-8bf0689c8a28
-          name: Morphia
-        - uuid: 5fdc320d-0745-416d-8ff5-650a02f7204c
-          name: Spring Data
-    - uuid: 39aaa153-e937-4deb-b859-1ec6663d2394
-      name: Observability
-      color: '#6EC664'
-      rank: 34
-      tags:
-        - uuid: ed83046c-e2e5-4bc5-8e8d-c703cd8ba114
-          name: Spring Boot Actuator
-        - uuid: aecd5185-e016-4a4c-aee2-6d8f66c349f7
-          name: Spring JMX
-        - uuid: a1d23517-c338-4fb2-96ff-b07f8b1729ce
-          name: Zipkin
-    - uuid: 1edca2df-4cc2-4cde-8f68-663f3db0f7ac
-      name: Other
-      color: '#2B9AF3'
-      rank: 8
-      tags:
-        - uuid: d81c6077-2fcb-4024-bb6a-0a98b64d4a78
-          name: 0MQ Client
-        - uuid: 25b9da21-e677-4781-9703-c850edd9afa1
-          name: ActiveMQ library
-        - uuid: 1fb73b91-c9a9-4fe8-877e-4730f462253c
-          name: Amazon SQS Cient
-        - uuid: 6602e28b-b1ad-4f2d-a5e6-f68644c0a519
-          name: AMQP Client
-        - uuid: e75ae716-c3a6-4678-a899-3d14d4d25a23
-          name: Camel Messaging Client
-        - uuid: d62f699b-2788-47f0-88e5-e5d3efa8e0e0
-          name: Common Annotations
-        - uuid: 3fdaa7c1-543c-43ba-8328-0fe4ce8a9898
-          name: EAR Deployment
-        - uuid: 8cc6d391-8946-409b-8932-8f288e28f437
-          name: HornetQ Client
-        - uuid: ea40fd9c-6ab6-4264-a396-d85c9ac502e3
-          name: HTTP Client
-        - uuid: f9d4ff3e-0c35-4449-8446-0839ef01c0aa
-          name: Java EE JAXR
-        - uuid: 4930c0c1-d3e3-42fc-b8c5-6a9beb63152f
-          name: JBossMQ client
-        - uuid: 83d40567-8090-4f03-bb40-0573b48d7c84
-          name: JCA
-        - uuid: 53d49a6a-dcb3-4f48-8c7b-db0c8f388283
-          name: JNA
-        - uuid: e7d65663-c1c6-4fa1-b60c-3c5b69ef2fc4
-          name: JNI
-        - uuid: d9f3a6be-3c6d-4df1-a775-9c99b6aa0d89
-          name: Mail
-        - uuid: 42cfbf58-25eb-4cdb-afde-899c57c80db4
-          name: Properties
-        - uuid: 4a8a2f1b-969f-4d31-90be-7cd675825ac1
-          name: Qpid Client
-        - uuid: 6ce1e4b4-7659-4c98-a868-e13b5082f96f
-          name: RabbitMQ Client
-        - uuid: a9332d45-b5f9-4a9e-87a1-e441439f0e41
-          name: Resource Adapter
-        - uuid: 38473a85-f374-4701-9626-6de7e44a07bb
-          name: RMI
-        - uuid: 3f521cf2-5971-4358-bbf4-6f678e856e98
-          name: RocketMQ Client
-        - uuid: f862432d-cc7a-4364-ab18-6b23d17bad72
-          name: SNMP4J
-        - uuid: 2e2b635f-73df-441d-a688-da642b6ab668
-          name: Spring Messaging Client
-        - uuid: 978ba403-77e6-48e9-9e6d-35a4d8c36fee
-          name: Zbus Client
-    - uuid: 15fe0759-884d-4ad3-9674-5bd505356b0a
-      name: Persistence
-      color: '#009596'
-      rank: 33
-      tags:
-        - uuid: 0deaf785-ca24-4a1e-9e29-968f2da71102
-          name: JPA entities
-        - uuid: 5a6741ec-0805-4ff0-b76e-3e70aa2e0e6c
-          name: JPA named queries
-        - uuid: 96f85742-4419-499a-ba25-2c2e2a60afed
-          name: JPA XML
-        - uuid: fc2da211-2fc0-4fe4-8ec2-094d1589078a
-          name: Persistence units
-        - uuid: e6866eba-a1a9-432d-88ef-e2d37aa3df94
-          name: Spring Data JPA
-    - uuid: fad89510-043d-4878-90df-69d73a5455df
-      name: Processing
-      color: '#F032E6'
-      rank: 25
-      tags:
-        - uuid: 74b20f28-30bc-4a3d-80c0-af74a958d4f4
-          name: EJB Timer
-        - uuid: d23f1560-5f36-462d-9068-59fdbf9e767d
-          name: Eureka
-        - uuid: 69a403b1-6f90-4637-8210-6ac93f753606
-          name: Feign
-        - uuid: 2e3aff36-1a11-432d-8762-6963151b0bd7
-          name: Java EE Batch
-        - uuid: 02fc2b6d-4dad-4787-9e49-e8e6c859af88
-          name: Java EE Batch API
-        - uuid: 97f6191b-5a7e-40a9-bdf4-02a1026adb63
-          name: Java EE JSON-P
-        - uuid: f02ae968-c650-427c-8dd8-37bcbc6e687f
-          name: Java Threads
-        - uuid: 168d4cd7-66a5-41fb-b1cd-a6a3164225fb
-          name: Quartz
-        - uuid: b6ce37f5-c5aa-4fe4-9c16-45c691240d93
-          name: Spring Batch
-        - uuid: 8da9ee88-479b-482f-9255-9537ea4879b3
-          name: Spring Scheduled
-    - uuid: 056d93dd-8fbe-4f01-a28a-f2cf5c58bc4f
-      name: REST
-      color: '#F032E6'
-      rank: 28
-      tags:
-        - uuid: ed830cea-b0c6-46cd-9630-703903dbfee9
-          name: JAX-RS
-        - uuid: 9784e54a-da65-4597-8bf3-78511c166928
-          name: Jersey
-        - uuid: 80ac51d3-d6d5-494f-82e7-430414637bfa
-          name: Unirest
-    - uuid: c1943ba9-3975-4203-a18c-c5d6460c24d4
-      name: Rich
-      color: '#BFEF45'
-      rank: 19
-      tags:
-        - uuid: 310d4ccd-9093-43b4-99af-afd3ba57bc42
-          name: Applet
-        - uuid: 98de9f32-119e-4952-ab64-10f3a145f836
-          name: EclipseRCP
-        - uuid: 1e7cf3da-55c2-4310-badc-f9c19f133cf0
-          name: FormLayoutMaker
-        - uuid: 0b0b9dc3-0bb3-4775-80b2-b496a0fcaa9f
-          name: JavaFX
-        - uuid: 0daca8f8-8415-49b7-bfcf-0d5bb64d0229
-          name: JGoodies
-        - uuid: 5a9b417e-64f1-47d9-8520-7bc9152ec324
-          name: JNLP
-        - uuid: 20f36936-adac-4066-9655-3790e1b472a6
-          name: MagicgroupLayout
-        - uuid: b6e4f0a1-3bcc-4ed6-b6c6-c178dc34001e
-          name: MiGLayout
-        - uuid: c9c17286-8ef2-40a7-8140-c6dec2dddcf2
-          name: Standard Widget Tookit (SWT)
-        - uuid: 54bcc59e-6a6e-4d78-9469-a1f37b47a496
-          name: Swing
-    - uuid: de0b9d89-2865-4ff2-b2b9-d74ba8ed2577
-      name: Rules and Processes
-      color: '#F4C145'
-      rank: 22
-      tags:
-        - uuid: 932fc370-64bc-4ec0-bc3e-efa48ea32ff5
-          name: Blaze
-        - uuid: 5c14efa0-8365-411e-b44e-3bac46a890fb
-          name: Camunda
-        - uuid: be9b0862-6426-4ec4-887e-88c19956c224
-          name: Drools
-        - uuid: f8791442-008a-4378-bbd9-6285945fd605
-          name: Easy Rules
-        - uuid: c455b580-2d40-470d-8d59-7bae3bcb45ef
-          name: iLog
-        - uuid: 731d0168-54b2-4bae-95df-1ad1a4e97de0
-          name: JBPM
-        - uuid: 5551abfd-27c9-409a-a978-f96d6cc2edef
-          name: MRules
-        - uuid: ac75d406-98a5-429c-b1d3-b1a504e1d3ce
-          name: Pega
-    - uuid: a7e29360-556a-4222-86fa-b09191e306d1
-      name: Security
-      color: '#D95F55'
-      rank: 10
-      tags:
-        - uuid: 6e4167ef-4605-477b-8143-67c392037aa2
-          name: Acegi Security
-        - uuid: 107a5e70-dd6e-4c6f-8864-ee14328ad988
-          name: AcrIS Security
-        - uuid: ab7773c7-a01b-45d7-addc-eaf84cf543d8
-          name: Apache Commons Validator
-        - uuid: 052ab348-b434-4226-a86b-2c56cd9362da
-          name: Bouncy Castle
-        - uuid: f0e5e4a4-3078-4839-8db7-26d6ac49dd05
-          name: Hdiv
-        - uuid: 4108d22c-9320-4566-bb7c-417806e121db
-          name: Jasypt
-        - uuid: be790cce-8939-419c-81ad-be2a333b3957
-          name: Java EE JACC
-        - uuid: d6e1bd35-a09b-42ef-a0fb-5532378ffe35
-          name: JSecurity
-        - uuid: 4f91316e-a625-45d3-b9bd-ce038b663e04
-          name: Keyczar
-        - uuid: cbab0b5f-33e5-494c-a8c8-b181523e1ff3
-          name: OACC
-        - uuid: 8c18a367-ab0d-4dee-a839-dfe4a5534391
-          name: OAUTH
-        - uuid: dbd428e0-5996-4856-b81f-35d3503d5089
-          name: OpenSAML
-        - uuid: 6d9e0f11-ac03-4b09-97e4-1ccc7737bbfb
-          name: OTR4J
-        - uuid: 3ee36882-dafb-4293-ba20-1945b5009446
-          name: OWASP CSRF Guard
-        - uuid: 312dd256-c93e-4580-9878-4c09c21276b8
-          name: OWASP ESAPI
-        - uuid: 9016838d-fe8c-405d-92c4-1b9ab6c5a011
-          name: PicketBox
-        - uuid: 5f80d4f2-3d83-48b9-8212-98bfc4a4e64d
-          name: PicketLink
-        - uuid: dd98aee0-4a3b-42f7-ba79-c4efa00a526a
-          name: SAML
-        - uuid: 677f3e04-0d50-437b-bd7a-10db13ffefb8
-          name: Santuario
-        - uuid: fe1cd56c-c2a1-4a44-8b98-b78cfde5f6ad
-          name: Security Realm
-        - uuid: ef976d2e-bfb3-4082-b44e-86fd4aa60e5e
-          name: Shiro
-        - uuid: 7304558d-7ac0-420b-8b2d-28b396ff6633
-          name: Spring Security
-        - uuid: d83256c5-2a93-48ea-8846-aecfeb498bf9
-          name: SSL
-        - uuid: 15d136c1-0e4b-42ad-be40-6b114e2e1294
-          name: Trunk JGuard
-        - uuid: 34333293-a706-4a1a-a8fd-5ca99275b187
-          name: Vlad
-        - uuid: a962b7a8-e16d-40cf-a92b-9f329bcfb412
-          name: WSS4J
-        - uuid: 25128d0a-1919-459c-bc81-22d0e55b3cf8
-          name: XACML
-    - uuid: dcae5d2d-5d2e-4a51-b966-c76554828c7c
-      name: Serverless / FAAS
-      color: '#40199A'
-      rank: 36
-      tags:
-        - uuid: 75507634-869b-4d7d-839b-1b6a5ef416bb
-          name: Spring Cloud Function
-    - uuid: 11158ab4-0f41-42fa-aff5-5c7ea7b5ab8a
-      name: Test
-      color: '#F4C145'
-      rank: 14
-      tags:
-        - uuid: b62526e2-0891-4855-bbd4-571c2dd5eb19
-          name: Akka Testkit
-        - uuid: 4a82518d-68cf-4690-b839-e063bf944b06
-          name: Arquillian
-        - uuid: 60c9acb5-23f1-45f5-a8c1-3b40d54bbdf7
-          name: Catus
-        - uuid: a08bb1e5-e4bc-4f64-9850-1b6df64cbc12
-          name: Concordian
-        - uuid: 2125bffe-652d-40a6-844d-41a9caf440a1
-          name: Cucumber
-        - uuid: 5a851179-36b2-445a-9051-e3af850a0326
-          name: DBUnit
-        - uuid: a87f7297-b8a3-43e4-a304-028ea70af072
-          name: EasyMock
-        - uuid: fed6c58c-b77c-48da-98ee-7f0fec55e8b2
-          name: EtlUnit
-        - uuid: 05eb05c8-544b-4621-a291-1f926e50e412
-          name: Guava Testing
-        - uuid: afce5b1e-9ea9-4a4c-9f3f-41409867d9f9
-          name: Hamcrest
-        - uuid: aa45644e-6a74-444a-9d4f-2b3806362af7
-          name: HavaRunner
-        - uuid: 2abc111f-233a-4b38-b49e-5b705b373db8
-          name: HttpUnit
-        - uuid: 5e80bf8c-3057-4778-813b-321c09b671da
-          name: JBehave
-        - uuid: 55fad5f9-7e02-43ff-9e07-54f1e87dcf76
-          name: JCunit
-        - uuid: f17c1ece-cc38-433f-93ed-c1ad2f891387
-          name: JFunk
-        - uuid: 1724390a-7e36-440b-84c6-1187e19c6a99
-          name: JMock
-        - uuid: 8a01fd7c-4569-4512-9631-3a964df206b0
-          name: JMockit
-        - uuid: 17527e62-f0db-4a59-bea9-64eaa8dcad42
-          name: JPA Matchers
-        - uuid: d4e15ff1-59a3-4b74-aea9-d0d4bbbb807d
-          name: Jukito
-        - uuid: 882d1cd9-cb65-4482-a346-409faf45df09
-          name: JUnit
-        - uuid: c6e14ad8-2d7c-4101-a676-535c1ab23c48
-          name: Mockito
-        - uuid: 70c35c5c-4cf6-494c-8134-fcfc6d4b2acb
-          name: Mule Functional Test Framework
-        - uuid: 37e30af2-bcbc-4eec-82ed-ff959fcd80e0
-          name: MultithreadedTC
-        - uuid: c768b298-1cd3-459e-a0ae-02e7c20a021c
-          name: Needle
-        - uuid: e0f31ee1-a5cb-4be2-a513-b3ad6d8f46cb
-          name: OpenPojo
-        - uuid: 3789e85c-de99-4cb0-a2e0-2e05bc847c22
-          name: Play Test
-        - uuid: 91e67eab-c4a4-4101-9fa9-61cdd1e00198
-          name: PowerMock
-        - uuid: 2ed12a57-ae3f-45ba-a6b6-0328177ab673
-          name: Randomized Testing Runner
-        - uuid: 88d3879d-9e4d-4960-ac8e-a2f8c93c8a74
-          name: REST Assured
-        - uuid: d771abb0-ac90-4870-b88f-018c70448edc
-          name: Restito
-        - uuid: 356d8c6f-b618-432f-ba76-0fd4d3f16d1a
-          name: Specsy
-        - uuid: 9a8263d8-d100-45f0-b8ae-f7864a6bc151
-          name: Spock
-        - uuid: 1d8ea1ec-53ff-4fd8-90cd-35cc0692ad51
-          name: Spring Test
-        - uuid: 5a8cf578-6b89-4140-81eb-46846a6385d5
-          name: Test Interface
-        - uuid: 5aa0e881-9229-44d0-b463-50599efe62b0
-          name: TestNG
-        - uuid: 9b4d3a71-c162-41b4-84b6-e6874b5b80f0
-          name: Unitils
-        - uuid: 4eebe633-b051-4ed8-939f-a20fc6f481f7
-          name: XMLUnit
-    - uuid: e8364225-9881-4de5-9df2-778f51f6afc8
-      name: Transaction
-      color: '#40199A'
-      rank: 13
-      tags:
-        - uuid: ec6d26e2-a5da-435e-bfc7-d4c084c097ae
-          name: AKKA JTA
-        - uuid: 2e27f50e-752a-4d6b-926d-714d6646b8b8
-          name: Apache Meecrowave JTA
-        - uuid: ea2e8699-9f19-4031-af5a-64e88eda7ed3
-          name: Apache Sirona JTA
-        - uuid: 0a92587e-240f-46e8-bcfc-0055d93166ce
-          name: Atomikos JTA
-        - uuid: 2d2def94-b9b0-4284-be58-393e0212f3b7
-          name: Demoiselle JTA
-        - uuid: 8d2bdbd5-eec5-4768-8eae-2f1ad156954d
-          name: Everit JTA
-        - uuid: 7de34d62-1aa0-49d6-9e7e-4a6b56cbea44
-          name: Evo JTA
-        - uuid: 1e87e4bb-8066-4a9d-a2d6-baf3dc4e8431
-          name: Geronimo JTA
-        - uuid: cdf18c67-354c-4ba2-96d3-ccb6e8327128
-          name: GlassgFish JTA
-        - uuid: 1181797a-ee6d-4ada-b718-2c11b3c8718f
-          name: Ignite JTA
-        - uuid: b3f13ef0-c447-4b6f-a42b-9dddbd71e2f6
-          name: Java Transaction API
-        - uuid: 89c9f709-3e0f-48a0-b722-a4842edda30f
-          name: JBoss Transactions
-        - uuid: 4953650d-942f-4508-907e-d9865793a920
-          name: JTA
-        - uuid: 2096ab72-1420-4716-97ab-7b0d4fa48d98
-          name: KumuluzEE JTA
-        - uuid: 494063de-6499-4061-8fd9-5d46bf5dde0f
-          name: Lift JTA
-        - uuid: 821f5fd8-d096-4d19-bd0e-603650e1c028
-          name: Mycontainer JTA
-        - uuid: 1a1c6cd9-03a0-4594-98b4-22f8ba41c66c
-          name: Narayana Arjuna
-        - uuid: d7afc55e-a9b5-44dc-95b0-0fe4448908b6
-          name: Nuxeo JTA/JCA
-        - uuid: 797dfa4a-c9eb-40d4-95c7-438dcd07e24b
-          name: OW2 JTA
-        - uuid: d391145b-69c2-45dc-bc57-5f4773966441
-          name: Spring Transactions
-        - uuid: bb62d444-9047-496a-b98a-5910c4543312
-          name: WF Core JTA
-    - uuid: daaface2-82b0-4259-a4c0-ee90ecdf96e0
-      name: Utilities
-      color: '#2B9AF3'
-      rank: 37
-      tags:
-        - uuid: d1ec1f41-3066-42d4-98ba-1230327b4949
-          name: Spring Shell
-    - uuid: 97486643-0425-40e2-a2da-591134bfef70
-      name: Validation
-      color: '#EC7A08'
-      rank: 21
-      tags:
-        - uuid: efb86e72-d228-4dbd-9ea4-5550cc4c0afb
-          name: Bean Validation
-    - uuid: 476230d0-9063-47c2-897b-c31716eb8393
-      name: Web Service
-      color: '#40199A'
-      rank: 20
-      tags:
-        - uuid: 070b958a-e9aa-4534-9dc1-0483ebf1b50e
-          name: Axis
-        - uuid: a3d3a148-802f-490b-b8c2-d2c0ee488262
-          name: Axis2
-        - uuid: 8737594c-ce40-4bf0-b737-28924c9d5cd1
-          name: CXF
-        - uuid: a8b504bc-b218-49b6-8379-7c777e0965d1
-          name: OpenWS
-        - uuid: 8460f4e3-aec4-4f55-965b-b398225f8c66
-          name: WebSphere WS Binding
-        - uuid: 2651ea77-fe00-4315-bd83-b731bc057515
-          name: WebSphere WS Extension
-        - uuid: eb68b388-dc71-42fe-adcf-9a634ce578a0
-          name: WSDL
-        - uuid: ca02e318-3866-42e8-96df-f99280b14408
-          name: XFire
-    - uuid: 74766814-e673-42eb-87e4-d58ab74b160d
-      name: Web
-      color: '#F032E6'
-      rank: 30
-      tags:
-        - uuid: 999d459b-62e9-4bf8-94f3-54b3e7f23983
-          name: JBoss Web XML
-        - uuid: 5755587c-ec24-4259-b953-bb77eacada68
-          name: JSF Page
-        - uuid: 0e389992-d50b-4465-b42c-84de8dd40c3b
-          name: JSP Page
-        - uuid: 6847f82d-0f9f-45ba-bc1e-bc71df1a1d98
-          name: Orion Web XML
-        - uuid: f534cb00-6caa-4db2-81b6-ae50b379bb0b
-          name: Seam
-        - uuid: 5b6ff5e7-97b6-497d-8685-fcd482660c1a
-          name: Spring Web
-        - uuid: 33d681f4-0e54-41e9-86ca-a7cf6a1ba5e1
-          name: Web XML File
-        - uuid: 98140402-9527-438b-814a-12964ce03e13
-          name: WebLogic Web XML
-        - uuid: 963b1419-fa3e-4186-86c0-b77afdc1c9c0
-          name: WebSocket
-        - uuid: 22b5998a-99db-45d2-b716-df63bbab86ba
-          name: WebSphere Web XML
+  - name: Language
+    rank: 1
+    color: '#F4C145'
+    tags:
+      - name: C# ASP .Net
+      - name: C++
+      - name: COBOL
+      - name: Java
+      - name: Javascript
+      - name: Python
+  - name: Operating System
+    rank: 2
+    color: '#469990'
+    tags:
+      - name: RHEL 8
+      - name: Windows Server 2016
+      - name: Z/OS
+  - name: Runtime
+    rank: 3
+    color: '#40199A'
+    tags:
+      - name: EAP
+      - name: JWS
+      - name: Quarkus
+      - name: Spring Boot
+      - name: Tomcat
+      - name: WebLogic
+      - name: WebSphere
+  - name: Database
+    rank: 4
+    color: '#009596'
+    tags:
+      - name: DB2
+      - name: MongoDB
+      - name: Oracle
+      - name: PostgreSQL
+      - name: SQL Server
+  - name: Data Center
+    rank: 5
+    color: '#469990'
+    tags:
+      - name: Boston (USA)
+      - name: London (UK)
+      - name: Paris (FR)
+      - name: Sydney (AU)
+  - name: Application Type
+    rank: 6
+    color: '#469990'
+    tags:
+      - name: COTS
+      - name: In house
+      - name: SaaS
+  - name: Other
+    rank: 8
+    color: '#2B9AF3'
+    tags:
+      - name: 0MQ Client
+      - name: ActiveMQ library
+      - name: Amazon SQS Cient
+      - name: AMQP Client
+      - name: Camel Messaging Client
+      - name: Common Annotations
+      - name: EAR Deployment
+      - name: HornetQ Client
+      - name: HTTP Client
+      - name: Java EE JAXR
+      - name: JBossMQ client
+      - name: JCA
+      - name: JNA
+      - name: JNI
+      - name: Mail
+      - name: Properties
+      - name: Qpid Client
+      - name: RabbitMQ Client
+      - name: Resource Adapter
+      - name: RMI
+      - name: RocketMQ Client
+      - name: SNMP4J
+      - name: Spring Messaging Client
+      - name: Zbus Client
+  - name: Integration
+    rank: 9
+    color: '#F032E6'
+    tags:
+      - name: 3scale
+      - name: Apache Camel
+      - name: Apache Synapse
+      - name: Apiman
+      - name: Camel
+      - name: Ikasan
+      - name: Istio
+      - name: Micrometer
+      - name: Mule
+      - name: Petals EIP
+      - name: ServiceMix
+      - name: Spring Integration
+      - name: Swagger
+      - name: SwitchYard
+      - name: Talend ESB
+      - name: Teiid
+      - name: WSO2
+  - name: Security
+    rank: 10
+    color: '#D95F55'
+    tags:
+      - name: Acegi Security
+      - name: AcrIS Security
+      - name: Apache Commons Validator
+      - name: Bouncy Castle
+      - name: Hdiv
+      - name: Jasypt
+      - name: Java EE JACC
+      - name: JSecurity
+      - name: Keyczar
+      - name: OACC
+      - name: OAUTH
+      - name: OpenSAML
+      - name: OTR4J
+      - name: OWASP CSRF Guard
+      - name: OWASP ESAPI
+      - name: PicketBox
+      - name: PicketLink
+      - name: SAML
+      - name: Santuario
+      - name: Security Realm
+      - name: Shiro
+      - name: Spring Security
+      - name: SSL
+      - name: Trunk JGuard
+      - name: Vlad
+      - name: WSS4J
+      - name: XACML
+  - name: Inversion of Control
+    rank: 11
+    color: '#F032E6'
+    tags:
+      - name: Airframe
+      - name: AOP Alliance
+      - name: AspectJ
+      - name: BeanInject
+      - name: CDI
+      - name: Cfg Engine
+      - name: Dagger
+      - name: GIN
+      - name: Google Guice
+      - name: Grapht DI
+      - name: Injekt for Kotlin
+      - name: Iroh
+      - name: Javax Inject
+      - name: JayWire
+      - name: Ka DI
+      - name: Kodein
+      - name: KouInject
+      - name: Macros
+      - name: Micro DI
+      - name: Peaberry
+      - name: PicoContainer
+      - name: Plexus Container
+      - name: Polyforms DI
+      - name: Scaldi
+      - name: Silk DI
+      - name: Spring
+      - name: Spring DI
+      - name: Sticky Configured
+      - name: SubCut
+      - name: Syringe
+      - name: Tornado Inject
+      - name: Weld
+      - name: Winter
+  - name: Logging
+    rank: 12
+    color: '#6EC664'
+    tags:
+      - name: Airlift Log manager
+      - name: Apache Flume
+      - name: Avalon Logkit
+      - name: Blitz4J
+      - name: Commons Logging
+      - name: Composite Logging JCL
+      - name: File system Logging
+      - name: GFC Logging
+      - name: JBoss logging
+      - name: Jcabi Log
+      - name: Klogger
+      - name: Kotlin Logging
+      - name: Log.io
+      - name: Log4J
+      - name: Log4s
+      - name: Logback
+      - name: Logging Utils
+      - name: Lumberjack
+      - name: MinLog
+      - name: Monolog
+      - name: NLOG4J
+      - name: OCPsoft Logging Utils
+      - name: OPS4J Pax Logging Service
+      - name: OW2 Log Until
+      - name: Scribe
+      - name: SLF4J
+      - name: Socket handler logging
+      - name: tinylog
+      - name: Twitter Util Logging
+  - name: Transaction
+    rank: 13
+    color: '#40199A'
+    tags:
+      - name: AKKA JTA
+      - name: Apache Meecrowave JTA
+      - name: Apache Sirona JTA
+      - name: Atomikos JTA
+      - name: Demoiselle JTA
+      - name: Everit JTA
+      - name: Evo JTA
+      - name: Geronimo JTA
+      - name: GlassgFish JTA
+      - name: Ignite JTA
+      - name: Java Transaction API
+      - name: JBoss Transactions
+      - name: JTA
+      - name: KumuluzEE JTA
+      - name: Lift JTA
+      - name: Mycontainer JTA
+      - name: Narayana Arjuna
+      - name: Nuxeo JTA/JCA
+      - name: OW2 JTA
+      - name: Spring Transactions
+      - name: WF Core JTA
+  - name: Test
+    rank: 14
+    color: '#F4C145'
+    tags:
+      - name: Akka Testkit
+      - name: Arquillian
+      - name: Catus
+      - name: Concordian
+      - name: Cucumber
+      - name: DBUnit
+      - name: EasyMock
+      - name: EtlUnit
+      - name: Guava Testing
+      - name: Hamcrest
+      - name: HavaRunner
+      - name: HttpUnit
+      - name: JBehave
+      - name: JCunit
+      - name: JFunk
+      - name: JMock
+      - name: JMockit
+      - name: JPA Matchers
+      - name: Jukito
+      - name: JUnit
+      - name: Mockito
+      - name: Mule Functional Test Framework
+      - name: MultithreadedTC
+      - name: Needle
+      - name: OpenPojo
+      - name: Play Test
+      - name: PowerMock
+      - name: Randomized Testing Runner
+      - name: REST Assured
+      - name: Restito
+      - name: Specsy
+      - name: Spock
+      - name: Spring Test
+      - name: Test Interface
+      - name: TestNG
+      - name: Unitils
+      - name: XMLUnit
+  - name: MVC
+    rank: 15
+    color: '#40199A'
+    tags:
+      - name: Anakia
+      - name: AngularFaces
+      - name: ANTLR StringTemplate
+      - name: Apache Tapestry
+      - name: BabbageFaces
+      - name: BootFaces
+      - name: ButterFaces
+      - name: Chunk Templates
+      - name: DVSL
+      - name: FreeMarker
+      - name: Grails
+      - name: GWT
+      - name: Handlebars
+      - name: HighFaces
+      - name: ICEfaces
+      - name: Ickenham
+      - name: Jamon
+      - name: Jetbrick template
+      - name: JFreeChart
+      - name: JMustache
+      - name: JSF
+      - name: JSilver
+      - name: JSTL
+      - name: LiferayFaces
+      - name: Mixer
+      - name: Myfaces
+      - name: OmniFaces
+      - name: OpenFaces
+      - name: Oracle ADF
+      - name: Play
+      - name: Portlet
+      - name: PrimeFaces
+      - name: Richfaces
+      - name: Rythm Template Engine
+      - name: Scalate
+      - name: Snippetory Template Engine
+      - name: Spark
+      - name: Spring MVC
+      - name: Stripes
+      - name: Struts
+      - name: Thymeleaf
+      - name: TieFaces
+      - name: Trimou
+      - name: Twirl
+      - name: UberFire
+      - name: Vaadin
+      - name: Velocity
+      - name: Water Template Engine
+      - name: Webmarco
+      - name: Wicket
+  - name: Database Driver
+    rank: 16
+    color: '#009596'
+    tags:
+      - name: Apache Accumulo Client
+      - name: Apache HBase Client
+      - name: Axion Driver
+      - name: Cassandra Client
+      - name: Derby Driver
+      - name: H2 Driver
+      - name: HSQLDB Driver
+      - name: LevelDB Client
+      - name: MckoiSQLDB Driver
+      - name: Microsoft SQL Driver
+      - name: MongoDB Client
+      - name: MySQL Driver
+      - name: Oracle DB Driver
+      - name: PostgreSQL Driver
+      - name: SQLite Driver
+  - name: 3rd party
+    rank: 17
+    color: '#2B9AF3'
+    tags:
+      - name: Apache Aries
+      - name: Apache Geronimo
+      - name: Apache Hadoop
+      - name: Apache Karaf
+      - name: Apache Mahout
+      - name: Cloudera
+      - name: EJB
+      - name: Elasticsearch
+      - name: Jetty
+      - name: Kibana
+      - name: Liferay
+      - name: Logstash
+      - name: MapR
+      - name: Neo4J
+      - name: Oracle Forms
+      - name: Spring Boot
+      - name: TensorFlow
+      - name: Tomcat
+      - name: Weka
+  - name: Caching
+    rank: 18
+    color: '#F032E6'
+    tags:
+      - name: Apache Commons JCS
+      - name: Apache Ignite
+      - name: Cache API
+      - name: Coherence
+      - name: Dynacache
+      - name: ehcache
+      - name: Hazelcast
+      - name: Infinispan
+      - name: JBoss Cache
+      - name: JCache
+      - name: Memcached
+      - name: Oscache
+      - name: Redis
+      - name: ShiftOne
+      - name: Spring Boot Cache
+      - name: Swarmcache
+  - name: Rich
+    rank: 19
+    color: '#BFEF45'
+    tags:
+      - name: Applet
+      - name: EclipseRCP
+      - name: FormLayoutMaker
+      - name: JavaFX
+      - name: JGoodies
+      - name: JNLP
+      - name: MagicgroupLayout
+      - name: MiGLayout
+      - name: Standard Widget Tookit (SWT)
+      - name: Swing
+  - name: Web Service
+    rank: 20
+    color: '#40199A'
+    tags:
+      - name: Axis
+      - name: Axis2
+      - name: CXF
+      - name: OpenWS
+      - name: WebSphere WS Binding
+      - name: WebSphere WS Extension
+      - name: WSDL
+      - name: XFire
+  - name: Validation
+    rank: 21
+    color: '#EC7A08'
+    tags:
+      - name: Bean Validation
+  - name: Rules and Processes
+    rank: 22
+    color: '#F4C145'
+    tags:
+      - name: Blaze
+      - name: Camunda
+      - name: Drools
+      - name: Easy Rules
+      - name: iLog
+      - name: JBPM
+      - name: MRules
+      - name: Pega
+  - name: Markup
+    rank: 23
+    color: '#F4C145'
+    tags:
+      - name: CSS
+      - name: HTML
+      - name: Javascript
+      - name: Spring Boot Flo
+  - name: Object Mapping
+    rank: 24
+    color: '#EC7A08'
+    tags:
+      - name: EclipseLink
+      - name: Hibernate
+      - name: Hibernate Cfg
+      - name: Hibernate Mapping
+      - name: Hibernate OGM
+      - name: Morphia
+      - name: Spring Data
+  - name: Processing
+    rank: 25
+    color: '#F032E6'
+    tags:
+      - name: EJB Timer
+      - name: Eureka
+      - name: Feign
+      - name: Java EE Batch
+      - name: Java EE Batch API
+      - name: Java EE JSON-P
+      - name: Java Threads
+      - name: Quartz
+      - name: Spring Batch
+      - name: Spring Scheduled
+  - name: Bean
+    rank: 26
+    color: '#EC7A08'
+    tags:
+      - name: EJB XML
+      - name: Entity Bean
+      - name: JBoss EJB XML
+      - name: Management EJB
+      - name: Message (MDB)
+      - name: Orion EJB XML
+      - name: Stateful (SFSB)
+      - name: Stateless (SLSB)
+      - name: WebSphere EJB
+      - name: WebSphere EJB Ext
+  - name: Binding
+    rank: 27
+    color: '#EC7A08'
+    tags:
+      - name: Java EE JAXB
+      - name: JSON-B
+  - name: REST
+    rank: 28
+    color: '#F032E6'
+    tags:
+      - name: JAX-RS
+      - name: Jersey
+      - name: Unirest
+  - name: HTTP
+    rank: 29
+    color: '#F032E6'
+    tags:
+      - name: JAX-WS
+      - name: Servlet
+      - name: Web Services Metadata
+  - name: Web
+    rank: 30
+    color: '#F032E6'
+    tags:
+      - name: JBoss Web XML
+      - name: JSF Page
+      - name: JSP Page
+      - name: Orion Web XML
+      - name: Seam
+      - name: Spring Web
+      - name: Web XML File
+      - name: WebLogic Web XML
+      - name: WebSocket
+      - name: WebSphere Web XML
+  - name: Database
+    rank: 31
+    color: '#009596'
+    tags:
+      - name: JDBC
+      - name: JDBC datasources
+      - name: JDBC XA datasources
+  - name: Messaging
+    rank: 32
+    color: '#F032E6'
+    tags:
+      - name: JMS Connection factory
+      - name: JMS Queue
+      - name: JMS Topic
+  - name: Persistence
+    rank: 33
+    color: '#009596'
+    tags:
+      - name: JPA entities
+      - name: JPA named queries
+      - name: JPA XML
+      - name: Persistence units
+      - name: Spring Data JPA
+  - name: Observability
+    rank: 34
+    color: '#6EC664'
+    tags:
+      - name: Spring Boot Actuator
+      - name: Spring JMX
+      - name: Zipkin
+  - name: Configuration Management
+    rank: 35
+    color: '#2B9AF3'
+    tags:
+      - name: Spring Cloud Config
+      - name: Spring Properties
+  - name: Serverless / FAAS
+    rank: 36
+    color: '#40199A'
+    tags:
+      - name: Spring Cloud Function
+  - name: Utilities
+    rank: 37
+    color: '#2B9AF3'
+    tags:
+      - name: Spring Shell
+  - name: Clustering
+    rank: 39
+    color: '#40199A'
+    tags:
+      - name: Web Session
