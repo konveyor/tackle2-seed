@@ -5,7 +5,6 @@ type TagCategory struct {
 	UUID  string
 	Name  string
 	Color string
-	Rank  int
 	Tags  []struct {
 		UUID string
 		Name string
