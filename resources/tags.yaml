@@ -1,0 +1,973 @@
+kind: TagCategory
+version: 1
+items:
+    - uuid: 5bad25cc-c6fc-4445-a36c-7e771b1d23db
+      name: 3rd party
+      color: '#2B9AF3'
+      tags:
+        - uuid: 9515de00-6b64-4548-8949-7c03f8001383
+          name: Apache Aries
+        - uuid: b2c3cc28-1926-4400-9e4a-18800dc9d97e
+          name: Apache Geronimo
+        - uuid: 972013c9-c2b7-4468-8c90-1c2b00b4b48c
+          name: Apache Hadoop
+        - uuid: cbe8975b-061d-47d8-b348-edfd9d07d0ab
+          name: Apache Karaf
+        - uuid: 154500ed-8b58-4e94-a430-d5baba3d3aba
+          name: Apache Mahout
+        - uuid: 3e747cad-1a48-499d-b85b-de12b7dbc914
+          name: Cloudera
+        - uuid: 8ac2fb95-f59f-4198-9f89-eac76c283022
+          name: EJB
+        - uuid: 2e81ec2b-5ea7-4475-9228-85c7133df2d2
+          name: Elasticsearch
+        - uuid: 33883f5e-823a-4fbe-bb28-25304dae388c
+          name: Jetty
+        - uuid: 0e712ce7-c437-4ef1-a5b2-cdedbde846eb
+          name: Kibana
+        - uuid: aee028f2-3a00-4b68-857f-65111e28c0d9
+          name: Liferay
+        - uuid: fe5fa8ee-aea0-4662-b3b0-558f33d7ab2e
+          name: Logstash
+        - uuid: 053da3eb-7312-419d-b758-a6e80396b353
+          name: MapR
+        - uuid: 5171c958-0423-4157-b111-af7526d87d37
+          name: Neo4J
+        - uuid: ee91044e-695b-4abd-be21-fb74e3586c30
+          name: Oracle Forms
+        - uuid: 80fcc94f-1ca9-4873-8ad5-fdae593efbd1
+          name: Spring Boot
+        - uuid: 95086817-eaf6-4269-bfc7-9597403a8966
+          name: TensorFlow
+        - uuid: b4237d06-59a2-4c0e-ad20-aeb39117dc73
+          name: Tomcat
+        - uuid: ffdbc25f-16af-4a64-8820-8e253221c91a
+          name: Weka
+    - uuid: 626b4cb7-753b-4a41-973b-75dc18966fb4
+      name: Application Type
+      color: '#469990'
+      tags:
+        - uuid: 794d75a2-32a2-4429-99a7-22f39bfd0e57
+          name: COTS
+        - uuid: de5aaf67-f7f3-4859-bf20-e4422ac581d3
+          name: In house
+        - uuid: e58ffcb7-b370-4c82-8313-ec5bfb0b8239
+          name: SaaS
+    - uuid: d1e9c34e-0504-43bd-ae39-035c12959044
+      name: Bean
+      color: '#EC7A08'
+      tags:
+        - uuid: 77ae35cf-2c03-4364-8c3a-0fac824b01b8
+          name: EJB XML
+        - uuid: 86805832-93fa-4e1f-a64b-5e4c1efdea64
+          name: Entity Bean
+        - uuid: 01393c4b-7483-4d6f-ba5d-d373fe892bb5
+          name: JBoss EJB XML
+        - uuid: b1b95c55-e949-48b5-9566-905697b9365d
+          name: Management EJB
+        - uuid: 856e40f2-c85b-4598-8e91-fb4949ccfee0
+          name: Message (MDB)
+        - uuid: f2d143bf-bc56-4d9f-8a45-eff6ce1f01aa
+          name: Orion EJB XML
+        - uuid: f3abc7d3-a12b-4d8c-8465-92dd7b28fddc
+          name: Stateful (SFSB)
+        - uuid: b7e90ef5-d2a9-4b9e-8c67-4c5e4538c793
+          name: Stateless (SLSB)
+        - uuid: e2561456-e0a5-4c11-b930-b5a15e65390b
+          name: WebSphere EJB
+        - uuid: d2529d9b-e483-41b5-9f09-7bdf4da95fa0
+          name: WebSphere EJB Ext
+    - uuid: 116b313c-dee3-440f-95ea-b8baa26ed242
+      name: Binding
+      color: '#EC7A08'
+      tags:
+        - uuid: 168d0169-5e79-4b7a-ac20-c583793a6f83
+          name: Java EE JAXB
+        - uuid: 592aae74-2195-4c93-949a-6a584daa33dc
+          name: JSON-B
+    - uuid: 8605790c-f1e2-4c9c-a93b-4a7c6a7091ff
+      name: Caching
+      color: '#F032E6'
+      tags:
+        - uuid: c3514bd9-397f-4d2a-908d-1f648191221e
+          name: Apache Commons JCS
+        - uuid: 8d4ded29-696f-476f-932e-25dde91104df
+          name: Apache Ignite
+        - uuid: ec5b8953-a05a-4953-bb58-d4d0abccb2d7
+          name: Cache API
+        - uuid: 6243612a-b294-4293-98d4-4406576c7427
+          name: Coherence
+        - uuid: f12bbd29-8527-4761-b433-cdf8fa7f2c30
+          name: Dynacache
+        - uuid: ac4cebc7-08c9-42c8-97ec-80193d9da3aa
+          name: ehcache
+        - uuid: 088d2660-b3aa-4178-9382-1352cfee5e42
+          name: Hazelcast
+        - uuid: 7e8d0758-f510-4111-80d3-a9e37224385b
+          name: Infinispan
+        - uuid: 4cb6adad-ed8f-47a0-b2e4-88a8ad737c07
+          name: JBoss Cache
+        - uuid: 10403320-67b5-4cab-a618-de477207e9c0
+          name: JCache
+        - uuid: 8ee64e8f-5483-4fc7-a270-2f29eb4e9f3b
+          name: Memcached
+        - uuid: 5701d3ec-d770-4e71-bc37-771ea0c70a80
+          name: Oscache
+        - uuid: 7d9f18c3-4cf8-4476-9033-c0e8de090a60
+          name: Redis
+        - uuid: 9c17fe8f-126f-45f6-b194-be4db46943ad
+          name: ShiftOne
+        - uuid: 7ac76322-0dd3-47bc-af14-ff5d0d619564
+          name: Spring Boot Cache
+        - uuid: 7d60c5f3-86b0-46cd-897a-c7ce4c72577d
+          name: Swarmcache
+    - uuid: 733b1cfd-ef39-4e69-9ed8-a620f667eef8
+      name: Clustering
+      color: '#40199A'
+      tags:
+        - uuid: 612c88af-c862-45f3-838e-73fd1df149f2
+          name: Web Session
+    - uuid: f4e48701-4349-4325-a698-338ee312d311
+      name: Configuration Management
+      color: '#2B9AF3'
+      tags:
+        - uuid: 70c337b0-af44-4e9f-ac25-f6eccbbe1e61
+          name: Spring Cloud Config
+        - uuid: 14979966-f027-44e2-87ce-d9d0156850f4
+          name: Spring Properties
+    - uuid: 4db79b7e-a0dc-4e31-955e-08d56ee446f1
+      name: Data Center
+      color: '#469990'
+      tags:
+        - uuid: 98a63de8-1ff2-49c5-89a3-27e76b044576
+          name: Boston (USA)
+        - uuid: dcc3a26f-b1ff-45cf-ac38-5eda12cff88c
+          name: London (UK)
+        - uuid: 63fc6c4f-468e-432b-8600-2a68333dcc92
+          name: Paris (FR)
+        - uuid: e11e0b40-e11c-4637-9cf2-3eff6b931b97
+          name: Sydney (AU)
+    - uuid: 02f4cfd7-02eb-4c75-a9e8-c1a27946c436
+      name: Database
+      color: '#009596'
+      tags:
+        - uuid: b0f4deb6-e88f-476a-88ac-7e3a75ca5816
+          name: JDBC
+        - uuid: 345daf40-2dce-404f-8479-cf6587dd42f1
+          name: JDBC datasources
+        - uuid: f54028ef-a2d5-4f43-8f3c-576cd9f30487
+          name: JDBC XA datasources
+    - uuid: 2a237c90-bc2b-4c05-b7f8-5dedd8d3ae4d
+      name: Database
+      color: '#009596'
+      tags:
+        - uuid: 0a3d9238-9abd-4501-a5c7-df202ad49aed
+          name: DB2
+        - uuid: c08bff3a-66b4-4869-95b8-20731de8492b
+          name: MongoDB
+        - uuid: 4592831c-971f-45b4-a979-40859e9554c8
+          name: Oracle
+        - uuid: 6ba3c184-b1fa-4e50-b044-1e6dcf2fe8b8
+          name: PostgreSQL
+        - uuid: 958bac82-a6c1-415c-8918-d959a88c8859
+          name: SQL Server
+    - uuid: 09e3f03c-fb16-48dc-a4fa-e533a2e08446
+      name: Database Driver
+      color: '#009596'
+      tags:
+        - uuid: c76a0564-64ca-443a-bec2-f92dd352a064
+          name: Apache Accumulo Client
+        - uuid: 28763683-6e97-483f-8178-87720a491ba6
+          name: Apache HBase Client
+        - uuid: e8ca5916-fae6-4908-8484-aed7ffe8a562
+          name: Axion Driver
+        - uuid: 7756a68c-7463-4f87-8b2f-60f0a223abc5
+          name: Cassandra Client
+        - uuid: 7cf6298b-0094-4e30-9d6f-4aec893e8f7e
+          name: Derby Driver
+        - uuid: cf5d8fc5-e31f-4d26-9c05-c6364ecfae74
+          name: H2 Driver
+        - uuid: 306fabc2-3a44-49ba-b614-c0563112201f
+          name: HSQLDB Driver
+        - uuid: 7c7c1232-8bb6-405d-9d59-6634fb4791cd
+          name: LevelDB Client
+        - uuid: edca2036-5913-4170-a8cc-e443a3f089fd
+          name: MckoiSQLDB Driver
+        - uuid: a4bad416-d839-4370-a3d3-df19682a58d2
+          name: Microsoft SQL Driver
+        - uuid: f94fe0ed-3d7d-421f-99f2-6221b9e176e9
+          name: MongoDB Client
+        - uuid: 8d28e29b-f918-4f91-a8ee-5cb4b91d3c81
+          name: MySQL Driver
+        - uuid: c8eea630-58ee-4125-a6c7-bd0d0ff1eab9
+          name: Oracle DB Driver
+        - uuid: a5e7f64a-2458-43df-a1de-3bd5ac0fde16
+          name: PostgreSQL Driver
+        - uuid: a77a5130-fb58-4c77-851c-b12d5a45a794
+          name: SQLite Driver
+    - uuid: a565bf63-c584-4877-8547-64230a0b36d9
+      name: HTTP
+      color: '#F032E6'
+      tags:
+        - uuid: 729d2641-7cb7-4d24-9302-e78e9eb62eff
+          name: JAX-WS
+        - uuid: 5bed190b-0fbe-4260-8760-3041acb95d07
+          name: Servlet
+        - uuid: afe68940-c4db-4697-8b5e-c3ec9255309b
+          name: Web Services Metadata
+    - uuid: 99a7d565-d22a-4a71-bd29-26ebd7c305e9
+      name: Integration
+      color: '#F032E6'
+      tags:
+        - uuid: 27246957-0e8d-4748-a01f-2c24c33e757b
+          name: 3scale
+        - uuid: 9aff7bca-5ff8-4a7b-8185-0498d4065885
+          name: Apache Camel
+        - uuid: 4fc27096-9913-4fdf-8239-7f179afb98e8
+          name: Apache Synapse
+        - uuid: efbc112a-0716-475a-a67b-37eff8cbb264
+          name: Apiman
+        - uuid: 86a379d0-488c-4619-ab39-ac4699e539f2
+          name: Camel
+        - uuid: 4464f707-a760-4eff-9feb-996ab252161f
+          name: Ikasan
+        - uuid: 8a9713d3-ff4d-435a-9c3c-b185d59284ef
+          name: Istio
+        - uuid: 9c2f8497-471f-4d75-a42c-ad331f01576d
+          name: Micrometer
+        - uuid: 81611b0b-205a-4859-b936-3684e17d8f35
+          name: Mule
+        - uuid: c2820cda-eeb2-4e30-8d54-669597c0ff5d
+          name: Petals EIP
+        - uuid: 40f17d31-df76-4144-b384-bbab845a15eb
+          name: ServiceMix
+        - uuid: f2c0923f-99ce-4585-8f2f-3d6f27ee63d6
+          name: Spring Integration
+        - uuid: acf46d6d-6239-46f2-92a2-eeae7b626aee
+          name: Swagger
+        - uuid: 249af310-552a-4b59-b298-9709320424b0
+          name: SwitchYard
+        - uuid: eadcb75f-f3f1-45e2-a8bc-39a7df745d36
+          name: Talend ESB
+        - uuid: 6ac1cf06-b8c0-4c2f-99e0-df2b56bc74d6
+          name: Teiid
+        - uuid: 8effed40-d688-4e6a-a542-5487d42c3d98
+          name: WSO2
+    - uuid: 857b8097-d125-4d9e-8d79-d5db3080df41
+      name: Inversion of Control
+      color: '#F032E6'
+      tags:
+        - uuid: aa14e8d8-191b-44fe-b4b5-194061d1e52a
+          name: Airframe
+        - uuid: bbdf97e8-e986-4111-92ff-80a967718c77
+          name: AOP Alliance
+        - uuid: 86feb314-e65a-4d15-8864-bb555e261a84
+          name: AspectJ
+        - uuid: 422028fa-ffdb-4c4a-985b-e42e4ff64e59
+          name: BeanInject
+        - uuid: afa8d703-4f04-412c-a14a-e8c24dd91365
+          name: CDI
+        - uuid: b1d22b5d-9c5f-4f2c-86c5-9c350305bb08
+          name: Cfg Engine
+        - uuid: 5eb6ab7a-2de6-416f-8213-288b54117d23
+          name: Dagger
+        - uuid: 28af4ceb-adce-4408-bf39-4b9312b8ecaf
+          name: GIN
+        - uuid: 2cb26785-87c5-45d5-876f-f8125a84537b
+          name: Google Guice
+        - uuid: 7e11cdc2-bd5e-4d2c-b123-e1f106128c6f
+          name: Grapht DI
+        - uuid: f24db375-58f1-4601-b23e-fe7e70b81248
+          name: Injekt for Kotlin
+        - uuid: 98dccb06-3106-4832-ad3a-ebaef2aeff16
+          name: Iroh
+        - uuid: 6081882d-5c5f-4afa-b426-d22aa03acb00
+          name: Javax Inject
+        - uuid: 9ff7fa68-0e66-49d6-94ff-96e41d2cc8fa
+          name: JayWire
+        - uuid: 09dac8f2-0807-4288-9f22-952fd3958a7d
+          name: Ka DI
+        - uuid: b3bde20e-c875-4a4f-a423-b6bedfa3e29b
+          name: Kodein
+        - uuid: ffb415a5-ff68-45f0-81a1-975ef7a7c485
+          name: KouInject
+        - uuid: dc969d87-0fd9-47d6-b6c3-8002bb848109
+          name: Macros
+        - uuid: 361a6083-7d58-4a39-a3e2-47544d92d691
+          name: Micro DI
+        - uuid: afa3aa4b-23df-4a5e-b6c2-28030df55488
+          name: Peaberry
+        - uuid: 803b3914-ca28-4604-a542-fc83f879e11a
+          name: PicoContainer
+        - uuid: c97e2c1c-b38b-4d17-aa5f-8e65d069d0bb
+          name: Plexus Container
+        - uuid: 2223669d-38d0-4503-a5ef-5e2247f8906b
+          name: Polyforms DI
+        - uuid: b3f398c4-dbfe-4a94-ab45-f6d528a8c91a
+          name: Scaldi
+        - uuid: 87f4518c-8b97-41f5-8649-48e1acc28b64
+          name: Silk DI
+        - uuid: fa494b38-085c-4312-bf48-9602d346c317
+          name: Spring
+        - uuid: 39f44813-139f-4e2f-b21a-ca317208ee48
+          name: Spring DI
+        - uuid: 2665a777-efcd-4274-b4f1-d7de795c9249
+          name: Sticky Configured
+        - uuid: e8b30299-8128-4173-b904-080cde1cf5d2
+          name: SubCut
+        - uuid: 0a7a275b-d234-4574-a4cd-4beedeb89465
+          name: Syringe
+        - uuid: a692ccb2-5bd9-4834-9b3b-4cf0682eb259
+          name: Tornado Inject
+        - uuid: fcf7224f-d344-4b3b-a07e-007c7613161c
+          name: Weld
+        - uuid: 72f301b1-d32a-4bb6-82f2-5fa2afcaa456
+          name: Winter
+    - uuid: 2b4ac540-7c68-4e4d-9139-d219aa6f2266
+      name: Language
+      color: '#F4C145'
+      tags:
+        - uuid: 71c58fe7-428b-4d7b-b11b-1b2776e3d094
+          name: C# ASP .Net
+        - uuid: 110c5295-7075-4d41-bfb0-342949e696de
+          name: C++
+        - uuid: 1d419470-5120-4092-8fa0-b10cca18be1c
+          name: COBOL
+        - uuid: 8152d95b-3578-4bf0-824d-eb73f260c8b0
+          name: Java
+        - uuid: c5a5ed54-9e47-4a13-8d58-94daab6f03ef
+          name: Javascript
+        - uuid: ef03f0a2-2c6e-41b6-928e-f52ccb591d48
+          name: Python
+    - uuid: 7197b149-b066-4e45-ae20-e5b630a86450
+      name: Logging
+      color: '#6EC664'
+      tags:
+        - uuid: 9b51bec7-6d91-4721-8823-84605507867d
+          name: Airlift Log manager
+        - uuid: 308a5d84-945c-4e9c-864b-0d482005a6eb
+          name: Apache Flume
+        - uuid: 1a1df8df-d69e-4e96-9b9c-0de4283dcb04
+          name: Avalon Logkit
+        - uuid: 676e23b8-16d3-4ac1-866a-a4c3545b5fdf
+          name: Blitz4J
+        - uuid: 9417e99b-f837-43fc-ac1b-fb3c0fa928d3
+          name: Commons Logging
+        - uuid: 5eb31162-e68e-42b4-a9a8-af7cd5aea6e3
+          name: Composite Logging JCL
+        - uuid: 5622e093-e6a5-42f5-9717-c866a55d3644
+          name: File system Logging
+        - uuid: cdd8d69c-b640-4748-9748-575db523382f
+          name: GFC Logging
+        - uuid: 766be992-2013-4e75-ad47-94a018cea1f2
+          name: JBoss logging
+        - uuid: 3fc0ca7c-c693-4605-9977-5f59dfc6903b
+          name: Jcabi Log
+        - uuid: af79a52f-41ea-4a40-8a39-e3358d49e0e6
+          name: Klogger
+        - uuid: 76a4d802-6e46-494b-855b-d846d906abaa
+          name: Kotlin Logging
+        - uuid: e9ad83f3-5dfb-42ef-b4ea-016f7ca80be3
+          name: Log.io
+        - uuid: 80035fdb-3794-4710-9c03-d8789fbadb78
+          name: Log4J
+        - uuid: c1d32857-e612-4664-b369-485275ac4456
+          name: Log4s
+        - uuid: 2b1ba55e-f2c2-4a25-9869-506631731e2e
+          name: Logback
+        - uuid: 310e8843-a62d-4e94-9bac-2eb2740ebb7d
+          name: Logging Utils
+        - uuid: fba03393-c1f3-49dc-baf1-3583ff6f6a1a
+          name: Lumberjack
+        - uuid: 5db47c48-c0c7-4dec-91fd-7f0e8a3c4e4b
+          name: MinLog
+        - uuid: 2ae06d50-743e-4a6b-b01c-82c5838a6c4d
+          name: Monolog
+        - uuid: b6a27ae4-9b22-4749-b0ee-d54005fcc079
+          name: NLOG4J
+        - uuid: bfb7c219-bebf-4327-b13d-b1ea9860e597
+          name: OCPsoft Logging Utils
+        - uuid: 425be43f-4734-4ca3-9af1-b3a821e45bc2
+          name: OPS4J Pax Logging Service
+        - uuid: f59c042c-3d24-477c-89d1-8529a77ce8f4
+          name: OW2 Log Until
+        - uuid: c51a5c2e-581d-493e-9046-4a7c58dc8785
+          name: Scribe
+        - uuid: 10618ab0-a48c-4a5b-ad79-ee625676ed86
+          name: SLF4J
+        - uuid: 3aa1f72f-3fb1-437b-9da6-1b285d8ea45c
+          name: Socket handler logging
+        - uuid: 58989e9b-c5b4-47cd-9d06-e2b115ce9a6e
+          name: tinylog
+        - uuid: f87e2908-09d2-4465-b7e5-a826c09f8f29
+          name: Twitter Util Logging
+    - uuid: 46a70a89-b223-4f3a-be09-2474f16ff1f9
+      name: MVC
+      color: '#40199A'
+      tags:
+        - uuid: 0240da21-4d11-44f6-9eff-4358e5625a57
+          name: Anakia
+        - uuid: 1b1ac377-961b-4df9-8705-680a1c6159d1
+          name: AngularFaces
+        - uuid: 6e93e6e5-3734-4986-bd02-89efd0ec432a
+          name: ANTLR StringTemplate
+        - uuid: da692f80-8482-47f5-b152-bfd145c2a54d
+          name: Apache Tapestry
+        - uuid: 81bd8318-5a66-4b62-b119-4b4ee9d66777
+          name: BabbageFaces
+        - uuid: 0e1c20b9-452b-473a-970d-db9630a85918
+          name: BootFaces
+        - uuid: 0887dad2-4133-4a56-82ef-759ae46ba82c
+          name: ButterFaces
+        - uuid: f64875e8-34d1-4acd-8ad2-f0bc6fcbbf20
+          name: Chunk Templates
+        - uuid: 64ab0e36-b03d-418f-bc4f-ce3fc58eb0dc
+          name: DVSL
+        - uuid: 9fc020c4-0352-4044-b600-3ad2af9cb208
+          name: FreeMarker
+        - uuid: ef26105e-b909-448f-9501-5e45e4310380
+          name: Grails
+        - uuid: 1da24004-efbd-4c7b-ae4d-6b10d3945b80
+          name: GWT
+        - uuid: a9a48c0b-ec5e-46fb-aa1d-e8a1c94e7e8c
+          name: Handlebars
+        - uuid: a6ad6b10-caa8-4a9a-9488-559f656fdb30
+          name: HighFaces
+        - uuid: 367cf2db-791a-48e8-9b18-b9487f860025
+          name: ICEfaces
+        - uuid: 3a01ada5-7374-4467-83b3-31dfd91c58be
+          name: Ickenham
+        - uuid: 4173ec8a-7c4d-41bf-8f5f-d21ec7cdfb10
+          name: Jamon
+        - uuid: ea525d67-a0f0-44b3-a9c6-7eb7c78e09a3
+          name: Jetbrick template
+        - uuid: 6fa174f5-c209-449c-b24e-fa907e7e67dc
+          name: JFreeChart
+        - uuid: cc9f308a-75fc-4f72-9221-87abd4126d0e
+          name: JMustache
+        - uuid: 5b28fe70-ff95-4352-aabb-acc2972a840c
+          name: JSF
+        - uuid: a56c0772-88b8-4979-9596-287ff5e191b1
+          name: JSilver
+        - uuid: f19e4537-4d40-471d-ba82-2a8adcec2df6
+          name: JSTL
+        - uuid: 9d143d01-fae3-4ef9-9a17-9ace43d2c095
+          name: LiferayFaces
+        - uuid: e21b1736-7976-4994-9c8d-f85e4b71d095
+          name: Mixer
+        - uuid: 884e8d2c-f3f7-4645-a484-de99cb4b8399
+          name: Myfaces
+        - uuid: a874a769-58fb-4501-a5ed-15d6d0bb1693
+          name: OmniFaces
+        - uuid: 19c3704e-bde5-45f4-82e3-66ee1cbeca6f
+          name: OpenFaces
+        - uuid: a43cd258-4356-49a7-950e-4ae72055953f
+          name: Oracle ADF
+        - uuid: 61a2a0ca-7bbd-42e4-8445-6ae7236e630c
+          name: Play
+        - uuid: 026a5429-efb5-46b1-ae5f-e24b1b3af8c7
+          name: Portlet
+        - uuid: ec83cdb8-16af-4217-8809-d325e1b66d75
+          name: PrimeFaces
+        - uuid: a5ab7db5-2247-4edd-9495-51ff067a2fa9
+          name: Richfaces
+        - uuid: 17e7fc7a-114b-4b07-bf26-8068907a8283
+          name: Rythm Template Engine
+        - uuid: c8bd49b2-c207-409c-97f3-e6626cbf4619
+          name: Scalate
+        - uuid: 6fc281c9-044c-4ae5-9403-402ace94e85c
+          name: Snippetory Template Engine
+        - uuid: 7b4e7a11-cc2e-432e-a6ef-3f0e8c87c167
+          name: Spark
+        - uuid: 126c3df3-90b1-476b-a189-0c411ed5e55b
+          name: Spring MVC
+        - uuid: 3119927f-410b-4b0c-ab9e-bf8f17e307ae
+          name: Stripes
+        - uuid: cbce5bb2-e79a-44ba-a306-68a1034ce22d
+          name: Struts
+        - uuid: 36758721-d444-486f-84de-f0026caceed2
+          name: Thymeleaf
+        - uuid: fa4110c6-af16-4410-9e84-38a81ace7e6e
+          name: TieFaces
+        - uuid: 218adb0c-f0d3-4ca5-a269-fbae9c915c2e
+          name: Trimou
+        - uuid: ccdfcc21-3eec-4bae-8cda-52360ce1d27f
+          name: Twirl
+        - uuid: 678e2c31-2afc-4e1d-8614-feffa33a73c2
+          name: UberFire
+        - uuid: 7e63474b-bead-4721-8a35-d30fe264d3d7
+          name: Vaadin
+        - uuid: cf050a89-ade7-4b87-bcf1-7ade938203ab
+          name: Velocity
+        - uuid: 1ea32985-0172-40b3-8724-d93ab176dd0a
+          name: Water Template Engine
+        - uuid: acd42300-30ff-45c9-a4c5-e49e5e17ad92
+          name: Webmarco
+        - uuid: 6150ce71-c344-4e6a-aa84-3a7a975dead2
+          name: Wicket
+    - uuid: 709e8a5b-9423-4c43-8df2-229915b75883
+      name: Markup
+      color: '#F4C145'
+      tags:
+        - uuid: cc84ab2a-71cb-4e79-a3fb-79e73642aa59
+          name: CSS
+        - uuid: 9508858c-b5a0-472b-8913-c4258f961a53
+          name: HTML
+        - uuid: 4b54e6ab-0b58-4145-984b-e0c7e3d9a42a
+          name: Javascript
+        - uuid: d7d75e48-a0cb-4d50-825e-1d0dfd7d9ac7
+          name: Spring Boot Flo
+    - uuid: 3a5090a9-acf8-445b-bd5b-612d4ae4b245
+      name: Messaging
+      color: '#F032E6'
+      tags:
+        - uuid: e244c9d9-097e-4a09-85ed-0d78a9f1318e
+          name: JMS Connection factory
+        - uuid: eac01bd4-a8e0-4891-8163-5adcd9a85854
+          name: JMS Queue
+        - uuid: c4215022-223d-4f8e-b1e4-a77db936b9bb
+          name: JMS Topic
+    - uuid: 24792c70-4ba1-4628-8e4c-5629f741913f
+      name: Object Mapping
+      color: '#EC7A08'
+      tags:
+        - uuid: 66dc2af4-cae3-4e73-b33c-f0b779ddd02f
+          name: EclipseLink
+        - uuid: 1eb8cb1c-82b4-4491-81a7-0d5010e9fecd
+          name: Hibernate
+        - uuid: e7b1bf12-4a92-4026-b599-5447fb490db6
+          name: Hibernate Cfg
+        - uuid: 2bca6d0d-daaa-4078-9368-71bb35eae6a8
+          name: Hibernate Mapping
+        - uuid: 257e2c3c-aa74-426e-b207-eae7181cd242
+          name: Hibernate OGM
+        - uuid: 1bd82263-893d-4fce-9b1e-65719941db41
+          name: Morphia
+        - uuid: ac724d49-2db1-4c32-8c47-cdce5e2e6542
+          name: Spring Data
+    - uuid: c933568f-8675-4bc9-978d-cdd719070a91
+      name: Observability
+      color: '#6EC664'
+      tags:
+        - uuid: 2d500cdb-007e-4da4-8e08-a865b201c150
+          name: Spring Boot Actuator
+        - uuid: 28ac309e-b103-47c9-9797-cffe0f4b1ea4
+          name: Spring JMX
+        - uuid: eb6914ae-5129-41b0-b71f-30515cc1088d
+          name: Zipkin
+    - uuid: d987e69b-d6c3-43a1-85c6-e5ee7383d568
+      name: Operating System
+      color: '#469990'
+      tags:
+        - uuid: 85824a4e-2dbe-4eaa-8ab3-bcee8f1b2f27
+          name: RHEL 8
+        - uuid: f289aa90-0dac-4716-99c2-7afc11bde95e
+          name: Windows Server 2016
+        - uuid: 42e6b70c-70e1-451a-8ba7-cd1b6812f710
+          name: Z/OS
+    - uuid: dd03257d-ac30-49ae-b7a2-2bb71995c93c
+      name: Other
+      color: '#2B9AF3'
+      tags:
+        - uuid: 27dadd41-f171-4a37-a250-364ca678eeb9
+          name: 0MQ Client
+        - uuid: eec74e97-3cd6-4c0f-a791-af6b5e4d3cf0
+          name: ActiveMQ library
+        - uuid: 9985a047-5cc3-4f31-9d0a-aa6d52672023
+          name: Amazon SQS Cient
+        - uuid: 8c2db09a-fee0-4ab4-8cb6-1d40270c1f56
+          name: AMQP Client
+        - uuid: fbe08ab3-3c57-4961-b6d6-63ebb76c6b4a
+          name: Camel Messaging Client
+        - uuid: bf90b160-df95-48aa-bb97-7771d3c4ab71
+          name: Common Annotations
+        - uuid: 91cf02bd-2a51-4d15-94b7-f9cfd7def281
+          name: EAR Deployment
+        - uuid: 8781d6c6-8496-4b5e-8d2b-42f53ce79cfa
+          name: HornetQ Client
+        - uuid: ef44087f-16cd-4339-8c93-50f59ba080a2
+          name: HTTP Client
+        - uuid: e941e70f-db1a-4968-8d8e-e89f1377dce6
+          name: Java EE JAXR
+        - uuid: f4c48c1f-487c-4dd2-af3e-5a3c8c97b92d
+          name: JBossMQ client
+        - uuid: 4fe200ea-9ab6-4e14-a6e2-53816ff735cf
+          name: JCA
+        - uuid: ad9bd4c3-d1ec-480c-97ed-eff61cfb467e
+          name: JNA
+        - uuid: 9d5888f1-1d4a-4103-8c15-19ea37ec0572
+          name: JNI
+        - uuid: 0c531959-42f1-4e1b-83a6-e1e364171b79
+          name: Mail
+        - uuid: 71e5b0e6-dcc5-4f32-908e-2d11c8bffa03
+          name: Properties
+        - uuid: 9cb9fdd3-6fad-4a18-8f75-164a67862744
+          name: Qpid Client
+        - uuid: 24569637-7697-4e6a-a3fe-4ed625812fd9
+          name: RabbitMQ Client
+        - uuid: c67ac918-7b2f-412e-9b87-09149b5deadb
+          name: Resource Adapter
+        - uuid: b0016c10-6888-419e-9c3f-d2017caec94d
+          name: RMI
+        - uuid: 90b60221-4427-452c-a90a-7e8322473b95
+          name: RocketMQ Client
+        - uuid: a1de0804-dd3a-414d-8bc7-cff097a03388
+          name: SNMP4J
+        - uuid: 806990e8-861e-481b-97be-dee3478e5651
+          name: Spring Messaging Client
+        - uuid: 21c59a8d-cd02-4797-b10a-70eff75e7bef
+          name: Zbus Client
+    - uuid: ef205cc9-d8e4-44dd-bd0a-4d48f4b20104
+      name: Persistence
+      color: '#009596'
+      tags:
+        - uuid: d0ac8ceb-16a1-4df7-9396-04cb641a1c7b
+          name: JPA entities
+        - uuid: 405f3eb4-79ec-465a-9727-e0ef3a3f466f
+          name: JPA named queries
+        - uuid: 7080967b-f98d-4288-997b-ac2321e71f07
+          name: JPA XML
+        - uuid: f19daf90-f023-44ab-ab10-c178c851978e
+          name: Persistence units
+        - uuid: 6b9cbdf3-53ae-4c93-b9bf-e045df4c72ab
+          name: Spring Data JPA
+    - uuid: 9a6d5994-2327-46b9-ad5d-a5a287b722c8
+      name: Processing
+      color: '#F032E6'
+      tags:
+        - uuid: b08f040c-fbcf-497f-a7f0-642a5fc30e8a
+          name: EJB Timer
+        - uuid: df3aac60-59bb-4f2e-b86d-a8de1e409267
+          name: Eureka
+        - uuid: 96387bf8-556f-4711-9dc4-af8c3acc531e
+          name: Feign
+        - uuid: 0fd71a91-437c-409a-bf5b-823173ad2f34
+          name: Java EE Batch
+        - uuid: 1682ed0c-fffb-4903-b38a-dd4a13cb56dc
+          name: Java EE Batch API
+        - uuid: 5012ec73-be82-4c15-88bb-e3880beafc17
+          name: Java EE JSON-P
+        - uuid: c7c99edd-f72e-4ffa-b307-0c54bdb960d2
+          name: Java Threads
+        - uuid: b625dbd5-970a-45a7-829b-7bd7930481ce
+          name: Quartz
+        - uuid: 4654d5e7-9cb6-45b5-9cd3-2855efa30c2a
+          name: Spring Batch
+        - uuid: 20e98772-7abe-4473-b8eb-42c6d247ee1e
+          name: Spring Scheduled
+    - uuid: 79089caa-7f16-4922-8d6f-f0b4711e7758
+      name: REST
+      color: '#F032E6'
+      tags:
+        - uuid: 0fcd8fb9-c7db-4e6b-9fdb-eaf06e42f88f
+          name: JAX-RS
+        - uuid: a4223893-fa50-492b-8cae-ce77618fb34d
+          name: Jersey
+        - uuid: 2403c7f1-eea0-496d-b91f-5dea9b9b6b5d
+          name: Unirest
+    - uuid: a9ab92f8-d107-47e9-9037-0230716cc262
+      name: Rich
+      color: '#BFEF45'
+      tags:
+        - uuid: f0a2d903-15e4-4a3b-80db-d1f89c6583e3
+          name: Applet
+        - uuid: 5224267c-323e-40f6-8095-d0568e9106b7
+          name: EclipseRCP
+        - uuid: 9c85615e-6eb8-48fb-8df9-f161b2bd9613
+          name: FormLayoutMaker
+        - uuid: 5ca3b843-2359-4b1f-9274-323fe5e36737
+          name: JavaFX
+        - uuid: 54f8b3db-7702-4647-8234-41b8008db1b3
+          name: JGoodies
+        - uuid: 51aea467-b845-4d55-8b5f-bf19ffc3eca8
+          name: JNLP
+        - uuid: 1c5d1d25-8f82-497d-95b4-be176a8ef816
+          name: MagicgroupLayout
+        - uuid: 18362314-166b-4b08-8927-ef9edcb73d63
+          name: MiGLayout
+        - uuid: caa91f0e-99ad-427d-8e74-47b256952afd
+          name: Standard Widget Tookit (SWT)
+        - uuid: 5aca8657-f822-40e8-bb50-7c48db36023d
+          name: Swing
+    - uuid: 6e5e9f2b-01ab-4446-b6cf-420765308c78
+      name: Rules and Processes
+      color: '#F4C145'
+      tags:
+        - uuid: 65c0d640-ce7c-41b2-9b53-011c3efd9df6
+          name: Blaze
+        - uuid: 595ca1a6-348a-4eb5-b832-2595fee163ec
+          name: Camunda
+        - uuid: 2a14d0f2-8951-48f4-8734-c783eefcbedd
+          name: Drools
+        - uuid: db311b1a-6a17-4ea7-91cc-8881291e474c
+          name: Easy Rules
+        - uuid: 9ed9106a-2296-49e6-ab92-e2148a7ffcb7
+          name: iLog
+        - uuid: 95a3f6e6-7c4c-4fda-9bc1-43bcd6b1e8b2
+          name: JBPM
+        - uuid: 60d4f5c1-fa3b-4e86-992f-497fe087bb92
+          name: MRules
+        - uuid: 83301367-8f3e-4d90-8b8b-0440d3c91879
+          name: Pega
+    - uuid: 23ee9e7a-c78e-4de8-9094-144ae6815ae3
+      name: Runtime
+      color: '#40199A'
+      tags:
+        - uuid: e04ead59-603a-444c-a978-d8e560874b92
+          name: EAP
+        - uuid: 17a681e4-383b-45d3-8767-72574e256302
+          name: JWS
+        - uuid: 773f1061-c6fc-4416-8283-a532a9977fd7
+          name: Quarkus
+        - uuid: cb7e6819-1ab1-4549-aa1e-961d08c2f235
+          name: Spring Boot
+        - uuid: 3a04a258-4ff0-4e0f-b79a-bb4936d1d13d
+          name: Tomcat
+        - uuid: 826951b1-20de-43e8-9c54-367ffc8eb2a8
+          name: WebLogic
+        - uuid: 1e5e190b-0567-43c7-87c1-e3b4cbab14f5
+          name: WebSphere
+    - uuid: 0819ee6b-2e39-4080-9cc6-f10feef74a6a
+      name: Security
+      color: '#D95F55'
+      tags:
+        - uuid: 5a5bfd6d-7255-4f87-8afd-2b331dd2d44f
+          name: Acegi Security
+        - uuid: 5e799e7a-abc0-495a-9849-06219ca8aa67
+          name: AcrIS Security
+        - uuid: e240c369-cfa3-4604-86e6-6b7d0882bdb3
+          name: Apache Commons Validator
+        - uuid: 3b938c74-118b-490d-bc0e-7234abd2a269
+          name: Bouncy Castle
+        - uuid: 19cbdc69-4fc3-4c74-a33b-a70cd13aff5d
+          name: Hdiv
+        - uuid: 01f956ce-8385-44d7-9ea3-3fe839af9205
+          name: Jasypt
+        - uuid: d2f8bd6a-07f4-4c82-9d24-cb3e5e1d33f6
+          name: Java EE JACC
+        - uuid: b07bad6c-e088-4ae4-b29c-e9aa96396a76
+          name: JSecurity
+        - uuid: 0c194b91-ef8c-4d1a-8a50-f282d6d3ec2c
+          name: Keyczar
+        - uuid: dccebb43-f126-42f2-833c-8e4b0a8e68f5
+          name: OACC
+        - uuid: 62dbc161-5966-4072-a234-24022b426178
+          name: OAUTH
+        - uuid: 95a720b3-7285-4d34-bd35-5738c2bbdc3b
+          name: OpenSAML
+        - uuid: 6bc09718-c009-4f8b-81d6-a4bae33e3ccf
+          name: OTR4J
+        - uuid: d0e72435-362f-4c35-98fa-d337bc47a205
+          name: OWASP CSRF Guard
+        - uuid: 82a57078-547c-4f1d-8ea3-ec4128027013
+          name: OWASP ESAPI
+        - uuid: ea05c94c-284e-4f84-a736-412b35a0ba02
+          name: PicketBox
+        - uuid: fc8d556b-c4bd-4efd-910e-efc269f951e5
+          name: PicketLink
+        - uuid: 932f5765-da9d-414e-ab35-dfc8d18ae569
+          name: SAML
+        - uuid: bdeac39d-c36c-4f0a-9639-5e82e92e0cff
+          name: Santuario
+        - uuid: 40688913-c51e-4318-8abe-12322630f249
+          name: Security Realm
+        - uuid: 984b3007-c90b-4065-86c2-92b4207d7305
+          name: Shiro
+        - uuid: aaa3822b-3f5b-44f8-90c8-eae921be983a
+          name: Spring Security
+        - uuid: 46b8983f-a469-4534-b6c4-1714412eae88
+          name: SSL
+        - uuid: 3358c0c5-9151-46ae-98a8-f1fa0bd5fdcd
+          name: Trunk JGuard
+        - uuid: 603fdf27-a561-47bc-ae8c-5d582ce1858f
+          name: Vlad
+        - uuid: a4b0c2de-71c4-437e-b187-56ec0f57171c
+          name: WSS4J
+        - uuid: b81005f9-717e-4885-9709-770a23a6536a
+          name: XACML
+    - uuid: 70343517-f3e0-4b6e-81e4-7fb0c1551dc1
+      name: Serverless / FAAS
+      color: '#40199A'
+      tags:
+        - uuid: b3743c9b-9e44-4e32-8cad-38053cd04d6c
+          name: Spring Cloud Function
+    - uuid: c893a17f-fc7f-4fe0-8bed-e8e9089a90fe
+      name: Test
+      color: '#F4C145'
+      tags:
+        - uuid: ed8a8371-2cd4-4abe-baa9-b539041675f2
+          name: Akka Testkit
+        - uuid: 1b0318f4-a68b-4a17-8fc4-484d32ba39d9
+          name: Arquillian
+        - uuid: 2b7089ad-97d8-4add-a54e-da287c8a1c13
+          name: Catus
+        - uuid: a336d6eb-ae50-442f-8af8-e7322282eac7
+          name: Concordian
+        - uuid: 8b884d2b-e364-4eba-9467-5605790bbd2a
+          name: Cucumber
+        - uuid: e5dd3bab-f6bd-48a9-8e23-594cf829a449
+          name: DBUnit
+        - uuid: 23bfd081-04d4-4e7a-af29-2de924eaabcd
+          name: EasyMock
+        - uuid: a553290f-c8f1-45be-8b89-11cdd599a919
+          name: EtlUnit
+        - uuid: 41057172-0c2a-43be-a81a-170b09d1a9a6
+          name: Guava Testing
+        - uuid: 2e9b9254-5388-479c-8037-1b6f6d8c26fb
+          name: Hamcrest
+        - uuid: 206441cb-180e-45f9-9f18-a37337ec8ed0
+          name: HavaRunner
+        - uuid: c68c3072-544e-4b3d-ae22-2d9d235ff330
+          name: HttpUnit
+        - uuid: 37c5a1d1-3de7-4e10-bec0-c0a768aa7fa5
+          name: JBehave
+        - uuid: 9e65cd0a-9925-4340-bd87-fc2eae589e9e
+          name: JCunit
+        - uuid: f8a36ec5-89a1-4aa8-8d2d-53ee8f34b9e0
+          name: JFunk
+        - uuid: 43b942a5-a04e-4b20-b51e-9b69776cb679
+          name: JMock
+        - uuid: 2c14d6bd-ec52-4c44-afcf-dcd99fa3e950
+          name: JMockit
+        - uuid: 4e3881f8-9adc-4410-abcc-0bd50eb0c4d2
+          name: JPA Matchers
+        - uuid: c0c45947-b9aa-4ee6-add4-9f8d2926227e
+          name: Jukito
+        - uuid: 7121dfcf-6896-4a34-9252-ab2241a7cba0
+          name: JUnit
+        - uuid: 5e31949e-18b6-4716-9cc1-b3ad72165d4c
+          name: Mockito
+        - uuid: bf7cce69-ae2e-4721-9224-c1792f204848
+          name: Mule Functional Test Framework
+        - uuid: 04f7e68e-8359-4a45-86be-881d4326e444
+          name: MultithreadedTC
+        - uuid: 08fdba7f-057e-438a-9b69-7022853d3e24
+          name: Needle
+        - uuid: cf73bdc3-8884-47cc-b616-be12f3cdcd70
+          name: OpenPojo
+        - uuid: 5eae7f91-3f42-4b43-831e-fd347950ccb3
+          name: Play Test
+        - uuid: eb828f9c-aaec-454e-8a8a-b714d1df6b3f
+          name: PowerMock
+        - uuid: 6e9cdcd1-b02a-4b81-a498-ad378355d2c4
+          name: Randomized Testing Runner
+        - uuid: 2edb5baf-f782-43cf-9e6b-ee295782dfcd
+          name: REST Assured
+        - uuid: 84d4b8b3-3345-4ae8-9b8c-29b1249fc11f
+          name: Restito
+        - uuid: 5c69b4ee-f0e0-44e7-80b6-5e546d7c859e
+          name: Specsy
+        - uuid: 1b964ee2-79ed-46e4-be3b-67f0e75422a1
+          name: Spock
+        - uuid: a8dca05b-3c04-46bd-b70b-a6f1b93e952e
+          name: Spring Test
+        - uuid: 4ce02363-2997-41f4-a3c1-1a329aa33b42
+          name: Test Interface
+        - uuid: 24ea3e0c-5a48-4d00-b15f-3a3fda9782b4
+          name: TestNG
+        - uuid: 2812b449-aec4-433b-b1eb-abb9e51a6c3a
+          name: Unitils
+        - uuid: 2886c23d-7c7b-4d68-9344-1bd7a7760e7a
+          name: XMLUnit
+    - uuid: 3608eb42-2421-40a4-9476-9d661462a25f
+      name: Transaction
+      color: '#40199A'
+      tags:
+        - uuid: 56299642-9ed5-4181-b25c-48a3d7d76230
+          name: AKKA JTA
+        - uuid: 0b9c13e0-2b8d-4c66-a7f4-c712fa21e7d7
+          name: Apache Meecrowave JTA
+        - uuid: 507b7d14-52c7-49e2-b005-a15e34187269
+          name: Apache Sirona JTA
+        - uuid: a71d8be4-c696-4c2c-afa6-efb3f9a95b8a
+          name: Atomikos JTA
+        - uuid: 290cec04-e827-4c9d-9d89-40e061a6327a
+          name: Demoiselle JTA
+        - uuid: c35d4fbc-607c-4b21-8652-860bec6d4651
+          name: Everit JTA
+        - uuid: 057967ba-f3e7-44e8-baa0-770946a3be71
+          name: Evo JTA
+        - uuid: 182a8d8e-0b00-4d7b-b96e-cefb63d1362e
+          name: Geronimo JTA
+        - uuid: 7cc067ad-71b9-405a-aaee-8cff98c61e91
+          name: GlassgFish JTA
+        - uuid: 5bc183c1-e672-4a76-b5fa-906eaf01ba4c
+          name: Ignite JTA
+        - uuid: f69ae23f-b1f4-4a1a-ab2d-6068fde0f7a1
+          name: Java Transaction API
+        - uuid: 0a92b590-918e-41b3-95b8-0bfaba6c844f
+          name: JBoss Transactions
+        - uuid: 2631173b-2cb9-4cf2-8caa-233a66308fa8
+          name: JTA
+        - uuid: 29154a3d-1a31-440c-a7c0-0a8a581073d7
+          name: KumuluzEE JTA
+        - uuid: 7d62167b-694d-420c-ba9d-41f5d0f05bad
+          name: Lift JTA
+        - uuid: d766e7a4-8819-44b0-bdbb-ad90dddbc6ca
+          name: Mycontainer JTA
+        - uuid: 23830700-ee63-4cd8-935a-bee99d5b996f
+          name: Narayana Arjuna
+        - uuid: 057e6f63-e843-4842-aa54-bb68dad5bff3
+          name: Nuxeo JTA/JCA
+        - uuid: 9433165f-5da9-474c-ba03-488df0207a58
+          name: OW2 JTA
+        - uuid: 8c3e8c81-2b74-40cb-8c6b-86829e74eac7
+          name: Spring Transactions
+        - uuid: fff36a0f-ae2e-49fe-9321-461e63984a0a
+          name: WF Core JTA
+    - uuid: 732ac587-ef52-427b-9202-be81c5d47384
+      name: Utilities
+      color: '#2B9AF3'
+      tags:
+        - uuid: 326ab038-2ecf-4b54-b6b8-9dfc15f899fb
+          name: Spring Shell
+    - uuid: 5ed642e4-8dae-4b4b-be90-aef694403a30
+      name: Validation
+      color: '#EC7A08'
+      tags:
+        - uuid: bea5b9c2-c63c-4bab-aeb9-d79dfe50d446
+          name: Bean Validation
+    - uuid: 7e9749a1-6b2c-4035-86ae-a74823e73c6e
+      name: Web
+      color: '#F032E6'
+      tags:
+        - uuid: b2abb68b-df40-47fa-8e4e-f0b982fd796f
+          name: JBoss Web XML
+        - uuid: 5c8602e6-c89d-4686-b1bf-72746da6587d
+          name: JSF Page
+        - uuid: 0a9c8d2a-b6c5-45c9-8ab1-3112bb1df13a
+          name: JSP Page
+        - uuid: 6c4ead1a-e70d-424e-8420-0079f6da42ec
+          name: Orion Web XML
+        - uuid: a7119325-5f5b-4efd-95b0-405d6923e9d3
+          name: Seam
+        - uuid: 94e8440a-5e1a-43ed-ac2d-df98662ddebc
+          name: Spring Web
+        - uuid: 693b12da-7415-4e08-a002-7486d1968880
+          name: Web XML File
+        - uuid: 175c35fb-7bf4-4aed-aa69-e74133344513
+          name: WebLogic Web XML
+        - uuid: 5ca89b79-0152-4de4-9e8d-ded00a10c5f8
+          name: WebSocket
+        - uuid: 5bc63d38-0ec2-4b45-bc91-70ddda357571
+          name: WebSphere Web XML
+    - uuid: ce7d6932-5939-4812-85ca-18133aa2336f
+      name: Web Service
+      color: '#40199A'
+      tags:
+        - uuid: 2c048dae-903e-4e9f-8b0d-fa4b905ea79d
+          name: Axis
+        - uuid: 44960a76-9a1b-4918-b912-1ceb7cd2e41c
+          name: Axis2
+        - uuid: 0d1b57d4-bbfc-4cf1-a211-c23ef4067919
+          name: CXF
+        - uuid: 4e7ee0c4-e9d1-465e-8d0b-4e62946b20d8
+          name: OpenWS
+        - uuid: 297c378e-b020-4ae4-8a5c-d83fd1b366b3
+          name: WebSphere WS Binding
+        - uuid: 008e6ca7-8340-45e5-9d03-aadc9eb50862
+          name: WebSphere WS Extension
+        - uuid: 3356a87b-9fb4-45a9-9857-40454f536ec6
+          name: WSDL
+        - uuid: 901d5438-a9fb-4d85-a7e4-a8034efe918c
+          name: XFire

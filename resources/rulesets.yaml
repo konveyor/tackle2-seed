@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: f9dc9bba27a00d72054813e5afd7787873605bac0fcfb6409f84f0eb74575860
+      checksum: fc14daf37e72c146b9700c093ac0708e65c9d5f8ebeba45895530f140724f01c
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.

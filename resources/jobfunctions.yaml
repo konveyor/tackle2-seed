@@ -1,0 +1,27 @@
+kind: JobFunction
+version: 1
+items:
+    - uuid: b43e1495-26b6-4afe-b213-d419ec31942a
+      name: Business Analyst
+    - uuid: 9bab287f-0caa-4a67-9a13-ffb404adf068
+      name: Business Service Owner / Manager
+    - uuid: f9e9c2a4-a8c4-4c28-ac90-5334d346ae7d
+      name: Consultant
+    - uuid: 79116954-7c18-4d40-bbd6-915b5487c56b
+      name: DBA
+    - uuid: 2e450572-8abf-40a2-99d6-827dbfdddf82
+      name: Developer / Software Engineer
+    - uuid: 11f158bc-4413-4358-8905-989e82372262
+      name: IT Operations
+    - uuid: 3e8cb6d4-b1b2-4536-8654-317e21523c66
+      name: Program Manager
+    - uuid: 604925a4-8917-47a7-b9e4-205b52c96020
+      name: Project Manager
+    - uuid: 20545e17-b0f0-4481-8ac9-b1f2d4f2a3e6
+      name: Service Owner
+    - uuid: 2d58906b-a7e6-4c00-b21c-4d9512c3649b
+      name: Solution Architect
+    - uuid: 3642918a-24b2-49e1-9ada-662a383b82a2
+      name: System Administration
+    - uuid: 2527c50b-dbf9-43a0-b5db-64250b193497
+      name: Test Analyst / Manager
