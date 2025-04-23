@@ -20,6 +20,24 @@ items:
       labels:
         - name: Containerization
           label: konveyor.io/target=cloud-readiness
+    - uuid: 883f8514-fbbe-4b11-985d-3f416f2321c9
+      name: Spring Framework
+      description: Upgrade to the latest release of Spring Framework.
+      provider: Java
+      imagepath: images/spring.svg
+      choice: true
+      labels:
+        - name: Spring Framework 6
+          label: konveyor.io/target=spring6
+    - uuid: c7f60112-b246-45b2-a997-354da594b2ec
+      name: Spring Boot
+      description: Upgrade to the latest release of Spring Boot.
+      provider: Java
+      imagepath: images/springboot.svg
+      choice: true
+      labels:
+        - name: Spring Boot 3
+          label: konveyor.io/target=spring-boot3
     - uuid: c038c915-a52c-4b45-a29d-d4494622ff72
       name: Quarkus
       description: Rules to support the migration of Spring Boot applications to Quarkus.
