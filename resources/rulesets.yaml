@@ -20,7 +20,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 1afb4330407cfc125cd511bd6632fbd51c4cbbbb18ad1fb189d5b7eed90966ad
+      checksum: 7c7d32066054bea8a98fcdb77fb965769bd1b8fef9c9829406c6ab37c95c6fbf
     - uuid: eb900f9e-6ff3-413d-9023-167765ce1311
       name: droolsjbpm
       description: This ruleset provides help for migrating to a unified KIE (Knowledge Is Everything) API in the upgrade from version 5 to 6.
@@ -43,7 +43,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 75ccd0ab478914359cd502bbed87938cf69b61c3bb0b8b8e760a1e24dcd52d87
+      checksum: ae711796a2134e8744e304b84ae514277808078d2e1e9fb2e5aaa57d4ed61bf2
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: fc14daf37e72c146b9700c093ac0708e65c9d5f8ebeba45895530f140724f01c
+      checksum: 87fe4b00ca5b13078eb530b371e5803c79cb7c8777113792488938c6a85675f4
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.
@@ -113,7 +113,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: de8c2ff00050175e53a55cddb1b61fc846cc40ed563ab0382f56d0ab9281c7c9
+      checksum: 0b84b48d59d1d88989d4f6a457ffd8053dcc9a6e61544c272fd9cc4b9d7be813
     - uuid: 53ba6b0f-ad48-4211-9673-a2065c2a4b4d
       name: openliberty/websphere
       description: This ruleset identifies usage of Java APIs and technologies which are not provided by Open Liberty.
@@ -121,7 +121,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: b25ef01d5a5b519e20612448b5c5dd49e16a470460b1dd0bba012d5b928cb3f6
+      checksum: 31968b4b4a8c9cb2cc197b717fd45d2e0a2b7d5a7c8106c4a449f92be4a10414
     - uuid: feb6648e-dd3c-4536-bf99-e40ee124653d
       name: os/windows
       description: This is a ruleset for Windows operating system specific rules while migrating to Linux operating system.
@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 2f191d559d5d962dfa587c356173da8f4668a26e43f826778807d66503510319
+      checksum: 0b704a742daf7377b583a0c1072d2135ed1b3cfc77ab484cdae43aef24b7dc11
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -150,7 +150,7 @@ items:
       name: .technology-usage
       description: This ruleset provides analysis of logging libraries.
       directory: rulesets/technology-usage
-      checksum: 97e2fe43bab9402f88db17984716c5bbd3b14bb7ae1e31a0899784a7d50d29cf
+      checksum: 9932d955d469782dea6ad274b5e280e1cb37cdc9c1153e736f9d5faa1508143a
     - uuid: 2a3357e3-c79f-4875-a869-b38cb28ac498
       name: camel3
       description: Rules for changes between Camel 3.0 and Camel 4.0
@@ -190,11 +190,23 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: f784dd8cb1f99abf28270f0220832a0026b224b91f1d1c27f1227afd49d36266
-    - uuid: 691164c7-d2dc-45d2-a23d-35ee6f8576c1
-      name: dotnet/dotnetframework
-      description: This ruleset provides analysis with respect to API changes between .NET Framework and newer versions of .NET.
-      directory: rulesets/dotnet
+    - uuid: 11c37c8c-427b-48cb-a7fd-dc007093ee69
+      name: eapxp6/eapxp5
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 5 to 6.
+      directory: rulesets/eapxp6
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 7651bc29c4391898322e7d32608819df364d4570bda135b2258c56b39fb0465f
+      checksum: a1214aa412f560b2c75a02b5a82f7033da8477fefd07bebcb033802eaeb6eadf
+    - uuid: d591b400-7f43-4f2e-a62c-df8f2f081c85
+      name: spring-boot
+      directory: rulesets/spring-boot
+      checksum: 9413bcb7c688d5afe5fab3f935eb3e1bec81878ef9a91bc9cf3dece87746dc3e
+    - uuid: d6266621-4830-4fcb-84fb-b6676ff0e6e4
+      name: spring-framework
+      description: Ruleset for migration of Spring Framework versions
+      directory: rulesets/spring-framework
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: ea68230e1943f92a598a05589c438596a52d5be31501ac1e564c8d6ee0408341
