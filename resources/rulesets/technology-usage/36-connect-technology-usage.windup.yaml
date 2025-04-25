@@ -1,4 +1,5 @@
 - customVariables: []
+  description: Java Connect
   labels:
   - konveyor.io/include=always
   links: []
@@ -16,6 +17,7 @@
         location: ANNOTATION
         pattern: jakarta.ws.rs.Path
 - customVariables: []
+  description: JNI usage
   labels:
   - konveyor.io/include=always
   links: []
@@ -122,6 +124,7 @@
     - builtin.file:
         pattern: ra\.xml
 - customVariables: []
+  description: Resource Adapter
   labels:
   - konveyor.io/include=always
   links: []
@@ -134,6 +137,7 @@
     builtin.hasTags:
     - Resource Adapter
 - customVariables: []
+  description: ActiveMQ
   labels:
   - konveyor.io/include=always
   links: []
@@ -146,6 +150,7 @@
     builtin.hasTags:
     - ActiveMQ
 - customVariables: []
+  description: OpenWS
   labels:
   - konveyor.io/include=always
   links: []
@@ -158,6 +163,7 @@
     builtin.hasTags:
     - OpenWS
 - customVariables: []
+  description: WSDL
   labels:
   - konveyor.io/include=always
   links: []
@@ -170,6 +176,7 @@
     builtin.hasTags:
     - WSDL
 - customVariables: []
+  description: RabbitMQ Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -182,6 +189,7 @@
     builtin.hasTags:
     - RabbitMQ Client
 - customVariables: []
+  description: Spring Messaging Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -194,6 +202,7 @@
     builtin.hasTags:
     - Spring Messaging Client
 - customVariables: []
+  description: Camel Messaging Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -206,6 +215,7 @@
     builtin.hasTags:
     - Camel Messaging Client
 - customVariables: []
+  description: Amazon SQS Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -218,6 +228,7 @@
     builtin.hasTags:
     - Amazon SQS Client
 - customVariables: []
+  description: HornetQ Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -230,6 +241,7 @@
     builtin.hasTags:
     - HornetQ Client
 - customVariables: []
+  description: AMQP Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -242,6 +254,7 @@
     builtin.hasTags:
     - AMQP Client
 - customVariables: []
+  description: RocketMQ Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -254,6 +267,7 @@
     builtin.hasTags:
     - RocketMQ Client
 - customVariables: []
+  description: 0MQ Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -266,6 +280,7 @@
     builtin.hasTags:
     - 0MQ Client
 - customVariables: []
+  description: JBossMQ Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -278,6 +293,7 @@
     builtin.hasTags:
     - JBossMQ Client
 - customVariables: []
+  description: Zbus Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -290,6 +306,7 @@
     builtin.hasTags:
     - Zbus Client
 - customVariables: []
+  description: Qpid Client
   labels:
   - konveyor.io/include=always
   links: []
@@ -302,6 +319,7 @@
     builtin.hasTags:
     - Qpid Client
 - customVariables: []
+  description: Kafka Client
   labels:
   - konveyor.io/include=always
   links: []

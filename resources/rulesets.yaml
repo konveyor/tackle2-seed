@@ -190,11 +190,24 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: f784dd8cb1f99abf28270f0220832a0026b224b91f1d1c27f1227afd49d36266
-    - uuid: 691164c7-d2dc-45d2-a23d-35ee6f8576c1
-      name: dotnet/dotnetframework
-      description: This ruleset provides analysis with respect to API changes between .NET Framework and newer versions of .NET.
-      directory: rulesets/dotnet
+    - name: eapxp6/eapxp5
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 5 to 6.
+      directory: rulesets/eapxp6
       dependencies:
-        - 10667615-e067-45b4-a925-563a79ea0949
-        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 7651bc29c4391898322e7d32608819df364d4570bda135b2258c56b39fb0465f
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: a1214aa412f560b2c75a02b5a82f7033da8477fefd07bebcb033802eaeb6eadf
+    - name: spring-boot
+      description: Ruleset for migration of Spring Boot
+      directory: rulesets/spring-boot
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 394bfb4e75aa8486a16eedaf2486d3a6867d44bf987d178b12c9f08f8bfcc777
+    - name: spring-framework
+      description: Ruleset for migration of Spring Framework versions
+      directory: rulesets/spring-framework
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: ea68230e1943f92a598a05589c438596a52d5be31501ac1e564c8d6ee0408341
