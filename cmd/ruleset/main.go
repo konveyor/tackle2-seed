@@ -100,14 +100,14 @@ func (r *Cmd) Main() (err error) {
 }
 
 func (r *Cmd) Reconcile() (err error) {
-	bash := Bash{}
 	tmpDir, err := ioutil.TempDir("", "ruleset-*")
 	if err != nil {
 		return
 	}
 	remote := path.Join(r.Remote.Path, RemoteRuleSets)
 	dest := path.Join(tmpDir, RuleSets)
-	err = bash.Run("cp", "-r", remote, dest)
+	bash := Bash{Silent: true}
+	err = r.CopyTree(bash, 2, remote, dest)
 	if err != nil {
 		return
 	}
@@ -121,6 +121,7 @@ func (r *Cmd) Reconcile() (err error) {
 	if !r.Manifest.Current.Dirty() {
 		return
 	}
+	bash = Bash{}
 	b := bash.Ask("Apply approved changes?")
 	if b {
 		err = r.Apply()
@@ -173,9 +174,42 @@ func (r *Cmd) ReplaceDir(ruleSet *pkg.RuleSet) (err error) {
 		return
 	}
 	bash = Bash{}
-	err = bash.Run("cp -r", remote, current)
+	err = r.CopyTree(bash, 1, remote, current)
 	return
 }
+
+func (r *Cmd) CopyTree(bash Bash, depth int, source, dest string) (err error) {
+	if depth == 0 {
+		return
+	}
+	entries, _ := os.ReadDir(source)
+	if err != nil {
+		return
+	}
+	err = bash.Run("mkdir -p", dest)
+	if err != nil {
+		return
+	}
+	for _, ent := range entries {
+		if ent.IsDir() {
+			err = r.CopyTree(
+				bash,
+				depth-1,
+				path.Join(source, ent.Name()),
+				path.Join(dest, ent.Name()))
+			continue
+		}
+		err = bash.Run(
+			"cp",
+			path.Join(source, ent.Name()),
+			dest)
+		if err != nil {
+			return
+		}
+	}
+	return
+}
+
 func (r *Cmd) Delete(ruleSet *pkg.RuleSet) (err error) {
 	bash := Bash{}
 	p := path.Join(r.Path, ruleSet.Dir())
