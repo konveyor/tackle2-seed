@@ -197,6 +197,9 @@ func (r *Cmd) CopyTree(bash Bash, depth int, source, dest string) (err error) {
 				depth-1,
 				path.Join(source, ent.Name()),
 				path.Join(dest, ent.Name()))
+			if err != nil {
+				return
+			}
 			continue
 		}
 		err = bash.Run(
