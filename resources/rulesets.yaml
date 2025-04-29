@@ -12,7 +12,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 669b6a395d0638db5a7efeebc0efddd83d9bacaeabe71e54ee27288024218228
+      checksum: 8c3fcb7401f3b841cdbef2d903437612d5140025346df0b57f2a8ee2f5aa4d77
     - uuid: e92057bc-5b66-4f7d-976f-f76aa3ad50e6
       name: camel3/camel2
       description: Rules for changes in XML file (e.g. pom.xml) to run on Apache Camel 3
@@ -150,7 +150,7 @@ items:
       name: .technology-usage
       description: This ruleset provides analysis of logging libraries.
       directory: rulesets/technology-usage
-      checksum: 9932d955d469782dea6ad274b5e280e1cb37cdc9c1153e736f9d5faa1508143a
+      checksum: 5f80388f67796776cc520bb2098ac7cf850b48674190696e4343b6e8b29ac674
     - uuid: 2a3357e3-c79f-4875-a869-b38cb28ac498
       name: camel3
       description: Rules for changes between Camel 3.0 and Camel 4.0
@@ -200,8 +200,9 @@ items:
       checksum: a1214aa412f560b2c75a02b5a82f7033da8477fefd07bebcb033802eaeb6eadf
     - uuid: d591b400-7f43-4f2e-a62c-df8f2f081c85
       name: spring-boot
+      description: Ruleset for migration of Spring Boot
       directory: rulesets/spring-boot
-      checksum: 9413bcb7c688d5afe5fab3f935eb3e1bec81878ef9a91bc9cf3dece87746dc3e
+      checksum: 1b17ed33da88bf8c05621b00d4912c9bb1e2e511e18fc23d02028be3288e503f
     - uuid: d6266621-4830-4fcb-84fb-b6676ff0e6e4
       name: spring-framework
       description: Ruleset for migration of Spring Framework versions
