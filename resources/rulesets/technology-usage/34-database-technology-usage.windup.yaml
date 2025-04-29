@@ -11,6 +11,10 @@
     java.referenced:
       location: ANNOTATION
       pattern: javax.annotation.sql.DataSourceDefinition
+      annotated:
+        elements:
+          - name: transactional
+            value: false
 - customVariables: []
   labels:
   - konveyor.io/include=always
@@ -24,7 +28,12 @@
     java.referenced:
       location: ANNOTATION
       pattern: javax.annotation.sql.DataSourceDefinition
+      annotated:
+        elements:
+          - name: transactional
+            value: false
 - customVariables: []
+  description: JPA Entities
   labels:
   - konveyor.io/include=always
   links: []
@@ -45,6 +54,7 @@
         filePattern: .*\.xml
         pattern: https://jakarta.ee/xml/ns/persistence
 - customVariables: []
+  description: JPA Queries
   labels:
   - konveyor.io/include=always
   links: []
@@ -86,6 +96,7 @@
         location: ANNOTATION
         pattern: jakarta.persistence.DiscriminatorValue
 - customVariables: []
+  description: Persistence Units
   labels:
   - konveyor.io/include=always
   links: []
