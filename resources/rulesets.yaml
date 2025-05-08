@@ -20,7 +20,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 7c7d32066054bea8a98fcdb77fb965769bd1b8fef9c9829406c6ab37c95c6fbf
+      checksum: 2f98d0eb5c0f03b059edc8f79dde53389dc40feea410017d98ebde9892ca6025
     - uuid: eb900f9e-6ff3-413d-9023-167765ce1311
       name: droolsjbpm
       description: This ruleset provides help for migrating to a unified KIE (Knowledge Is Everything) API in the upgrade from version 5 to 6.
@@ -36,14 +36,14 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: bbcb18f37a2f537a04d458fd50652fd39c6200c5f9becd081de166ae18212659
+      checksum: 185d862ac66d0965183793dbd1ae2d417920a082dd5ca61f4c01d63faa9d6d8a
     - uuid: 1a523b92-1fb3-422b-aaf7-35f43a259fb9
       name: eap7/weblogic/tests/data
       directory: rulesets/eap7
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: ae711796a2134e8744e304b84ae514277808078d2e1e9fb2e5aaa57d4ed61bf2
+      checksum: 59be615112cc030153e865a3beedd67dd8d1a8c068362d9bee024045afd87ad4
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
@@ -150,7 +150,7 @@ items:
       name: .technology-usage
       description: This ruleset provides analysis of logging libraries.
       directory: rulesets/technology-usage
-      checksum: 5f80388f67796776cc520bb2098ac7cf850b48674190696e4343b6e8b29ac674
+      checksum: 83bb8902e7cc56fbd2db646dbbf2dc6baeea7a4681fd45d09b9f50bdbd44b9d4
     - uuid: 2a3357e3-c79f-4875-a869-b38cb28ac498
       name: camel3
       description: Rules for changes between Camel 3.0 and Camel 4.0
