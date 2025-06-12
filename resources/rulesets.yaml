@@ -168,13 +168,13 @@ items:
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: bafbdb690b30041e3945a34b67aeffc72382aaf378d50289a7ded6b4619e7e27
     - uuid: b0db48ab-d75a-41cd-ad07-0bfbf875c25a
-      name: openjdk17
+      name: openjdk21
       description: This ruleset provides analysis regarding deprecated APIs in OpenJDK 21.
       directory: rulesets/openjdk21
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 6a17cb71bba12d0ac51566b492451b046cca621a0bd42252c2826b91833524ae
+      checksum: a97a0e7c07f0242519e32ddf0f6def5197f7c8756c1a1a3176e8efc6e3791bbd
     - uuid: e981e01a-5722-4df0-bf01-9e0694e7bb05
       name: cloud-readiness
       description: This ruleset detects logging configurations that may be problematic when migrating an application to a cloud environment.
