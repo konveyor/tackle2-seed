@@ -42,5 +42,6 @@ jobs:
     needs: build-hub
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
+      operator_bundle: quay.io/konveyor/tackle2-operator-bundle:release-0.7
       tackle_hub: ttl.sh/konveyor-hub-${{ github.sha }}:4h
       api_tests_ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
