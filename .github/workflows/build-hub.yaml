@@ -1,0 +1,13 @@
+name: tackle2-hub build to update seed and rules
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+jobs:
+  trigger-hub-build:
+    if: github.event.pull_request.merged == true
+    uses: konveyor/tackle2-hub/.github/workflows/march-image-build-push.yml@main
