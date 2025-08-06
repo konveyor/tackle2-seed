@@ -12,7 +12,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: f01a8d01525af63a150704b6977e34bc1d7bbbcf71a8e95fbc651c1c48b24a49
+      checksum: 12726aeb3a4e29d1577a63bf551b2f55342ce661e87af26fd70200386488e2af
     - uuid: e92057bc-5b66-4f7d-976f-f76aa3ad50e6
       name: camel3/camel2
       description: Rules for changes in XML file (e.g. pom.xml) to run on Apache Camel 3
@@ -197,7 +197,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: b13048428577ab6095fda61d3853956196437b9afe04a62b9cb0c8e95336cb45
+      checksum: afffc7aebaf2d9c138b9595dfdffe880548097491798192fa299c5ded6c1e27b
     - uuid: d591b400-7f43-4f2e-a62c-df8f2f081c85
       name: spring-boot
       description: Ruleset for migration of Spring Boot
@@ -211,3 +211,11 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: ec16a5b953e5b2b09b42c1c06faba7f6c2cfb07a37eb0f74fd52608b5deba846
+    - uuid: 78a4f4eb-2cf7-4d96-8de8-a414c26ea6a8
+      name: eap81/eap8
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP 6/7/8 to 8.1. This ruleset also applies to migrations from EAP XP 5.0 to 6.0, since EAP XP 6.0 has EAP 8.1 underlying.
+      directory: rulesets/eap81
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: b676e30cc921d45e83ac7e341eb5e7f08a3189576a8b390d562296f5ba9ddc7c
