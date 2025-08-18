@@ -24,6 +24,7 @@ const (
 	KindTagCategory   = "tagcategory"
 	KindTarget        = "target"
 	KindQuestionnaire = "questionnaire"
+	KindGenerator     = "generator"
 )
 
 // Seed document structure.

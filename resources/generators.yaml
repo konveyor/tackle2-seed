@@ -1,0 +1,15 @@
+kind: Generator
+version: 1
+items:
+    - uuid: 8b25ed8e-f55d-404f-a5d2-819e698b2549
+      kind: helm
+      name: Openshift
+      description: Openshift Generator.
+      repository:
+        kind: git
+        url: https://github.com/konveyor/tackle2-seed.git
+        branch: ""
+        tag: ""
+        path: resources/helm/openshift
+      params: {}
+      values: {}

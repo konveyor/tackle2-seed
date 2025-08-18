@@ -142,6 +142,22 @@ func main() {
 					panic(err)
 				}
 			}
+		case pkg.KindGenerator:
+			for i := range seed.Items {
+				item := &seed.Items[i]
+				g := pkg.Generator{}
+				err = item.Decode(&g)
+				if err != nil {
+					panic(err)
+				}
+				if g.UUID == "" {
+					g.UUID = uuid.NewString()
+				}
+				err = item.Encode(g)
+				if err != nil {
+					panic(err)
+				}
+			}
 		default:
 		}
 		seedsByFile[seed.Filename()] = append(seedsByFile[seed.Filename()], seed)
