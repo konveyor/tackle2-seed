@@ -10,6 +10,6 @@ items:
         url: https://github.com/konveyor/cf-k8s-helm-chart.git
         branch: ""
         tag: ""
-        path: resources/helm/openshift
+        path: ""
       params: {}
       values: {}
