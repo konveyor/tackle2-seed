@@ -89,6 +89,13 @@ func (r *Seed) DecodeItems() (decoded []interface{}, err error) {
 				return
 			}
 			decoded = append(decoded, item)
+		case KindGenerator:
+			item := Generator{}
+			err = encoded.Decode(&item)
+			if err != nil {
+				return
+			}
+			decoded = append(decoded, item)
 		default:
 			err = liberr.New("unknown kind")
 			return
