@@ -7,7 +7,7 @@ items:
       description: Openshift Generator.
       repository:
         kind: git
-        url: https://github.com/konveyor/tackle2-seed.git
+        url: https://github.com/konveyor/cf-k8s-helm-chart.git
         branch: ""
         tag: ""
         path: resources/helm/openshift
