@@ -1,0 +1,15 @@
+kind: Generator
+version: 1
+items:
+    - uuid: 8b25ed8e-f55d-404f-a5d2-819e698b2549
+      kind: helm
+      name: CloudFoundry-Openshift
+      description: Generate openshift assets using a Cloud Foundry application manifest.
+      repository:
+        kind: git
+        url: https://github.com/konveyor/cf-k8s-helm-chart.git
+        branch: ""
+        tag: ""
+        path: ""
+      params: {}
+      values: {}

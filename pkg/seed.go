@@ -24,6 +24,7 @@ const (
 	KindTagCategory   = "tagcategory"
 	KindTarget        = "target"
 	KindQuestionnaire = "questionnaire"
+	KindGenerator     = "generator"
 )
 
 // Seed document structure.
@@ -83,6 +84,13 @@ func (r *Seed) DecodeItems() (decoded []interface{}, err error) {
 			decoded = append(decoded, item)
 		case KindQuestionnaire:
 			item := Questionnaire{}
+			err = encoded.Decode(&item)
+			if err != nil {
+				return
+			}
+			decoded = append(decoded, item)
+		case KindGenerator:
+			item := Generator{}
 			err = encoded.Decode(&item)
 			if err != nil {
 				return
