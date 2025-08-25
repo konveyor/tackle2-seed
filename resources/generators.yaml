@@ -4,7 +4,7 @@ items:
     - uuid: 8b25ed8e-f55d-404f-a5d2-819e698b2549
       kind: helm
       name: Openshift
-      description: Openshift Generator.
+      description: Cloud Foundry => Openshift.
       repository:
         kind: git
         url: https://github.com/konveyor/cf-k8s-helm-chart.git
