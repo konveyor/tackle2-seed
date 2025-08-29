@@ -20,7 +20,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: e725f4255d6c5f7aa9401dc9a8b3c1d5e520755f8268e35878c7f6f79f017257
+      checksum: 2d4ee3bf8f7500a38ed2b49a93939f62caea11d2d81dc646453752c4298e1163
     - uuid: eb900f9e-6ff3-413d-9023-167765ce1311
       name: droolsjbpm
       description: This ruleset provides help for migrating to a unified KIE (Knowledge Is Everything) API in the upgrade from version 5 to 6.
@@ -43,7 +43,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 7e49903256efee8d6c3dc926acbbe9b4104b905021b3936652b6867df5b05a2a
+      checksum: 0e52147b51530f1c728d1587b50526c57c9ce9ee79bd6b0270da187299f4008e
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
