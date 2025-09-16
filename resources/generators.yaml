@@ -8,7 +8,7 @@ items:
       repository:
         kind: git
         url: https://github.com/konveyor/cf-k8s-helm-chart.git
-        branch: ""
+        branch: "v0.1.0"
         tag: ""
         path: "java-backend"
       params: {}
