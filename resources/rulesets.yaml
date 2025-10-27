@@ -12,7 +12,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 12726aeb3a4e29d1577a63bf551b2f55342ce661e87af26fd70200386488e2af
+      checksum: a13a01315da176a0966ebfa3f4f8f233c61104d9dcc4e74b870703e285e1bf40
     - uuid: e92057bc-5b66-4f7d-976f-f76aa3ad50e6
       name: camel3/camel2
       description: Rules for changes in XML file (e.g. pom.xml) to run on Apache Camel 3
@@ -20,7 +20,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 2d4ee3bf8f7500a38ed2b49a93939f62caea11d2d81dc646453752c4298e1163
+      checksum: b054e9c9ebd49660123d208aa855b3d99ced2f2322ef0a4794b75c0b06db0f70
     - uuid: eb900f9e-6ff3-413d-9023-167765ce1311
       name: droolsjbpm
       description: This ruleset provides help for migrating to a unified KIE (Knowledge Is Everything) API in the upgrade from version 5 to 6.
@@ -43,7 +43,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 0e52147b51530f1c728d1587b50526c57c9ce9ee79bd6b0270da187299f4008e
+      checksum: b9978a624c008c445471883e7f8ac5967de04b4a99008586446ef91aa4f511a9
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 95d12dfdda1aeba15f1e1d199206181c999c5bdac52765147754a4a8f2f9763b
+      checksum: 82c851cea5201d05b8982dfc8081b438727a326cc6c2f93a4d4029668ee89a28
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.
@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 07772613f792e82f2f1e4888996798c4e7d2cf66dac0f2c4d7f0f9cfd7a9e7c9
+      checksum: 58ae73cebe6f973880c893b6742d8b58d8ef2333505debf509d7b741c0901d69
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -150,7 +150,7 @@ items:
       name: .technology-usage
       description: This ruleset provides analysis of logging libraries.
       directory: rulesets/technology-usage
-      checksum: 8ea1810396f446704212f5a3af3b973505cb513ecb6cd526683bee8922729f5a
+      checksum: 177ae89b6cd719bb757956147806aa6d685fac072cb828e49f2a1d89da28c9f5
     - uuid: 2a3357e3-c79f-4875-a869-b38cb28ac498
       name: camel3
       description: Rules for changes between Camel 3.0 and Camel 4.0
@@ -174,7 +174,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: ca826c23abf9a39c403e2ad01656c3f896a6195cb5004fc9add7ebecadc9779e
+      checksum: 8b39719aa8383c18adb82232ffdfdbb3dacde744cf1f79a7c90eb7f1ea6fd405
     - uuid: e981e01a-5722-4df0-bf01-9e0694e7bb05
       name: cloud-readiness
       description: This ruleset detects logging configurations that may be problematic when migrating an application to a cloud environment.
