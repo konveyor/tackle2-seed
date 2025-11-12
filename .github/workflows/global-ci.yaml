@@ -43,3 +43,4 @@ jobs:
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
       tackle_hub: ttl.sh/konveyor-hub-${{ github.sha }}:4h
+      api_tests_ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
