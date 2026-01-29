@@ -1,0 +1,39 @@
+name: Trigger seeding process
+
+on:
+  repository_dispatch:
+    types: [trigger-seed]
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: The branch to merge to
+        required: true
+        default: main
+
+jobs:
+  trigger-seed:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Set branch
+        run: |
+          echo "BRANCH=${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || (github.event_name == 'repository_dispatch' && github.event.client_payload.branch || 'main')}}" >> $GITHUB_ENV
+      - name: Pull repository
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.BRANCH }}
+      - name: Create seed patch
+        run: make ruleset-patch RULESET_ARGS="-y"
+      - name: Generate branch name
+        run: |
+          echo "PR_BRANCH_NAME=$(date -u +%Y%m%dT-%H%M%SZ)-seed-update-${{ env.BRANCH }}" >> $GITHUB_ENV
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v8.1.0
+        with:
+          branch: ${{ env.PR_BRANCH_NAME }}
+          title: Automatic seed update from ${{ env.BRANCH }}
+          body: This PR updates the seed from the ${{ env.BRANCH }} branch.
+          commit-message: Update seed from ${{ env.BRANCH }}
+          author: Seed Update <seed-update@konveyor.org>
