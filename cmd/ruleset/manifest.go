@@ -7,7 +7,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
-	"path"
+	"path/filepath"
 	"strings"
 
 	"github.com/konveyor/tackle2-seed/pkg"
@@ -69,19 +69,11 @@ func (r *Manifest) Write() (err error) {
 	return
 }
 
-func (r *Manifest) Build() (err error) {
+func (r *Manifest) Build(paths []string) (err error) {
 	r.dirMap = make(map[string]*pkg.RuleSet)
-	p := path.Join(r.root, RuleSets)
-	entries, err := os.ReadDir(p)
-	if err != nil {
-		return
-	}
-	for _, entry := range entries {
-		if !entry.IsDir() {
-			continue
-		}
+	for _, path := range paths {
 		ruleSet := &pkg.RuleSet{
-			Directory: path.Join(RuleSets, entry.Name()),
+			Directory: path,
 		}
 		err = r.SetDetails(ruleSet)
 		if err != nil {
@@ -138,14 +130,16 @@ func (r *Manifest) Add(ruleSet *pkg.RuleSet) {
 		ruleSet)
 }
 
-func (r *Manifest) Update(ruleSet *pkg.RuleSet) {
-	for i := range r.ruleSets {
-		if r.ruleSets[i].Dir() == ruleSet.Dir() {
-			r.ruleSets[i].Description = ruleSet.Description
+func (r *Manifest) Update(other *pkg.RuleSet) {
+	for _, ruleSet := range r.ruleSets {
+		if other.Dir() == ruleSet.Dir() {
+			ruleSet.Checksum = other.Checksum
+			ruleSet.Description = other.Description
+			ruleSet.Labels = other.Labels
 			if r.IsDep(ruleSet) {
 				continue
 			}
-			r.ruleSets[i].Name = ruleSet.Name
+			ruleSet.Name = other.Name
 			break
 		}
 	}
@@ -164,7 +158,7 @@ func (r *Manifest) Delete(ruleSet *pkg.RuleSet) {
 }
 
 func (r *Manifest) SetDetails(ruleSet *pkg.RuleSet) (err error) {
-	p := path.Join(r.root, ruleSet.Dir(), "ruleset.yaml")
+	p := filepath.Join(r.root, ruleSet.Dir(), "ruleset.yaml")
 	object := struct {
 		Name        string
 		Description string
@@ -172,7 +166,7 @@ func (r *Manifest) SetDetails(ruleSet *pkg.RuleSet) (err error) {
 	f, err := os.Open(p)
 	if err != nil {
 		if os.IsNotExist(err) {
-			ruleSet.Name = path.Base(ruleSet.Dir())
+			ruleSet.Name = filepath.Base(ruleSet.Dir())
 			err = nil
 		}
 		return
@@ -196,7 +190,7 @@ func (r *Manifest) SetDetails(ruleSet *pkg.RuleSet) (err error) {
 }
 
 func (r *Manifest) SetDigest(ruleSet *pkg.RuleSet) (err error) {
-	p := path.Join(r.root, ruleSet.Dir())
+	p := filepath.Join(r.root, ruleSet.Dir())
 	b, err := pkg.ChecksumDir(p)
 	if err == nil {
 		ruleSet.Checksum = hex.EncodeToString(b)
@@ -262,7 +256,7 @@ func (r *Manifest) find() (err error) {
 		if entry.IsDir() {
 			continue
 		}
-		r.path = path.Join(r.root, entry.Name())
+		r.path = filepath.Join(r.root, entry.Name())
 		f, err = os.Open(r.path)
 		if err != nil {
 			return
