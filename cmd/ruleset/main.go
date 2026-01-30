@@ -196,8 +196,8 @@ func (r *Cmd) Delete(ruleSet *pkg.RuleSet) (err error) {
 
 func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 	pathMap := make(map[string][]string)
-	var fn func(string)
-	fn = func(dir string) {
+	var search func(string)
+	search = func(dir string) {
 		if strings.HasSuffix(dir, ".") {
 			return
 		}
@@ -210,7 +210,7 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 		for _, ent := range entries {
 			if ent.IsDir() {
 				next := filepath.Join(dir, ent.Name())
-				fn(next)
+				search(next)
 				if err != nil {
 					return
 				}
@@ -228,37 +228,41 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 			}
 		}
 	}
-	fn(root)
+	cp := func(path string) {
+		var in, out *os.File
+		in, err = os.Open(path)
+		if err != nil {
+			return
+		}
+		defer func() {
+			_ = in.Close()
+		}()
+		path = strings.TrimPrefix(path, root)
+		path = filepath.Join(dest, path)
+		err = os.MkdirAll(filepath.Dir(path), 0755)
+		if err != nil {
+			return
+		}
+		out, err = os.Create(path)
+		if err != nil {
+			return
+		}
+		defer func() {
+			_ = out.Close()
+		}()
+		_, err = io.Copy(out, in)
+		if err != nil {
+			return
+		}
+	}
+	search(root)
 	for ruleSet, files := range pathMap {
 		paths = append(paths, ruleSet)
 		for _, p := range files {
-			var in, out *os.File
-			in, err = os.Open(p)
+			cp(p)
 			if err != nil {
 				return
 			}
-			defer func() {
-				_ = in.Close()
-			}()
-			p = strings.TrimPrefix(p, root)
-			p = filepath.Join(dest, p)
-			err = os.MkdirAll(filepath.Dir(p), 0755)
-			if err != nil {
-				return
-			}
-			out, err = os.Create(p)
-			if err != nil {
-				return
-			}
-			defer func() {
-				_ = out.Close()
-			}()
-			_, err = io.Copy(out, in)
-			if err != nil {
-				return
-			}
-			_ = in.Close()
-			_ = out.Close()
 		}
 	}
 	return
