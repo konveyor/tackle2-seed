@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/konveyor/tackle2-seed/pkg"
@@ -265,5 +266,6 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 			}
 		}
 	}
+	sort.Strings(paths)
 	return
 }
