@@ -257,6 +257,8 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 			if err != nil {
 				return
 			}
+			_ = in.Close()
+			_ = out.Close()
 		}
 	}
 	return
