@@ -229,29 +229,27 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 			}
 		}
 	}
-	cp := func(path string) {
-		var in, out *os.File
-		in, err = os.Open(path)
+	cp := func(inPath, destPath string) {
+		var reader, writer *os.File
+		reader, err = os.Open(inPath)
 		if err != nil {
 			return
 		}
 		defer func() {
-			_ = in.Close()
+			_ = reader.Close()
 		}()
-		path = strings.TrimPrefix(path, root)
-		path = filepath.Join(dest, path)
-		err = os.MkdirAll(filepath.Dir(path), 0755)
+		err = os.MkdirAll(filepath.Dir(destPath), 0755)
 		if err != nil {
 			return
 		}
-		out, err = os.Create(path)
+		writer, err = os.Create(destPath)
 		if err != nil {
 			return
 		}
 		defer func() {
-			_ = out.Close()
+			_ = writer.Close()
 		}()
-		_, err = io.Copy(out, in)
+		_, err = io.Copy(writer, reader)
 		if err != nil {
 			return
 		}
@@ -259,8 +257,10 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 	search(root)
 	for ruleSet, files := range pathMap {
 		paths = append(paths, ruleSet)
-		for _, p := range files {
-			cp(p)
+		for _, pathIn := range files {
+			destPath := strings.TrimPrefix(pathIn, root)
+			destPath = filepath.Join(dest, destPath)
+			cp(pathIn, destPath)
 			if err != nil {
 				return
 			}
