@@ -201,7 +201,8 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 		if strings.HasSuffix(dir, ".") {
 			return
 		}
-		entries, err := os.ReadDir(dir)
+		var entries []os.DirEntry
+		entries, err = os.ReadDir(dir)
 		if err != nil {
 			return
 		}
@@ -217,10 +218,13 @@ func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
 			}
 			file := filepath.Join(dir, ent.Name())
 			files = append(files, file)
-			if ent.Name() == pkg.RuleSetYaml {
-				ruleSetDir := strings.TrimPrefix(dir, root)
+		}
+		for _, file := range files {
+			if filepath.Base(file) == pkg.RuleSetYaml {
+				ruleSetDir, _ := filepath.Rel(root, dir)
 				ruleSetDir = filepath.Join(RuleSets, ruleSetDir)
 				pathMap[ruleSetDir] = files
+				break
 			}
 		}
 	}
