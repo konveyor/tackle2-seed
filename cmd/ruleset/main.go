@@ -2,9 +2,12 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"io/ioutil"
 	"os"
-	"path"
+	"path/filepath"
+	"sort"
+	"strings"
 
 	"github.com/konveyor/tackle2-seed/pkg"
 	"github.com/pborman/getopt/v2"
@@ -13,7 +16,7 @@ import (
 const (
 	Resources      = "resources"
 	RuleSets       = "rulesets"
-	RemoteRuleSets = "default/generated"
+	RemoteRuleSets = "stable"
 )
 
 var Deps = []string{
@@ -104,15 +107,15 @@ func (r *Cmd) Reconcile() (err error) {
 	if err != nil {
 		return
 	}
-	remote := path.Join(r.Remote.Path, RemoteRuleSets)
-	dest := path.Join(tmpDir, RuleSets)
-	bash := Bash{Silent: true}
-	err = r.CopyTree(bash, 2, remote, dest)
+
+	remote := filepath.Join(r.Remote.Path, RemoteRuleSets)
+	dest := filepath.Join(tmpDir, RuleSets)
+	paths, err := r.copyRuleSets(remote, dest)
 	if err != nil {
 		return
 	}
 	r.Manifest.Remote.root = tmpDir
-	err = r.Manifest.Remote.Build()
+	err = r.Manifest.Remote.Build(paths)
 	if err != nil {
 		return
 	}
@@ -121,7 +124,7 @@ func (r *Cmd) Reconcile() (err error) {
 	if !r.Manifest.Current.Dirty() {
 		return
 	}
-	bash = Bash{}
+	bash := Bash{}
 	b := bash.Ask("Apply approved changes?")
 	if b {
 		err = r.Apply()
@@ -167,55 +170,102 @@ func (r *Cmd) Apply() (err error) {
 
 func (r *Cmd) ReplaceDir(ruleSet *pkg.RuleSet) (err error) {
 	bash := Bash{Silent: true}
-	remote := path.Join(r.Manifest.Remote.root, ruleSet.Dir())
-	current := path.Join(r.Path, ruleSet.Dir())
+	remote := filepath.Join(r.Manifest.Remote.root, ruleSet.Dir())
+	current := filepath.Join(r.Path, ruleSet.Dir())
 	err = bash.Run("rm -rf", current)
 	if err != nil {
 		return
 	}
 	bash = Bash{}
-	err = r.CopyTree(bash, 1, remote, current)
-	return
-}
-
-func (r *Cmd) CopyTree(bash Bash, depth int, source, dest string) (err error) {
-	if depth == 0 {
-		return
-	}
-	entries, _ := os.ReadDir(source)
+	err = bash.Run("mkdir -p", current)
 	if err != nil {
 		return
 	}
-	err = bash.Run("mkdir -p", dest)
+	err = bash.Run("cp -r", remote, filepath.Dir(current))
 	if err != nil {
 		return
-	}
-	for _, ent := range entries {
-		if ent.IsDir() {
-			err = r.CopyTree(
-				bash,
-				depth-1,
-				path.Join(source, ent.Name()),
-				path.Join(dest, ent.Name()))
-			if err != nil {
-				return
-			}
-			continue
-		}
-		err = bash.Run(
-			"cp",
-			path.Join(source, ent.Name()),
-			dest)
-		if err != nil {
-			return
-		}
 	}
 	return
 }
 
 func (r *Cmd) Delete(ruleSet *pkg.RuleSet) (err error) {
 	bash := Bash{}
-	p := path.Join(r.Path, ruleSet.Dir())
+	p := filepath.Join(r.Path, ruleSet.Dir())
 	err = bash.Run("rm -rf", p)
+	return
+}
+
+func (r *Cmd) copyRuleSets(root, dest string) (paths []string, err error) {
+	pathMap := make(map[string][]string)
+	var search func(string)
+	search = func(dir string) {
+		if strings.HasSuffix(dir, ".") {
+			return
+		}
+		var entries []os.DirEntry
+		entries, err = os.ReadDir(dir)
+		if err != nil {
+			return
+		}
+		var files []string
+		for _, ent := range entries {
+			if ent.IsDir() {
+				next := filepath.Join(dir, ent.Name())
+				search(next)
+				if err != nil {
+					return
+				}
+				continue
+			}
+			file := filepath.Join(dir, ent.Name())
+			files = append(files, file)
+		}
+		for _, file := range files {
+			if filepath.Base(file) == pkg.RuleSetYaml {
+				ruleSetDir, _ := filepath.Rel(root, dir)
+				ruleSetDir = filepath.Join(RuleSets, ruleSetDir)
+				pathMap[ruleSetDir] = files
+				break
+			}
+		}
+	}
+	cp := func(inPath, destPath string) {
+		var reader, writer *os.File
+		reader, err = os.Open(inPath)
+		if err != nil {
+			return
+		}
+		defer func() {
+			_ = reader.Close()
+		}()
+		err = os.MkdirAll(filepath.Dir(destPath), 0755)
+		if err != nil {
+			return
+		}
+		writer, err = os.Create(destPath)
+		if err != nil {
+			return
+		}
+		defer func() {
+			_ = writer.Close()
+		}()
+		_, err = io.Copy(writer, reader)
+		if err != nil {
+			return
+		}
+	}
+	search(root)
+	for ruleSet, files := range pathMap {
+		paths = append(paths, ruleSet)
+		for _, pathIn := range files {
+			destPath := strings.TrimPrefix(pathIn, root)
+			destPath = filepath.Join(dest, destPath)
+			cp(pathIn, destPath)
+			if err != nil {
+				return
+			}
+		}
+	}
+	sort.Strings(paths)
 	return
 }
