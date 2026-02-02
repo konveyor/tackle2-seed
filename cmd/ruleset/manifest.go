@@ -284,10 +284,12 @@ func (r *Manifest) hasCommonAncestor(a, b string, n int) (match bool) {
 	a = filepath.Clean(a)
 	b = filepath.Clean(b)
 	separator := string(filepath.Separator)
-	a = strings.TrimLeft(a, separator)
-	b = strings.TrimLeft(b, separator)
-	aList := strings.Split(a, separator)
-	bList := strings.Split(b, separator)
+	aList := strings.Split(
+		strings.TrimLeft(a, separator),
+		separator)
+	bList := strings.Split(
+		strings.TrimLeft(b, separator),
+		separator)
 	end := min(len(aList), len(bList), n)
 	for i := 0; i < end; i++ {
 		if aList[i] != bList[i] {
