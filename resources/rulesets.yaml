@@ -2,9 +2,9 @@ kind: RuleSet
 version: 8
 items:
     - uuid: 10667615-e067-45b4-a925-563a79ea0949
-      name: .discovery
+      name: discovery-rules
       directory: rulesets/java/00-discovery
-      checksum: 309bc9b01fa0c9435dd155e4441c83d44d843e73e287ac66f5ce028684feca6c
+      checksum: b6ee00833be29c31d0773a303d996d0dd533a3871ce72b607afe3bfa8abe24e5
     - uuid: 2eed70c0-305c-4061-bb92-d638ee834e47
       name: azure/springboot
       description: Recommend OpenFeign instead of Feign.
@@ -12,7 +12,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 07468af69d8bf52f27627cc2fe5a8554c77964a041312d773c1f1d4431e89d90
+      checksum: e9659aba4f98a54753884fa153a7c79a9c0796902c6b4d7bd1d9fcf2d6f86c6b
     - uuid: e92057bc-5b66-4f7d-976f-f76aa3ad50e6
       name: camel3/camel2
       description: Rules for changes in XML file (e.g. pom.xml) to run on Apache Camel 3
@@ -20,7 +20,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: e9fe55de96e2379e94f600b9e42ecbdabe7d4dd937c9400781af8f9f6e0f1100
+      checksum: d0833ec355a22be19333c13767d4c58b72323eecf2020799cace9892a898c1b1
     - uuid: eb900f9e-6ff3-413d-9023-167765ce1311
       name: droolsjbpm
       description: This ruleset provides help for migrating to a unified KIE (Knowledge Is Everything) API in the upgrade from version 5 to 6.
@@ -36,14 +36,14 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: fde17aa23341022c49ff018006e4c63f9e33a6bdb1cbfbf611cdebbeccf6e632
+      checksum: 938199534f514dca8558d3c330d90e1376deb9dc1374e93a4e65bfe4c868aeb0
     - uuid: 1a523b92-1fb3-422b-aaf7-35f43a259fb9
       name: eap7/weblogic/tests/data
       directory: rulesets/java/eap7
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: f2b0471ef040c3a25d4e27d4b00f3b3e7647a55ce04cff165a3e931f8c29e474
+      checksum: 962b9645c45852c0f8941b960492005ccaa365ef4163b1e5752e404497efac54
     - uuid: 3c471738-dfcf-46e8-b803-df07c304acc7
       name: eap8/eap7
       description: This ruleset provides analysis of Java EE applications that need to change certain CDI-related method calls.
@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 384da02f352b031b2648dee2088035eee4d2f7465df4f8c0e27a1e7c2a5616bc
+      checksum: a16fef8b3a0271efd903f8bea76d430d888b69ecb97cc01d0b7a6ae5b7ca46fe
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.
@@ -59,7 +59,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: e806fe0159bcbbef28aa92c2ea40909ca73f07a8229f813e3c00d8f8ea0bf5a6
+      checksum: 361db135c38b3a0364bb4b252e077432994a71626cdae3d06ad5f1b5b598e5d7
     - uuid: d51b30c0-a0a1-49ff-a0bb-861c43343c6b
       directory: rulesets/java/filemappings
       dependencies:
@@ -89,7 +89,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 41d14326e59c2fd553d2e22e7f56b2289bbe502e88b57143774f147625431c73
+      checksum: 70de83fbb4e09f9a743bb9a86651e617bc213bfe8debdcbcf30c11b195c67150
     - uuid: 72b74cb6-dba7-452d-93a3-1a26855051e0
       name: openjdk7/oraclejdk7
       description: This ruleset provides analysis with respect to the migration from OracleJDK to OpenJDK.
@@ -97,7 +97,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: a7fe367b9dbb958e7d28f55f7b4d009c6c2093aee9d3b23fe683b31ab5f78e7a
+      checksum: c5326a0d75c3e7bbc6e405d4266311a62f30333c4192eff127a3e7148d504ddb
     - uuid: e83339db-4dd8-4b06-bb31-6dfcb29c964a
       name: openjdk11/openjdk8
       description: This ruleset provides analysis with respect to API removals between OpenJDK 8 and 11.
@@ -121,7 +121,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: a5c05953115791c553ea65cadbbc71975e13e54cb426785a8e69b160b37ddb08
+      checksum: 7af4cfc10e0603baf9f4fd0e22676654ae3aa148b0cd41b9e669654f599e4412
     - uuid: feb6648e-dd3c-4536-bf99-e40ee124653d
       name: os/windows
       description: This is a ruleset for Windows operating system specific rules while migrating to Linux operating system.
@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 9f024eea51fd22f3dfc5286e78b96149b73fde1e7319498f0483b25355a6b1f4
+      checksum: 609511d175d9e7a851b92d7e5d372684f6be53b0d9d7054a0b77e7e14a93f650
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -147,10 +147,10 @@ items:
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: 7e6b93f2a29255f66170144a2e8cbc5559c3e6d3c7f15e715bbaa13ed670d1b4
     - uuid: 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      name: .technology-usage
+      name: technology-usage
       description: This ruleset provides analysis of logging libraries.
       directory: rulesets/java/technology-usage
-      checksum: e237ca4267f9e216c680b617d8c6769ef9c72b1efe276f3c19d1ddfc67c3279f
+      checksum: 06623138d66e6abd445a39ba6ca559b291407f7ef109964c406dde9b13499540
     - uuid: 2a3357e3-c79f-4875-a869-b38cb28ac498
       name: camel3
       description: Rules for changes between Camel 3.0 and Camel 4.0
@@ -210,7 +210,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: ece45fb1ecc0b1a54b0f30f31ee823d851d794706b0f6b6b62d46e6b42362ea3
+      checksum: 2521491a8c8bf35ec7e3348b75524eb220ab919bdd701ff678af7f985be37e70
     - uuid: 78a4f4eb-2cf7-4d96-8de8-a414c26ea6a8
       name: eap81/eap8
       description: This ruleset provides analysis of Maven built applications when migrating from EAP 6/7/8 to 8.1. This ruleset also applies to migrations from EAP XP 5.0 to 6.0, since EAP XP 6.0 has EAP 8.1 underlying.
@@ -219,3 +219,73 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: b676e30cc921d45e83ac7e341eb5e7f08a3189576a8b390d562296f5ba9ddc7c
+    - name: dotnet/dotnetframework
+      description: This ruleset provides analysis with respect to API changes between .NET Framework and newer versions of .NET.
+      directory: rulesets/dotnet
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 3395e21a50f027bf3341ed4601d14895f289b79c7a555c93623a260df2f60865
+    - name: angular-16/angular-17
+      description: This ruleset provides guidance for migrating from angular-16 to angular-17
+      directory: rulesets/nodejs/angular/angular-modern-patterns/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: c8d592504d0d7f26ca7c95669fd2dfa00070a70cfd8a80473821d9b3a685be98
+    - name: angular-12/angular-13
+      description: This ruleset provides guidance for migrating from angular-12 to angular-13
+      directory: rulesets/nodejs/angular/angular-v12/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: c94be80b0ba314c218eff8f5e9353bb4a63c7959f8e3bc123b2ad8f7b1020437
+    - name: angular-14/angular-15
+      description: This ruleset provides guidance for migrating from angular-14 to angular-15
+      directory: rulesets/nodejs/angular/angular-v14/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 1cfe6a72bdb3afd6f7bcfb58a49462f25d22335e4bc7032028f1097379034442
+    - name: angular-16/angular-21
+      description: This ruleset provides guidance for migrating from angular-16 to angular-21
+      directory: rulesets/nodejs/angular/angular-v16-to-v21/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 9c17f71990407a8303c6bb10c1932280a69f8bf84dc053184e4d157a4effe89e
+    - name: angular-2/angular-8
+      description: This ruleset provides guidance for migrating from angular-2 to angular-8
+      directory: rulesets/nodejs/angular/angular-v2-to-v8/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 3a575249260e7cd34693405d38cb10018e5167069560caef1b6015bbea55de53
+    - name: angular-9/angular-10
+      description: This ruleset provides guidance for migrating from angular-9 to angular-10
+      directory: rulesets/nodejs/angular/angular-v9-to-v10/migration-rules.yaml
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: a9baecc6a2a09a1c215d36dcbc4dd68a2523069d5def1fbf7840f1e182352350
+    - name: angularjs/angular
+      description: This ruleset provides guidance for migrating from angularjs to angular
+      directory: rulesets/nodejs/angular/angularjs-to-angular
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: d245269db3b6bd9608e6c6a0373af095e369366cbe2fef89d6bd41853bbde7ba
+    - name: astro-v4/astro-v5
+      description: This ruleset provides guidance for migrating from Astro v4 to Astro v5
+      directory: rulesets/nodejs/astro/astro-v4-to-v5
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 350b43edc11ea69973a1beeacd599837ed6719c2775a0a5a9376f9786548dfb2
+    - name: patternfly-v5/patternfly-v6
+      description: This ruleset provides guidance for migrating from patternfly-v5 to patternfly-v6
+      directory: rulesets/nodejs/patternfly
+      dependencies:
+        - '@rulesets/00-discovery'
+        - '@rulesets/technology-usage'
+      checksum: 5c4b75181d09ce76917e57b61fd7bb6424aa96b9bb8f58c2031fc76fd2a579f2
