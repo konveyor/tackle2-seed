@@ -20,8 +20,8 @@ const (
 )
 
 var Deps = []string{
-	"rulesets/00-discovery",
-	"rulesets/technology-usage",
+	"rulesets/java/00-discovery",
+	"rulesets/java/technology-usage",
 }
 
 var YesAssumed = true

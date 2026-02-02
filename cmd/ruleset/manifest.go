@@ -200,9 +200,11 @@ func (r *Manifest) SetDigest(ruleSet *pkg.RuleSet) (err error) {
 
 func (r *Manifest) SetDeps(ruleSet *pkg.RuleSet) {
 	for _, d := range Deps {
-		ruleSet.Dependencies = append(
-			ruleSet.Dependencies,
-			"@"+d)
+		if r.hasCommonAncestor(ruleSet.Directory, d, 2) {
+			ruleSet.Dependencies = append(
+				ruleSet.Dependencies,
+				"@"+d)
+		}
 	}
 }
 
@@ -275,5 +277,25 @@ func (r *Manifest) find() (err error) {
 		}
 	}
 	err = fmt.Errorf("manifest not found")
+	return
+}
+
+func (r *Manifest) hasCommonAncestor(a, b string, n int) (match bool) {
+	a = filepath.Clean(a)
+	b = filepath.Clean(b)
+	separator := string(filepath.Separator)
+	aList := strings.Split(
+		strings.TrimLeft(a, separator),
+		separator)
+	bList := strings.Split(
+		strings.TrimLeft(b, separator),
+		separator)
+	end := min(len(aList), len(bList), n)
+	for i := 0; i < end; i++ {
+		if aList[i] != bList[i] {
+			return
+		}
+	}
+	match = end > 0
 	return
 }
