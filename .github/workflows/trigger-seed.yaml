@@ -29,6 +29,14 @@ jobs:
       - name: Generate branch name
         run: |
           echo "PR_BRANCH_NAME=$(date -u +%Y%m%dT-%H%M%SZ)-seed-update-${{ env.BRANCH }}" >> $GITHUB_ENV
+      - name: Get Token
+        id: get_workflow_token
+        uses: peter-murray/workflow-application-token-action@v4
+        with:
+          application_id: ${{ vars.KONVEYOR_BOT_ID }}
+          application_private_key: ${{ secrets.KONVEYOR_BOT_KEY }}
+          revoke_token: 'true'
+          permissions: "pull_requests:write,contents:write"
       - name: Create PR
         uses: peter-evans/create-pull-request@v8.1.0
         with:
@@ -36,4 +44,5 @@ jobs:
           title: Automatic seed update from ${{ env.BRANCH }}
           body: This PR updates the seed from the ${{ env.BRANCH }} branch.
           commit-message: Update seed from ${{ env.BRANCH }}
-          author: Seed Update <seed-update@konveyor.org>
+          author: Konveyor Bot <konveyor-ci@konveyor.org>
+          token: ${{ steps.get_workflow_token.outputs.token }}
