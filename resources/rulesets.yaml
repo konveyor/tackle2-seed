@@ -28,7 +28,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 5828c052705f6da6ba2a4edef2608332f1c61f6259c78d30896942dbc59bedf7
+      checksum: 807cdbb3dbea47af85abcf52528bca6438da0e4c77e967b8591bcf316e01800b
     - uuid: 17b03c9f-ba19-4680-a3c2-ca159c5d74f0
       name: eap6/java-ee/seam
       description: This ruleset provides generic migration knowledge from the Seam 2 UI controls to pure JSF 2 UI Controls
