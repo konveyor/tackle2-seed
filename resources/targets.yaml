@@ -146,7 +146,7 @@ items:
       name: Patternfly 6
       description: Upgrade your Patternfly application.
       provider: nodejs
-      imagepath: images/patternfly.svg
+      imagepath: images/nodejs.svg
       choice: true
       labels:
         - name: Patternfly 5 to Patternfly 6
@@ -164,7 +164,7 @@ items:
       name: .NET
       description: Upgrade your .NET application.
       provider: csharp
-      imagepath: images/nodejs.svg
+      imagepath: images/csharp.svg
       choice: true
       labels:
         - name: .NET Framework to .NET Framework 3
