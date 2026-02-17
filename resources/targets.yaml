@@ -121,3 +121,51 @@ items:
           label: konveyor.io/target=azure-appservice
         - name: Azure Kubernetes Service
           label: konveyor.io/target=azure-aks
+    - uuid: df2888b1-9c03-45d3-929b-52cc099d254a
+      name: Angular
+      description: Upgrade your Angular application.
+      provider: nodejs
+      imagepath: images/nodejs.svg
+      choice: true
+      labels:
+        - name: AngularJS to Angular
+          label: konveyor.io/target=angular
+        - name: Angular 8
+          label: konveyor.io/target=angular-8
+        - name: Angular 10
+          label: konveyor.io/target=angular-10
+        - name: Angular 12
+          label: konveyor.io/target=angular-12
+        - name: Angular 14
+          label: konveyor.io/target=angular-14
+        - name: Angular 17
+          label: konveyor.io/target=angular-17
+        - name: Angular 21
+          label: konveyor.io/target=angular-21
+    - uuid: 43f30275-5a4e-49f7-8a7d-780f47bad227
+      name: Patternfly 6
+      description: Upgrade your Patternfly application.
+      provider: nodejs
+      imagepath: images/patternfly.svg
+      choice: true
+      labels:
+        - name: Patternfly 5 to Patternfly 6
+          label: konveyor.io/target=patternfly-v6
+    - uuid: 656eb626-b3ec-46ef-a2e5-e7323ff74e22
+      name: Astro 5
+      description: Upgrade your Astro application.
+      provider: nodejs
+      imagepath: images/nodejs.svg
+      choice: true
+      labels:
+        - name: Astro 4 to Astro 5
+          label: konveyor.io/target=astro-v5
+    - uuid: 75cfa0a7-075e-48f4-9bc9-d4c514457b4f
+      name: .NET
+      description: Upgrade your .NET application.
+      provider: csharp
+      imagepath: images/nodejs.svg
+      choice: true
+      labels:
+        - name: Patternfly 5 to Patternfly 6
+          label: konveyor.io/target=patternfly-v6
