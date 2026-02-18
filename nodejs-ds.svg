@@ -1,0 +1,81 @@
+<svg id="e057e0d6-7ef5-49c4-ae5f-0dd730783e7d" data-name="Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <title>Container icon - Red</title>
+<desc>cube, kubernetes, K8s, code, application, development, developer, OpenShift, platform, hexagon, cloud, group, list, software and technologies</desc>
+<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 8.0-c001 1.000000, 0000/00/00-00:00:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:ns1="http://prismstandard.org/namespaces/basic/2.1/"
+            xmlns:cq="http://www.day.com/jcr/cq/1.0"
+            xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+            xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
+         <xmp:rhcc-effective-on>2023-12-08T17:42:58.827Z</xmp:rhcc-effective-on>
+         <xmp:rhcc-metadata-complete-moderator>pending</xmp:rhcc-metadata-complete-moderator>
+         <xmp:rhcc-translation-id>TRA6c93d25e-f59e-4fde-b899-4694bd579101</xmp:rhcc-translation-id>
+         <xmp:brand-content-type>Icon</xmp:brand-content-type>
+         <xmp:CreateDate>2023-12-08T17:42:58.827Z</xmp:CreateDate>
+         <xmp:rhcc-aspect-ratio>square</xmp:rhcc-aspect-ratio>
+         <xmp:rhcc-effective-on-set-on-upload>true</xmp:rhcc-effective-on-set-on-upload>
+         <xmp:rhcc-published-asset-email-sent>true</xmp:rhcc-published-asset-email-sent>
+         <xmp:rhcc-metadata-complete-uploader>pending</xmp:rhcc-metadata-complete-uploader>
+         <xmp:rhcc-file-last-modified>2024-07-12T23:44:49.660Z</xmp:rhcc-file-last-modified>
+         <xmp:rhcc-audience>rhcc-audience:internal</xmp:rhcc-audience>
+         <xmp:brand-content-subtype>Icon</xmp:brand-content-subtype>
+         <xmp:rhcc-rights-restricted>yes</xmp:rhcc-rights-restricted>
+         <xmp:rhcc-derivative-id>DER6c93d25e-f59e-4fde-b899-4694bd579101</xmp:rhcc-derivative-id>
+         <xmp:rhcc-uploaded-by>pmeilleu@redhat.com</xmp:rhcc-uploaded-by>
+         <xmp:brand-logo-color>Red</xmp:brand-logo-color>
+         <xmp:rhcc-notify-portal-subscribers-on-change>yes</xmp:rhcc-notify-portal-subscribers-on-change>
+         <xmp:rhcc-product>
+            <rdf:Bag>
+               <rdf:li>rhcc-product:red-hat-openshift</rdf:li>
+            </rdf:Bag>
+         </xmp:rhcc-product>
+         <dc:format>image/svg+xml</dc:format>
+         <dc:modified>2024-02-09T20:16:25.312Z</dc:modified>
+         <dc:title>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Container icon - Red</rdf:li>
+            </rdf:Alt>
+         </dc:title>
+         <dc:description>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">cube, kubernetes, K8s, code, application, development, developer, OpenShift, platform, hexagon, cloud, group, list, software and technologies</rdf:li>
+            </rdf:Alt>
+         </dc:description>
+         <ns1:expirationDate>2030-12-31T10:56:00.000-05:00</ns1:expirationDate>
+         <cq:lastReplicationAction_scene7>Activate</cq:lastReplicationAction_scene7>
+         <cq:lastReplicationAction_publish>Activate</cq:lastReplicationAction_publish>
+         <cq:lastReplicated_publish>2024-10-02T19:31:54.893Z</cq:lastReplicated_publish>
+         <cq:lastReplicatedBy>workflow-process-service</cq:lastReplicatedBy>
+         <cq:lastReplicationAction>Activate</cq:lastReplicationAction>
+         <cq:lastReplicatedBy_publish>workflow-process-service</cq:lastReplicatedBy_publish>
+         <cq:isDelivered>false</cq:isDelivered>
+         <cq:lastReplicated>2024-10-02T19:31:54.893Z</cq:lastReplicated>
+         <cq:lastReplicatedBy_scene7>workflow-process-service</cq:lastReplicatedBy_scene7>
+         <cq:lastReplicated_scene7>2024-10-02T19:31:54.893Z</cq:lastReplicated_scene7>
+         <tiff:ImageLength>36</tiff:ImageLength>
+         <tiff:ImageWidth>36</tiff:ImageWidth>
+         <xmpRights:UsageTerms>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Use icons between 32 and 100 pixels.</rdf:li>
+            </rdf:Alt>
+         </xmpRights:UsageTerms>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                               
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .b92ad349-0b02-42b0-abf7-bb03617304bd {
+        fill: #e00;
+      }
+    </style>
+  </defs>
+  <path class="b92ad349-0b02-42b0-abf7-bb03617304bd" d="M30.44,10.46l-12.13-7a.62.62,0,0,0-.62,0l-12.13,7a.63.63,0,0,0-.31.54V25a.63.63,0,0,0,.31.54l12.13,7a.64.64,0,0,0,.62,0l12.13-7a.63.63,0,0,0,.31-.54V11A.63.63,0,0,0,30.44,10.46ZM29.5,24.64,18,31.28,6.5,24.64V11.36L18,4.72l11.5,6.64Z"/>
+</svg>
