@@ -129,7 +129,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: bbcd52324ea02be5699c00dbc629d9830379bf8261e3861bce45fe00edc82d49
+      checksum: 3832b610b4020c5ba94debf07173aef9f7006f94ff4f53c94d1d11e8e380ca57
     - uuid: 23f92444-0366-47c8-abc2-f67e6bcd95f2
       name: quarkus/springboot
       description: This ruleset gives hints to migrate from SpringBoot devtools to Quarkus
