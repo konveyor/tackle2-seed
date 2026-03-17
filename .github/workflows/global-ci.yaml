@@ -43,4 +43,7 @@ jobs:
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
       tackle_hub: ttl.sh/konveyor-hub-${{ github.sha }}:4h
+      base_tag: release-0.9
+      addon_analyzer: quay.io/konveyor/tackle2-addon-analyzer:release-0.9
+      addon_discovery: quay.io/konveyor/tackle2-addon-discovery:release-0.9
       api_tests_ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
