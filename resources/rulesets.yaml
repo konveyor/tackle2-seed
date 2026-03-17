@@ -129,7 +129,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: bbcd52324ea02be5699c00dbc629d9830379bf8261e3861bce45fe00edc82d49
+      checksum: 3832b610b4020c5ba94debf07173aef9f7006f94ff4f53c94d1d11e8e380ca57
     - uuid: 23f92444-0366-47c8-abc2-f67e6bcd95f2
       name: quarkus/springboot
       description: This ruleset gives hints to migrate from SpringBoot devtools to Quarkus
@@ -219,11 +219,6 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: b676e30cc921d45e83ac7e341eb5e7f08a3189576a8b390d562296f5ba9ddc7c
-    - uuid: 00032e3c-9b49-4015-9a52-5242e712aa75
-      name: dotnet/dotnetframework
-      description: This ruleset provides analysis with respect to API changes between .NET Framework and newer versions of .NET.
-      directory: rulesets/dotnet
-      checksum: 3395e21a50f027bf3341ed4601d14895f289b79c7a555c93623a260df2f60865
     - uuid: eee93cbc-ff14-4255-9289-07a92f9c33a0
       name: angular-16/angular-17
       description: This ruleset provides guidance for migrating from angular-16 to angular-17
@@ -269,3 +264,19 @@ items:
       description: This ruleset provides guidance for migrating from patternfly-v5 to patternfly-v6
       directory: rulesets/nodejs/patternfly
       checksum: 5c4b75181d09ce76917e57b61fd7bb6424aa96b9bb8f58c2031fc76fd2a579f2
+    - uuid: fc06a86c-a7ea-4794-a2d0-fc39c6c30810
+      name: dotnet-core-migration
+      description: |
+        Ruleset for migrating ASP.NET MVC applications to ASP.NET Core / .NET Core.
+
+        This ruleset identifies incompatible APIs, frameworks, and patterns that need to be
+        updated when migrating from .NET Framework to .NET Core/.NET 5+.
+
+        The rules are organized into the following categories:
+        - Web Framework Migration (System.Web to ASP.NET Core)
+        - Authentication and Security Migration
+        - Entity Framework to EF Core Migration
+        - Configuration and State Management Migration
+        - Runtime and Utility Class Migration
+      directory: rulesets/dotnet/core-migration
+      checksum: 6e984207f56318fb0daed53b0ae22008f33471392f66b7ae0713b38db70583e8
