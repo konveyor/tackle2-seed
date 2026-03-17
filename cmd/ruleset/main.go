@@ -137,6 +137,14 @@ func (r *Cmd) Reconcile() (err error) {
 
 func (r *Cmd) Apply() (err error) {
 	manifest := r.Manifest.Current
+	// Process deleted before added/updated so we don't remove a parent of a path we're adding
+	// (e.g. deleting rulesets/dotnet must happen before adding rulesets/dotnet/core-migration).
+	for _, ruleSet := range manifest.changed.deleted {
+		err = r.Delete(ruleSet)
+		if err != nil {
+			return
+		}
+	}
 	for _, ruleSet := range manifest.changed.added {
 		err = r.ReplaceDir(ruleSet)
 		if err != nil {
@@ -145,12 +153,6 @@ func (r *Cmd) Apply() (err error) {
 	}
 	for _, ruleSet := range manifest.changed.updated {
 		err = r.ReplaceDir(ruleSet)
-		if err != nil {
-			return
-		}
-	}
-	for _, ruleSet := range manifest.changed.deleted {
-		err = r.Delete(ruleSet)
 		if err != nil {
 			return
 		}
