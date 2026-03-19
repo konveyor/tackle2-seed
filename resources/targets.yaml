@@ -162,10 +162,10 @@ items:
           label: konveyor.io/target=astro-v5
     - uuid: 75cfa0a7-075e-48f4-9bc9-d4c514457b4f
       name: .NET
-      description: Upgrade your .NET application.
+      description: .NET Core Migration.
       provider: csharp
       imagepath: images/csharp.svg
       choice: true
       labels:
-        - name: .NET Framework to .NET Framework 3
-          label: konveyor.io/target=dotnet3
+        - name: Migration from .NET Framework to .NET Core
+          label: konveyor.io/target=dotnet-core
