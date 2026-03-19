@@ -167,5 +167,5 @@ items:
       imagepath: images/csharp.svg
       choice: true
       labels:
-        - name: Migration of ASP.NET MVC applications from .NET Framework to ASP.NET Core / .NET Core
+        - name: Migration from .NET Framework to .NET Core
           label: konveyor.io/target=dotnet-core
