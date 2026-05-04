@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 609511d175d9e7a851b92d7e5d372684f6be53b0d9d7054a0b77e7e14a93f650
+      checksum: f8dd2a5009f3e66e82a2f92366d221d53ac9ff05889e3c7f79d2d818817115bd
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
