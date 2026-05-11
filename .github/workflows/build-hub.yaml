@@ -25,7 +25,8 @@ jobs:
       - name: Trigger tackle2-hub image build
         env:
           GH_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+          BASE_REF: ${{ github.base_ref }}
         run: |
           gh workflow run march-image-build-push.yml \
             --repo konveyor/tackle2-hub \
-            --ref ${{ github.base_ref }}
+            --ref "$BASE_REF"
