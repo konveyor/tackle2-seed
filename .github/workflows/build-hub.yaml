@@ -4,10 +4,28 @@ on:
   pull_request:
     branches:
       - main
+      - 'release-*'
     types:
       - closed
 
 jobs:
   trigger-hub-build:
     if: github.event.pull_request.merged == true
-    uses: konveyor/tackle2-hub/.github/workflows/march-image-build-push.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Token
+        id: get_workflow_token
+        uses: peter-murray/workflow-application-token-action@v4
+        with:
+          application_id: ${{ vars.KONVEYOR_BOT_ID }}
+          application_private_key: ${{ secrets.KONVEYOR_BOT_KEY }}
+          revoke_token: 'true'
+          permissions: "actions:write"
+
+      - name: Trigger tackle2-hub image build
+        env:
+          GH_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+        run: |
+          gh workflow run march-image-build-push.yml \
+            --repo konveyor/tackle2-hub \
+            --ref ${{ github.base_ref }}
