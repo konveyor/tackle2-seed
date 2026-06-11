@@ -70,9 +70,16 @@ jobs:
       env:
         PR_BODY: ${{ github.event.pull_request.body }}
       run: |
-        # Default to main branch
-        KONCUR_REF="main"
+        # Default behavior: match the branch/ref being tested
+        # For push events: use the branch name (main, release-0.9, etc.)
+        # For PRs: use the base branch (the target of the PR)
+        if [ "${{ github.event_name }}" == "push" ]; then
+          KONCUR_REF="${{ github.ref_name }}"
+        else
+          KONCUR_REF="${{ github.base_ref }}"
+        fi
 
+        # Override with specific Koncur PR if mentioned in PR description
         if [ "${{ github.event_name }}" == "pull_request" ] && [ -n "$PR_BODY" ]; then
           # Look for "Koncur PR: 123" or "koncur PR: 123" pattern
           KONCUR_PR=$(echo "$PR_BODY" | grep -oPi '[K|k]oncur [P|p][R|r]:\s*\K\d+' | head -n1)
