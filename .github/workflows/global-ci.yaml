@@ -43,16 +43,14 @@ jobs:
     runs-on: ubuntu-24.04
     outputs:
       koncur_ref: ${{ steps.parse.outputs.koncur_ref }}
-      run_koncur_tests: ${{ steps.parse.outputs.run_koncur_tests }}
     steps:
     - name: Parse PR description for test references
       id: parse
       env:
         PR_BODY: ${{ github.event.pull_request.body }}
       run: |
-        # Default values
+        # Default to main branch
         KONCUR_REF="main"
-        RUN_KONCUR="false"
 
         if [ "${{ github.event_name }}" == "pull_request" ] && [ -n "$PR_BODY" ]; then
           # Look for "Koncur PR: 123" or "koncur PR: 123" pattern
@@ -60,15 +58,12 @@ jobs:
 
           if [ -n "$KONCUR_PR" ]; then
             KONCUR_REF="refs/pull/${KONCUR_PR}/head"
-            RUN_KONCUR="true"
             echo "Found Koncur PR reference: #${KONCUR_PR}"
           fi
         fi
 
         echo "koncur_ref=${KONCUR_REF}" >> $GITHUB_OUTPUT
-        echo "run_koncur_tests=${RUN_KONCUR}" >> $GITHUB_OUTPUT
         echo "Koncur ref: ${KONCUR_REF}"
-        echo "Run koncur tests: ${RUN_KONCUR}"
 
   e2e:
     needs: [build-hub, parse-pr-refs]
@@ -76,5 +71,5 @@ jobs:
     with:
       tackle_hub: ttl.sh/konveyor-hub-${{ github.sha }}:4h
       api_tests_ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
-      run_koncur_hub_tests: ${{ needs.parse-pr-refs.outputs.run_koncur_tests == 'true' }}
+      run_koncur_hub_tests: true
       koncur_ref: ${{ needs.parse-pr-refs.outputs.koncur_ref }}
