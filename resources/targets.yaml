@@ -163,7 +163,7 @@ items:
     - uuid: 75cfa0a7-075e-48f4-9bc9-d4c514457b4f
       name: .NET
       description: .NET Core Migration.
-      provider: csharp
+      provider: C#
       imagepath: images/csharp.svg
       choice: true
       labels:
