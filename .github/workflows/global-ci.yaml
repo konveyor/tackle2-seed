@@ -13,6 +13,27 @@ on:
     - 'release-*'
 
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.get-tag.outputs.tag }}
+    steps:
+      - id: get-tag
+        run: |
+          echo "Get tag for quay.io/konveyor images"      
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            branch="${{ github.ref_name }}"
+          else
+            branch="${{ github.base_ref }}"
+          fi
+
+          if [[ "$branch" == "main" ]]; then
+            echo "tag=latest" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=$branch" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$(grep tag "$GITHUB_OUTPUT")"
+
   build-hub:
     name: Build tackle2-hub
     runs-on: ubuntu-24.04
@@ -39,8 +60,22 @@ jobs:
         podman push $IMG
 
   e2e:
-    needs: build-hub
+    needs: [setup, build-hub]
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
-      tackle_hub: ttl.sh/konveyor-hub-${{ github.sha }}:4h
-      api_tests_ref: ${{ github.event_name == 'push' && github.ref || github.base_ref }}
+      operator_bundle: quay.io/konveyor/tackle2-operator-bundle:${{ needs.setup.outputs.tag }}
+      run_api_tests: false
+      run_koncur_hub_tests: true
+      koncur_ref: ${{ github.event_name == 'push' && github.ref_name || github.base_ref }}
+      tackle_cr: |
+        kind: Tackle
+        apiVersion: tackle.konveyor.io/v1alpha1
+        metadata:
+          name: tackle
+        spec:
+          image_pull_policy: IfNotPresent
+          analyzer_container_requests_cpu: 100m
+          provider_java_container_requests_cpu: 100m
+          provider_python_container_requests_cpu: 100m
+          feature_auth_required: false
+          hub_image_fqin: ttl.sh/konveyor-hub-${{ github.sha }}:4h
