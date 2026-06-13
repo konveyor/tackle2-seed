@@ -59,48 +59,14 @@ jobs:
         podman build --build-arg SEED_ROOT=/opt/app-root/src/tackle2-seed -t $IMG .
         podman push $IMG
 
-  parse-pr-refs:
-    name: Parse PR references
-    runs-on: ubuntu-24.04
-    outputs:
-      koncur_ref: ${{ steps.parse.outputs.koncur_ref }}
-    steps:
-    - name: Parse PR description for test references
-      id: parse
-      env:
-        PR_BODY: ${{ github.event.pull_request.body }}
-      run: |
-        # Default behavior: match the branch/ref being tested
-        # For push events: use the branch name (main, release-0.9, etc.)
-        # For PRs: use the base branch (the target of the PR)
-        if [ "${{ github.event_name }}" == "push" ]; then
-          KONCUR_REF="${{ github.ref_name }}"
-        else
-          KONCUR_REF="${{ github.base_ref }}"
-        fi
-
-        # Override with specific Koncur PR if mentioned in PR description
-        if [ "${{ github.event_name }}" == "pull_request" ] && [ -n "$PR_BODY" ]; then
-          # Look for "Koncur PR: 123" or "koncur PR: 123" pattern
-          KONCUR_PR=$(echo "$PR_BODY" | grep -oPi '[K|k]oncur [P|p][R|r]:\s*\K\d+' | head -n1)
-
-          if [ -n "$KONCUR_PR" ]; then
-            KONCUR_REF="refs/pull/${KONCUR_PR}/head"
-            echo "Found Koncur PR reference: #${KONCUR_PR}"
-          fi
-        fi
-
-        echo "koncur_ref=${KONCUR_REF}" >> $GITHUB_OUTPUT
-        echo "Koncur ref: ${KONCUR_REF}"
-
   e2e:
-    needs: [setup, build-hub, parse-pr-refs]
+    needs: [setup, build-hub]
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
       operator_bundle: quay.io/konveyor/tackle2-operator-bundle:${{ needs.setup.outputs.tag }}
       run_api_tests: false
       run_koncur_hub_tests: true
-      koncur_ref: ${{ needs.parse-pr-refs.outputs.koncur_ref }}
+      koncur_ref: ${{ github.event_name == 'push' && github.ref_name || github.base_ref }}
       tackle_cr: |
         kind: Tackle
         apiVersion: tackle.konveyor.io/v1alpha1
