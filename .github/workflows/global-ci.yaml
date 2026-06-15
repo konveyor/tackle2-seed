@@ -13,6 +13,27 @@ on:
     - 'release-*'
 
 jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      tag: ${{ steps.get-tag.outputs.tag }}
+    steps:
+      - id: get-tag
+        run: |
+          echo "Get tag for quay.io/konveyor images"      
+          if [[ "${{ github.event_name }}" == "push" ]]; then
+            branch="${{ github.ref_name }}"
+          else
+            branch="${{ github.base_ref }}"
+          fi
+
+          if [[ "$branch" == "main" ]]; then
+            echo "tag=latest" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=$branch" >> "$GITHUB_OUTPUT"
+          fi
+          echo "$(grep tag "$GITHUB_OUTPUT")"
+
   build-hub:
     name: Build tackle2-hub
     runs-on: ubuntu-24.04
@@ -39,7 +60,7 @@ jobs:
         podman push $IMG
 
   e2e:
-    needs: build-hub
+    needs: [setup, build-hub]
     uses: konveyor/ci/.github/workflows/global-ci-bundle.yml@main
     with:
       operator_bundle: quay.io/konveyor/tackle2-operator-bundle:release-0.9
