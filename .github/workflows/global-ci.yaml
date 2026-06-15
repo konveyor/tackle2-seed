@@ -66,6 +66,7 @@ jobs:
       operator_bundle: quay.io/konveyor/tackle2-operator-bundle:${{ needs.setup.outputs.tag }}
       run_api_tests: false
       run_koncur_hub_tests: true
+      run_koncur_kantra_tests: true
       koncur_ref: ${{ github.event_name == 'push' && github.ref_name || github.base_ref }}
       tackle_cr: |
         kind: Tackle
