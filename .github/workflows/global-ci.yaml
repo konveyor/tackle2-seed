@@ -74,13 +74,18 @@ jobs:
       with:
         path: kantra/tackle2-seed
 
+    # ttl.sh requires TTL as tag (:4h), but kantra Dockerfile uses IMAGE without tag.
+    # Push :4h for ttl.sh, then push :$IMAGE_TAG for kantra internal use.
     - name: Build kantra and save image
       working-directory: kantra
       env:
-        IMG: ttl.sh/konveyor-kantra-${{ github.sha }}:4h
+        IMAGE_TAG: ${{ needs.setup.outputs.tag }}
+        IMG: ttl.sh/konveyor-kantra-${{ github.sha }}
       run: |
-        podman build --build-arg VERSION=${{ needs.setup.outputs.tag }} --build-arg IMAGE=$IMG -t $IMG .
-        podman push $IMG
+        podman build --build-arg IMAGE=$IMG --build-arg VERSION=$IMAGE_TAG -t $IMG:4h .
+        podman push $IMG:4h
+        podman tag $IMG:4h $IMG:$IMAGE_TAG
+        podman push $IMG:$IMAGE_TAG
 
   e2e:
     needs: [setup, build-hub, build-kantra]
