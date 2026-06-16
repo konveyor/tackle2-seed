@@ -1,4 +1,4 @@
-name: tackle2-hub build to update seed and rules
+name: Build tackle2-hub and kantra images to update seed and rules
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - 'release-*'
 
 jobs:
-  trigger-hub-build:
+  trigger-hub-and-kantra-image-build:
     if: github.repository == 'konveyor/tackle2-seed'
     runs-on: ubuntu-latest
     steps:
@@ -27,4 +27,13 @@ jobs:
         run: |
           gh workflow run march-image-build-push.yml \
             --repo konveyor/tackle2-hub \
+            --ref "$REF_NAME"
+
+      - name: Trigger kantra image build
+        env:
+          GH_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          gh workflow run multi-arch-image-build.yaml \
+            --repo konveyor/kantra \
             --ref "$REF_NAME"
