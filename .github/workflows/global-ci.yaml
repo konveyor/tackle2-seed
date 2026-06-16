@@ -37,14 +37,14 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
         repository: konveyor/tackle2-hub
         ref: ${{ env.BRANCH }}
         path: tackle2-hub
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       with:
         path: tackle2-hub/tackle2-seed
 
@@ -63,14 +63,14 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
         repository: konveyor/kantra
         ref: ${{ env.BRANCH }}
         path: kantra
 
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       with:
         path: kantra/tackle2-seed
 
