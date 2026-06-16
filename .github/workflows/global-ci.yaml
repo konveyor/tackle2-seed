@@ -79,7 +79,7 @@ jobs:
       env:
         IMG: ttl.sh/konveyor-kantra-${{ github.sha }}:4h
       run: |
-        podman build --build-arg VERSION=${{ needs.setup.outputs.tag }} -t $IMG .
+        podman build --build-arg VERSION=${{ needs.setup.outputs.tag }} --build-arg IMAGE=$IMG -t $IMG .
         podman push $IMG
 
   e2e:
