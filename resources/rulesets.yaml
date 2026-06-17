@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 609511d175d9e7a851b92d7e5d372684f6be53b0d9d7054a0b77e7e14a93f650
+      checksum: f8dd2a5009f3e66e82a2f92366d221d53ac9ff05889e3c7f79d2d818817115bd
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -280,3 +280,27 @@ items:
         - Runtime and Utility Class Migration
       directory: rulesets/dotnet/core-migration
       checksum: 6e984207f56318fb0daed53b0ae22008f33471392f66b7ae0713b38db70583e8
+    - uuid: 5e35a8bf-3b95-4620-9b69-489528636e48
+      name: eap82/eap8
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP 6/7/8 to 8.2. This ruleset also applies to migrations from EAP XP 6.0 to 7.0, since EAP XP 7.0 has EAP 8.2 underlying.
+      directory: rulesets/java/eap82
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 1d927160aeb9440a90362391d930d2d5269385ac3f3761c5874260073961f49b
+    - uuid: a5d37af0-f0ce-4487-9947-5493a78beb91
+      name: eapxp7/eapxp6
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 6 to 7.
+      directory: rulesets/java/eapxp7
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 8f043e4b2613ef101bd668184d0b58fec5b2d0ac48f4004581f8a7e0bac4e9bc
+    - uuid: 006c814d-14ab-4f8c-8ca8-9f59cc6297ca
+      name: openjdk25+/openjdk21
+      description: Rules for migrating from openjdk21 to openjdk25+
+      directory: rulesets/java/openjdk25
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 8d539177b47d14b31b060612d93c232894bdadf5e5c583a4915b3fb84b19617e
