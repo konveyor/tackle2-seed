@@ -280,3 +280,27 @@ items:
         - Runtime and Utility Class Migration
       directory: rulesets/dotnet/core-migration
       checksum: 6e984207f56318fb0daed53b0ae22008f33471392f66b7ae0713b38db70583e8
+    - uuid: 592838a9-3eaa-4318-95c7-586f5e7cca67
+      name: eap82/eap8
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP 6/7/8 to 8.2. This ruleset also applies to migrations from EAP XP 6.0 to 7.0, since EAP XP 7.0 has EAP 8.2 underlying.
+      directory: rulesets/java/eap82
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 1d927160aeb9440a90362391d930d2d5269385ac3f3761c5874260073961f49b
+    - uuid: db0f16cb-1b5a-488b-b843-27b0215c28ad
+      name: eapxp7/eapxp6
+      description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 6 to 7.
+      directory: rulesets/java/eapxp7
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 8f043e4b2613ef101bd668184d0b58fec5b2d0ac48f4004581f8a7e0bac4e9bc
+    - uuid: 7288a092-8790-4eea-99b1-51e8925c6325
+      name: openjdk25+/openjdk21
+      description: Rules for migrating from openjdk21 to openjdk25+
+      directory: rulesets/java/openjdk25
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 8d539177b47d14b31b060612d93c232894bdadf5e5c583a4915b3fb84b19617e
