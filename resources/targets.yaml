@@ -1,5 +1,5 @@
 kind: Target
-version: 8
+version: 9
 items:
     - uuid: 72e4ac0a-619a-4c6e-acdc-b2ae6540ca56
       name: Application server migration to
@@ -48,7 +48,7 @@ items:
           label: konveyor.io/target=quarkus
     - uuid: 4f366cc9-a528-44f4-b0d0-5aa4a318c0d0
       name: OpenJDK
-      description: Rules to support upgrading the version of OpenJDK. Migrate to OpenJDK 11, OpenJDK 17 or OpenJDK 21.
+      description: Rules to support upgrading the version of OpenJDK. Migrate to OpenJDK 11, OpenJDK 17, OpenJDK 21 or OpenJDK 25.
       provider: Java
       imagepath: images/mug.svg
       choice: true
@@ -59,6 +59,8 @@ items:
           label: konveyor.io/target=openjdk17
         - name: OpenJDK 21
           label: konveyor.io/target=openjdk21
+        - name: OpenJDK 25
+          label: konveyor.io/target=openjdk25
     - uuid: 8c4daa66-cdbc-4cd6-894c-f117f25ea6c6
       name: OracleJDK to OpenJDK
       description: Rules to support migration to OpenJDK from OracleJDK.
