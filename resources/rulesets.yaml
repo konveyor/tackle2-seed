@@ -287,7 +287,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 1d927160aeb9440a90362391d930d2d5269385ac3f3761c5874260073961f49b
+      checksum: b9d929faa57ae85eec476a81613a8d314b7b22922aaa5f9b05787e2a0c4f618a
     - uuid: 69dcdb5d-06b6-4141-acc6-7e2d2f97c424
       name: eapxp7/eapxp6
       description: This ruleset provides analysis of Maven built applications when migrating from EAP XP 6 to 7.
@@ -295,7 +295,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 8f043e4b2613ef101bd668184d0b58fec5b2d0ac48f4004581f8a7e0bac4e9bc
+      checksum: 32d66c0e80e002643a3c527e27795f1ab3923d7cd41137e0365ffb9fdc8f854a
     - uuid: 54625963-d341-4c0a-95ce-6f0999bcb718
       name: openjdk25+/openjdk21
       description: Rules for migrating from openjdk21 to openjdk25+
