@@ -1,5 +1,5 @@
 kind: Target
-version: 9
+version: 10
 items:
     - uuid: 72e4ac0a-619a-4c6e-acdc-b2ae6540ca56
       name: Application server migration to
@@ -171,3 +171,11 @@ items:
       labels:
         - name: Migration from .NET Framework to .NET Core
           label: konveyor.io/target=dotnet-core
+    - uuid: 1ef1ac3f-b771-4e26-8af1-352ae8e46687
+      name: Go
+      description: Rules for migrating Go applications, including Kubernetes Ingress to Gateway API and FIPS 140-3 compliance.
+      provider: Go
+      imagepath: images/migration.svg
+      labels:
+        - name: Go
+          label: konveyor.io/target=go
