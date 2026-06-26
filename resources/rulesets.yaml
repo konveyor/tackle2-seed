@@ -304,3 +304,8 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: 8d539177b47d14b31b060612d93c232894bdadf5e5c583a4915b3fb84b19617e
+    - uuid: 0e2122ac-6c25-4375-99c8-7412f5e70f26
+      name: gateway-api-go/k8s-ingress-go
+      description: Rules for migrating from k8s-ingress-go to gateway-api-go
+      directory: rulesets/go/ingress-to-gatewayapi
+      checksum: ed69f14fdd0939e78318b7428a770d7429659ab23934a3146bbcd2807e7d56e7
