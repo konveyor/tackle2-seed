@@ -304,3 +304,13 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: 8d539177b47d14b31b060612d93c232894bdadf5e5c583a4915b3fb84b19617e
+    - uuid: ef364eb3-8b11-470a-b903-9f37808a2601
+      name: go-fips-combined
+      description: Go FIPS 140-3 compliance rules — weak algorithms, cipher modes, key strength, TLS, crypto hygiene, PQC readiness, build config, gRPC, K8s, database, HTTP, JWT, OAuth, X.509, SSH
+      directory: rulesets/go/fips
+      checksum: d82f20109b7796176d1c0bc422508a9970461f9d77c82db4fb3b7407cee18143
+    - uuid: 2cfec068-32ff-479d-ab98-7a69db172c89
+      name: gateway-api-go/k8s-ingress-go
+      description: Rules for migrating from k8s-ingress-go to gateway-api-go
+      directory: rulesets/go/ingress-to-gatewayapi
+      checksum: ed69f14fdd0939e78318b7428a770d7429659ab23934a3146bbcd2807e7d56e7
