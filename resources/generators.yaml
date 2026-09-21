@@ -3,13 +3,49 @@ version: 1
 items:
     - uuid: 8b25ed8e-f55d-404f-a5d2-819e698b2549
       kind: helm
-      name: CloudFoundry-Openshift
-      description: Generate openshift assets using a Cloud Foundry application manifest.
+      name: Quickstart-CloudFoundry-Kubernetes
+      description: Generate Kubernetes deployment manifests from a Cloud Foundry Discovery Manifest.
       repository:
         kind: git
-        url: https://github.com/konveyor/cf-k8s-helm-chart.git
-        branch: v0.1.0
-        tag: ""
-        path: java-backend
+        url: https://github.com/konveyor/quickstart-generators.git
+        branch: ""
+        tag: v0.11.0
+        path: quickstart-cf-k8s
+      params: {}
+      values: {}
+    - uuid: db7d7ccd-9e62-457a-8cfe-ebe0f528538f
+      kind: helm
+      name: Quickstart-Java-Service
+      description: Generate deployment manifests (Deployment, Service, Route/Ingress, ServiceAccount) and a Dockerfile for Java microservices (Spring Boot / Quarkus) on OpenShift and Kubernetes.
+      repository:
+        kind: git
+        url: https://github.com/konveyor/quickstart-generators.git
+        branch: ""
+        tag: v0.11.0
+        path: quickstart-java-service
+      params: {}
+      values: {}
+    - uuid: 005b0193-53ab-49de-bfc1-0436b43f0b83
+      kind: helm
+      name: Quickstart-OpenShift-GitOps
+      description: Generate ArgoCD Application definitions to onboard Java microservices into OpenShift GitOps.
+      repository:
+        kind: git
+        url: https://github.com/konveyor/quickstart-generators.git
+        branch: ""
+        tag: v0.11.0
+        path: quickstart-openshift-gitops
+      params: {}
+      values: {}
+    - uuid: 72362841-1151-47a2-bd69-7a59264b71c7
+      kind: helm
+      name: Quickstart-OpenShift-Pipelines
+      description: Generate Tekton Pipelines to build and deploy Java microservices on OpenShift.
+      repository:
+        kind: git
+        url: https://github.com/konveyor/quickstart-generators.git
+        branch: ""
+        tag: v0.11.0
+        path: quickstart-openshift-pipelines
       params: {}
       values: {}
