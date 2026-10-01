@@ -330,3 +330,11 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: 0b59f347c8fc7dda13c2cf23d52adb0dd30f13652c151dc1d1d6e9dcc0a2ce27
+    - uuid: 25974e9b-e914-49e4-a9bd-b4915e2ace10
+      name: openjdk8/openjdk7
+      description: Rules for migrating from openjdk7 to openjdk8
+      directory: rulesets/java/openjdk8
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: ccc0e39a391385d01f24e15ec1c8f5bb6c1e90321a0d2f033cb8aff0d123e7de
