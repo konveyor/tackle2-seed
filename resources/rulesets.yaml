@@ -314,3 +314,27 @@ items:
       description: Rules for migrating from k8s-ingress-go to gateway-api-go
       directory: rulesets/go/ingress-to-gatewayapi
       checksum: ed69f14fdd0939e78318b7428a770d7429659ab23934a3146bbcd2807e7d56e7
+    - uuid: cffd1ae1-9c58-4c5b-9dd6-51dceddae361
+      name: openjdk8/openjdk7
+      description: Rules for migrating from openjdk7 to openjdk8
+      directory: rulesets/java/openjdk8
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: ccc0e39a391385d01f24e15ec1c8f5bb6c1e90321a0d2f033cb8aff0d123e7de
+    - uuid: 4b810448-af0d-4ac5-bdf9-dd6f46206a78
+      name: spring-boot-4
+      description: Ruleset for migration from Spring Boot 3.x to Spring Boot 4.0
+      directory: rulesets/java/spring-boot-4
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 25c9e365786c410bd20b805ae27ac55cbe56cb51eaa0fbc29133bef180cc7be9
+    - uuid: 6dbd57c8-c68d-4af5-abe2-73c1f2140000
+      name: spring-framework-7
+      description: Ruleset for migration from Spring Framework 6.x to Spring Framework 7.0
+      directory: rulesets/java/spring-framework-7
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 0b59f347c8fc7dda13c2cf23d52adb0dd30f13652c151dc1d1d6e9dcc0a2ce27
