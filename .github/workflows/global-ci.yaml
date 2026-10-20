@@ -114,4 +114,10 @@ jobs:
           provider_java_container_requests_cpu: 100m
           provider_python_container_requests_cpu: 100m
           feature_auth_required: false
+          # Keep the agentic/Kai Solution Server operand disabled: it is not
+          # needed to validate the seed and its deployment does not become
+          # ready in this e2e env, which otherwise marks the Tackle CR as
+          # Failure before koncur runs.
+          experimental_deploy_kai: false
+          kai_solution_server_enabled: false
           hub_image_fqin: ttl.sh/konveyor-hub-${{ github.sha }}:4h
