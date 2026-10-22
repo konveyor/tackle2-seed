@@ -17,18 +17,46 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: Set branch
-        run: |
-          echo "BRANCH=${{ github.event_name == 'workflow_dispatch' && github.event.inputs.branch || (github.event_name == 'repository_dispatch' && github.event.client_payload.branch || 'main')}}" >> $GITHUB_ENV
+      - name: Prepare PR metadata
+        id: meta
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const isDispatch = context.eventName === 'repository_dispatch';
+            const p = (isDispatch && context.payload.client_payload) || {};
+            const branch = isDispatch
+              ? (p.branch || 'main')
+              : ((context.payload.inputs && context.payload.inputs.branch) || 'main');
+
+            core.setOutput('branch', branch);
+            core.setOutput('commit_message', `Update seed from ${branch}`);
+
+            let title, body;
+            if (isDispatch && p.repo) {
+              // Use the original rulesets PR title (strip the trailing "(#123)" from squash merges).
+              const prTitle = (p.commit_subject || '').replace(/\s*\(#\d+\)\s*$/, '').trim();
+              title = `🌰 ${prTitle || `Seed update from ${branch}`}`;
+              const source = (p.pr_number && p.pr_url)
+                ? `[${p.repo}#${p.pr_number}](${p.pr_url})`
+                : `[${p.repo}](https://github.com/${p.repo})`;
+              body = `This seed was automatically generated from ${source}.`;
+            } else {
+              // Fallback for manual workflow_dispatch runs or payloads without the extra fields.
+              title = `🌰 Automatic seed update from ${branch}`;
+              body = `This PR updates the seed from the \`${branch}\` branch.`;
+            }
+
+            core.setOutput('title', title);
+            core.setOutput('body', body);
       - name: Pull repository
         uses: actions/checkout@v5
         with:
-          ref: ${{ env.BRANCH }}
+          ref: ${{ steps.meta.outputs.branch }}
       - name: Create seed patch
         run: make ruleset-patch RULESET_ARGS="-y"
       - name: Generate branch name
         run: |
-          echo "PR_BRANCH_NAME=$(date -u +%Y%m%dT-%H%M%SZ)-seed-update-${{ env.BRANCH }}" >> $GITHUB_ENV
+          echo "PR_BRANCH_NAME=$(date -u +%Y%m%dT-%H%M%SZ)-seed-update-${{ steps.meta.outputs.branch }}" >> $GITHUB_ENV
       - name: Get Token
         id: get_workflow_token
         uses: peter-murray/workflow-application-token-action@v4
@@ -41,9 +69,9 @@ jobs:
         uses: peter-evans/create-pull-request@v8.1.0
         with:
           branch: ${{ env.PR_BRANCH_NAME }}
-          title: Automatic seed update from ${{ env.BRANCH }}
-          body: This PR updates the seed from the ${{ env.BRANCH }} branch.
-          commit-message: Update seed from ${{ env.BRANCH }}
+          title: ${{ steps.meta.outputs.title }}
+          body: ${{ steps.meta.outputs.body }}
+          commit-message: ${{ steps.meta.outputs.commit_message }}
           author: Konveyor Bot <konveyor-ci@konveyor.org>
           token: ${{ steps.get_workflow_token.outputs.token }}
           signoff: true
