@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: adb50c1ae244c5f077a6630a1e89524609b64f41409d44356e5de460ee3e4e32
+      checksum: 2f6b2386e775699e84b7913c7dc1950b9919cd735b69f84dad68eb298675666b
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -338,3 +338,11 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: 0b59f347c8fc7dda13c2cf23d52adb0dd30f13652c151dc1d1d6e9dcc0a2ce27
+    - uuid: d46d82d2-a624-47c8-93e1-ee99a0c12949
+      name: quarkus-rh
+      description: This ruleset provides Red Hat build of Quarkus 3.33-specific hints that layer on top of the shared Java EE/Jakarta EE to Quarkus rules (which also carry the konveyor.io/target=quarkus-rh label). It covers the Red Hat build of Quarkus BOM/plugin coordinates, the Red Hat Maven repository, and extensions that are not productized/supported in Red Hat build of Quarkus.
+      directory: rulesets/java/quarkus-rh
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 6976757c70050b2ece447be3ea3ed494ce9675fb3a1623398e29fb9a1da3603e
