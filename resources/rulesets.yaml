@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: a16fef8b3a0271efd903f8bea76d430d888b69ecb97cc01d0b7a6ae5b7ca46fe
+      checksum: 24656d742795cc01dbfb949d10b2806d9d68044587fbf5b30f1d7677ee2d4091
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.
@@ -105,7 +105,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 1101f330e0899874ca458ca89a745280852931a52bde2583aa53e8cd61c85a7b
+      checksum: 571d2f28f4505532ca2369df6b3c7f935119743aa196f31f32b2bcdaa15a5c88
     - uuid: c73c3986-64a5-4c2e-8149-fba57347af99
       name: openjdk17/openjdk11
       description: This ruleset provides analysis Security Manager classes and methods deprecated between OpenJDK 11 to 17.
@@ -137,7 +137,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: adb50c1ae244c5f077a6630a1e89524609b64f41409d44356e5de460ee3e4e32
+      checksum: 2f6b2386e775699e84b7913c7dc1950b9919cd735b69f84dad68eb298675666b
     - uuid: 9179982c-6007-4e40-b67c-9a7272e44e87
       name: rhr/springboot
       description: Verify the version of the Spring Boot framework is compatible with those supported by Red Hat Runtimes
@@ -329,7 +329,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 0b59f347c8fc7dda13c2cf23d52adb0dd30f13652c151dc1d1d6e9dcc0a2ce27
+      checksum: 05185b8bac154b5f306b027df955a89ab97b780c8fd6febbfe86c88c1e5ba2f0
     - uuid: 25974e9b-e914-49e4-a9bd-b4915e2ace10
       name: openjdk8/openjdk7
       description: Rules for migrating from openjdk7 to openjdk8
@@ -338,3 +338,11 @@ items:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
       checksum: ccc0e39a391385d01f24e15ec1c8f5bb6c1e90321a0d2f033cb8aff0d123e7de
+    - uuid: 889a5ab0-eb2e-4b44-8ad9-fa38e496cb2a
+      name: quarkus-rh
+      description: This ruleset provides Red Hat build of Quarkus 3.33-specific hints that layer on top of the shared Java EE/Jakarta EE to Quarkus rules (which also carry the konveyor.io/target=quarkus-rh label). It covers the Red Hat build of Quarkus BOM/plugin coordinates, the Red Hat Maven repository, and extensions that are not productized/supported in Red Hat build of Quarkus.
+      directory: rulesets/java/quarkus-rh
+      dependencies:
+        - 10667615-e067-45b4-a925-563a79ea0949
+        - 1b2a0eef-511c-4c07-a36a-d301b15d8207
+      checksum: 6976757c70050b2ece447be3ea3ed494ce9675fb3a1623398e29fb9a1da3603e
