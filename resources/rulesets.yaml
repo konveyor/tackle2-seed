@@ -51,7 +51,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: a16fef8b3a0271efd903f8bea76d430d888b69ecb97cc01d0b7a6ae5b7ca46fe
+      checksum: 24656d742795cc01dbfb949d10b2806d9d68044587fbf5b30f1d7677ee2d4091
     - uuid: 288037b2-279f-4d11-9ea9-f91ff274447f
       name: eapxp/thorntail
       description: This ruleset provides analysis of Maven built applications that use Thorntail Maven Plugin, which should be replaced by JBoss EAP XP Bootable JAR Maven Plugin, when migrating to JBoss EAP XP.
@@ -105,7 +105,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 1101f330e0899874ca458ca89a745280852931a52bde2583aa53e8cd61c85a7b
+      checksum: 571d2f28f4505532ca2369df6b3c7f935119743aa196f31f32b2bcdaa15a5c88
     - uuid: c73c3986-64a5-4c2e-8149-fba57347af99
       name: openjdk17/openjdk11
       description: This ruleset provides analysis Security Manager classes and methods deprecated between OpenJDK 11 to 17.
@@ -337,7 +337,7 @@ items:
       dependencies:
         - 10667615-e067-45b4-a925-563a79ea0949
         - 1b2a0eef-511c-4c07-a36a-d301b15d8207
-      checksum: 0b59f347c8fc7dda13c2cf23d52adb0dd30f13652c151dc1d1d6e9dcc0a2ce27
+      checksum: 05185b8bac154b5f306b027df955a89ab97b780c8fd6febbfe86c88c1e5ba2f0
     - uuid: d46d82d2-a624-47c8-93e1-ee99a0c12949
       name: quarkus-rh
       description: This ruleset provides Red Hat build of Quarkus 3.33-specific hints that layer on top of the shared Java EE/Jakarta EE to Quarkus rules (which also carry the konveyor.io/target=quarkus-rh label). It covers the Red Hat build of Quarkus BOM/plugin coordinates, the Red Hat Maven repository, and extensions that are not productized/supported in Red Hat build of Quarkus.
